@@ -12,6 +12,7 @@ $route = str_replace($basePath, '', $requestUri);
 $routes = [
     '/' => 'home.php',
     '/about' => 'about.php',
+    '/faq' => 'faq.php',
 ];
 
 // Vérifiez si la route existe

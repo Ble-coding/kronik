@@ -54,7 +54,7 @@
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="/formation/formation-en-ligne">Formation en Ligne</a> -->
                         <a class="hover-effect paragraph-base grey-100 pt-2" href="/">Mentorat</a>
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="mentorat-jeunes.php">Mentorat pour les Jeunes</a> -->
-
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="./faq">Faqs</a>
                     </div>
                 </div>
 
