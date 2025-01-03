@@ -9,4 +9,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php [L,QSA]
 
 # Page 404 personnalisée
-ErrorDocument 404 /404.html
+ErrorDocument 404 /404.php

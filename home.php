@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Kronik-X Health - Innover pour transformer la gestion des maladies chroniques en Afrique et dans les LMICs</title>
+    
     <?php
-			require __DIR__ . '/layouts/head.php';
-		?>
+require __DIR__ . '/layouts/head.php';
+?>
+
 </head>
 
 <body>
