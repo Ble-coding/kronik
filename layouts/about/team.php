@@ -20,7 +20,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="card-expert">
                             <div class="card-image">
-                                <a href="#"><img src="assets/imgs/pages/home5/team3.webp" alt="Vatech" /></a>
+                                <a href="#"><img src="assets/imgs/pages/home5/team3.webp" alt="kronik" /></a>
                             </div>
                             <div class="card-info">
                                 <div class="card-socials">
@@ -56,7 +56,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="card-expert">
                             <div class="card-image">
-                                <a href="#"><img src="assets/imgs/pages/home5/team2.webp" alt="Vatech" /></a>
+                                <a href="#"><img src="assets/imgs/pages/home5/team2.webp" alt="kronik" /></a>
                             </div>
                             <div class="card-info">
                                 <div class="card-socials">
@@ -91,7 +91,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="card-expert">
                             <div class="card-image">
-                                <a href="#"><img src="assets/imgs/pages/home5/team1.webp" alt="Vatech" /></a>
+                                <a href="#"><img src="assets/imgs/pages/home5/team1.webp" alt="kronik" /></a>
                             </div>
                             <div class="card-info">
                                 <div class="card-socials">
