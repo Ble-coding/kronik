@@ -25,7 +25,7 @@
                     <div class="pt-3">
                         <div class="form-newsletter">
                             <form action="#">
-                                <input type="text" class="form-control" placeholder="Email Address" />
+                                <input type="text" class="form-control" placeholder="Adresse Email" />
                                 <input type="submit" class="btn btn-newsletter" value="" />
                             </form>
                         </div>
