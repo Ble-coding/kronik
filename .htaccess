@@ -1,12 +1,15 @@
 # Activer la réécriture d'URL
 RewriteEngine On
 
-# Ignore les fichiers et répertoires existants
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+
+# Ignorer les fichiers statiques comme CSS, JS, et images
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
 
 # Réécrit toutes les URLs vers index.php
 RewriteRule ^(.*)$ index.php [L,QSA]
 
 # Page 404 personnalisée
-ErrorDocument 404 /404.php
+ErrorDocument 404 /404.html

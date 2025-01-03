@@ -3522,7 +3522,7 @@ img {
   margin-bottom: 10px;
 }
 .card-expert .card-info .card-text-info a:hover {
-  color: var(--tc-primary-home) !important;
+  color: var(--kronik-light-blue) !important;
 }
 .card-expert .card-info .card-socials {
   position: absolute;
@@ -3533,7 +3533,7 @@ img {
   max-width: 213px;
   padding: 7px 32px;
   border-radius: 20px;
-  background-color: var(--tc-primary-home);
+  background-color: var(--kronik-light-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3874,7 +3874,7 @@ img {
 
 .card-number {
   border-radius: 8px;
-  background-color: var(--tc-primary-1000);
+  background-color: var(--kronik-green);
   padding: 13px 20px;
   display: flex;
   align-items: center;
@@ -13146,7 +13146,7 @@ h6 {
 }
 
 .box-about-us-7 {
-  background-image: url(../imgs/pages/home7/bg-about.png);
+  /* background-image: url(../imgs/pages/home7/bg-about.png); */
   background-position: right 113px bottom 88px;
   background-repeat: no-repeat;
 }
@@ -15650,7 +15650,7 @@ h6 {
 }
 
 .box-faq-single-banner {
-  background-image: url(../imgs/pages/faq/banner.png);
+  background-image: url(../imgs/pages/home5/team_best.webp);
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
@@ -16062,10 +16062,10 @@ h6 {
 }
 
 .box-blog-single-banner .box-faq-single-banner-inner::before {
-  background: url(../imgs/pages/blog/icon-1.png) no-repeat center;
+  background: url(../imgs/pages/home5/left_half.png) no-repeat center;
 }
 .box-blog-single-banner .box-faq-single-banner-inner::after {
-  background: url(../imgs/pages/blog/icon-2.png) no-repeat center;
+  background: url(../imgs/pages/home5/right_half.png) no-repeat center;
 }
 
 .container-slide .swiper-slide {

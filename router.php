@@ -11,10 +11,7 @@ $route = str_replace($basePath, '', $requestUri);
 // Définir les routes disponibles
 $routes = [
     '/' => 'home.php',
-    // '/partner' => 'kanyePartner.php',
-    '/about/mission' => 'about/lmics-definition.php',
-    '/lmics/lmics-definition' => 'lmics/lmics-definition.php',
-    '/formation/formation-en-ligne' => 'formation/formation-en-ligne.php',
+    '/about' => 'about.php',
 ];
 
 // Vérifiez si la route existe

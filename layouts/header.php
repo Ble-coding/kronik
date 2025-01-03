@@ -13,7 +13,7 @@
                                 <li><a class="dropdown-item" href="programmes.php">Nos Programmes en un coup d'œil</a></li>
                             </ul>
                         </li> -->
-                        <li class="nav-item"><a class="nav-link fw-medium" href="/">À Propos</a></li>
+                        <li class="nav-item"><a class="nav-link fw-medium" href="./about">À Propos</a></li>
                         <!-- <li class="nav-item dropdown menu-item-has-children">
                             <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">À Propos</a>
                             <ul class="dropdown-menu">
@@ -86,7 +86,7 @@
                             <li><a class="dropdown-item" href="programmes.php">Nos Programmes en un coup d'œil</a></li>
                         </ul>
                     </li> -->
-                    <li class="nav-item"><a class="nav-link fw-medium" href="/">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="./about">À Propos</a></li>
                     <!-- <li class="nav-item dropdown menu-item-has-children">
                         <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">À Propos</a>
                         <ul class="dropdown-menu">
