@@ -42,7 +42,7 @@
                                 <li><a class="dropdown-item" href="formation.php">Formation et Renforcement de Capacités</a></li>
                             </ul>
                         </li> -->
-                        <li class="nav-item"><a class="nav-link fw-medium" href="/">Contactez-Nous</a></li>
+                        <li class="nav-item"><a class="nav-link fw-medium" href="./contact">Contactez-Nous</a></li>
                         <!-- <li class="nav-item dropdown menu-item-has-children">
                             <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contactez-Nous</a>
                             <ul class="dropdown-menu">
@@ -152,7 +152,7 @@
 
                     <!-- Contact -->
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" href="contact.php">Contact</a>
+                        <a class="nav-link fw-medium" href="./contact">Contact</a>
                     </li>
 
                 </ul>

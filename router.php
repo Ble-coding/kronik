@@ -13,6 +13,7 @@ $routes = [
     '/' => 'home.php',
     '/about' => 'about.php',
     '/faq' => 'faq.php',
+    '/contact' => 'contact.php',
 ];
 
 // Vérifiez si la route existe

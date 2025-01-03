@@ -40,7 +40,7 @@
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="programmes.php">Nos Programmes en un coup d'œil</a> -->
                         <a class="hover-effect paragraph-base grey-100 pt-2" href="/">À Propos</a>
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="./about/mission">Notre Mission</a> -->
-                        <a class="hover-effect paragraph-base grey-100 pt-2" href="contact.php">Contact</a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="./contact">Contact</a>
                         <a class="hover-effect paragraph-base grey-100 pt-2" href="/">Actualités</a>
                     </div>
                 </div>

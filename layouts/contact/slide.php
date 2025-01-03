@@ -1,10 +1,10 @@
 <?php
 include 'layouts/breadcrumb.php';
 
-$title = "Faq";
+$title = "Contact";
 $breadcrumbs = [
     ['label' => 'Home', 'url' => '/'],
-    ['label' => 'Faq'],
+    ['label' => 'Contact'],
 ];
 
 renderBreadcrumb($title, $breadcrumbs);

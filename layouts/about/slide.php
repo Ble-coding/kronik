@@ -1,17 +1,11 @@
-<section class="box-faq-single-banner box-blog-single-banner">
-            <div class="box-faq-single-banner-inner">
-                <div class="container">
-                    <h1 class="display-ag-2xl color-white">À Propos</h1>
-                    <div class="box-breadcrumb">
-                        <ul class="breadcrumb">
-                            <li class="breadcrumb-item">
-                                <a href="#">Home</a>
-                            </li>
-                            <li class="breadcrumb-item">
-                                <span>À Propos</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+<?php
+include 'layouts/breadcrumb.php';
+
+$title = "À Propos";
+$breadcrumbs = [
+    ['label' => 'Home', 'url' => '/'],
+    ['label' => 'À Propos'],
+];
+
+renderBreadcrumb($title, $breadcrumbs);
+?>

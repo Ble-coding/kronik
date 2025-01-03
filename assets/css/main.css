@@ -15664,6 +15664,13 @@ h6 {
   background-size: cover;
 }
 
+.box-faq-single-banner-contact {
+  background-image: url(../imgs/pages/home5/team4.webp);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
 .box-faq-single-banner-inner {
   background-image: url(../imgs/pages/faq/bg-faq.png);
   background-repeat: no-repeat;
