@@ -12500,13 +12500,14 @@ h6 {
 .menu-footer li a {
   display: inline-block;
   padding: 0px 0px;
-  color: rgba(255, 255, 255, 0.6784313725);
+  color: #fff;
   font-size: 16px;
   line-height: 30px;
   font-family: var(--tc-rubik-font-family);
 }
 .menu-footer li a:hover {
-  color: var(--tc-primary-home);
+  color: #fff;
+  text-decoration: underline;
 }
 
 .swiper-pagination-style-3 .swiper-pagination-bullet {
@@ -15670,6 +15671,22 @@ h6 {
   background-position: top left;
   background-size: cover;
 }
+
+.box-faq-single-banner-terms {
+  background-image: url(../imgs/pages/home5/header_health.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
+.box-faq-single-banner-privacy {
+  background-image: url(../imgs/pages/home5/x_health.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
+
 
 .box-faq-single-banner-inner {
   background-image: url(../imgs/pages/faq/bg-faq.png);

@@ -93,21 +93,26 @@
         </div>
     </div>
     <div class="container-fluid footer-1 px-0">
-        <div class="footer">
-            <div class="container py-4">
-                <div class="footer-bottom">
-                    <div class="row paragraph-base">
-                        <div class="col">
-                            <div class="paragraph-medium color-white"> © Copyright
+                <div class="footer">
+                    <div class="container py-4">
+                        <div class="footer-bottom">
+                            <div class="row paragraph-base">
+                                <div class="col">
+                                    <div class="paragraph-rubik-r color-white">
+                                    © Copyright
                                 <?php echo date('Y'); ?> | Tous droits réservés par
-                                    <a href="https://www.santemousso.net/" target="_blank">santemousso.net</a></div>
-                        </div>
-                        <div class="col d-flex justify-content-end">
-                            <a href="#" class="paragraph-medium color-white">Conditions générales / Politique de confidentialité</a>
+                                    <a href="https://www.santemousso.net/" target="_blank">santemousso.net</a>
+                                    </div>
+                                </div>
+                                <div class="col d-flex justify-content-end">
+                                    <ul class="menu-footer">
+                                        <li><a href="./terms">Conditions générales</a></li>
+                                        <li><a href="./privacy">Politique de confidentialité</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 </footer>
