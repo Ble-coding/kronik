@@ -11,7 +11,7 @@
                             <p class="paragraph-rubik-r color-white desc-banner mb-40"> Kronik-X Health, le premier incubateur dédié à l’innovation numérique, s’engage à créer des solutions impactantes et accessibles pour les maladies chroniques telles que le diabète, l’hypertension, le cancer et les maladies mentales.</p>
                            
                             <div class="d-flex align-items-center flex-wrap">
-                                <a href="./about/mission" class="btn btn-linear-01 mb-3">
+                                <a href="./about" class="btn btn-linear-01 mb-3">
                                 Découvrez notre mission
                                     <img src="assets/imgs/pages/home5/plus.png" alt="kronik" />
                                 </a>

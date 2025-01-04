@@ -101,7 +101,7 @@
                                     <div class="paragraph-rubik-r color-white">
                                     © Copyright
                                 <?php echo date('Y'); ?> | Tous droits réservés par
-                                    <a href="https://www.santemousso.net/" target="_blank">santemousso.net</a>
+                                    <a href="https://www.santemousso.net/" target="_blank">Sante 2.0</a>
                                     </div>
                                 </div>
                                 <div class="col d-flex justify-content-end">
@@ -114,5 +114,5 @@
                         </div>
                     </div>
                 </div>
-            </div>
+     </div>
 </footer>

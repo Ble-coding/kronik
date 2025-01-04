@@ -57,7 +57,7 @@
                                 <path d="M7.55523 8C7.55523 7.576 7.90137 6.94286 8.25176 6.41143C8.70226 5.72571 9.24059 5.12743 9.85779 4.67086C10.3206 4.32857 10.8816 4 11.333 4M11.333 4C10.8816 4 10.3201 3.67143 9.85779 3.32914C9.24059 2.872 8.70226 2.27371 8.25176 1.58914C7.90137 1.05714 7.55523 0.422857 7.55523 3.11705e-07M11.333 4L-0.000324313 4" stroke="" />
                             </svg>
                         </span>
-                        <p class="sub-heading-md desc-tab-service">Objectif : o	Comprendre les défis et opportunités de la santé numérique dans les pays à revenu faible et intermédiaire (LMICs).</p>
+                        <p class="sub-heading-md desc-tab-service">Objectif : Comprendre les défis et opportunités de la santé numérique dans les pays à revenu faible et intermédiaire (LMICs).</p>
                     </a> 
 
                     
@@ -90,7 +90,7 @@
                                 <path d="M7.55523 8C7.55523 7.576 7.90137 6.94286 8.25176 6.41143C8.70226 5.72571 9.24059 5.12743 9.85779 4.67086C10.3206 4.32857 10.8816 4 11.333 4M11.333 4C10.8816 4 10.3201 3.67143 9.85779 3.32914C9.24059 2.872 8.70226 2.27371 8.25176 1.58914C7.90137 1.05714 7.55523 0.422857 7.55523 3.11705e-07M11.333 4L-0.000324313 4" stroke="" />
                             </svg>
                         </span>
-                        <p class="sub-heading-md desc-tab-service">Objectif : o	Élaborer des modèles économiques viables pour des solutions de santé numérique.</p>
+                        <p class="sub-heading-md desc-tab-service">Objectif : Élaborer des modèles économiques viables pour des solutions de santé numérique.</p>
                     </a>
 
 

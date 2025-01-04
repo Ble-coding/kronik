@@ -4776,13 +4776,30 @@ img {
   background-color: var(--tc-theme-main);
   transition-duration: 0.4s;
 }
-.card-service-7:hover {
-  background-image: url(../imgs/pages/home12/service2.png);
+.card-service-7-1:hover {
+  background-image: url(../imgs/pages/home5/service1_darker.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   transition-duration: 0.4s;
 }
+
+.card-service-7-3:hover {
+  background-image: url(../imgs/pages/home5/service2_darker.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition-duration: 0.4s;
+}
+
+.card-service-7-2:hover {
+  background-image: url(../imgs/pages/home5/service3_darker.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition-duration: 0.4s;
+}
+
 .card-service-7:hover .card-image {
   background-color: var(--tc-primary-home);
   border: 2px solid var(--tc-theme-main);
@@ -9531,7 +9548,7 @@ a.btn.text-secondary:hover {
 }
 
 .sub-heading-ag-xl {
-  font-size: 24px !important;
+  font-size: 20px !important;
   line-height: 120% !important;
   font-weight: 700 !important;
   font-family: var(--tc-ag-font-family) !important;

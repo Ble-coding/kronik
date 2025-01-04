@@ -19,7 +19,7 @@
 </p>
 
     <div class="mb-5"></div>
-    <a href="#" class="btn btn-primary-square-2-md">
+    <a href="./about" class="btn btn-primary-square-2-md">
     Découvrir nos initiatives
         <img src="assets/imgs/template/icons/plus-sm.svg" alt="Plus" />
     </a>

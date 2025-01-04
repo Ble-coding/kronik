@@ -20,7 +20,7 @@
             (225) 0554 631 663
         </p>
         <div class="sub-heading-ag-xl color-white d-flex align-items-center mb-4">
-            <img src="assets/imgs/pages/contact/address.png" alt="Adresse" class="me-3" />
+            <img src="assets/imgs/pages/contact/address_corrected.png" alt="Adresse" class="me-3" />
             <p class="mb-0">Cocody, Riviera Bonoumin Rue i61, Abidjan, Côte d'Ivoire</p>
         </div>
     </div>
@@ -104,10 +104,11 @@
                             </div>
                             <div class="card-info">
     <h6 class="sub-heading-ag-md mb-3">Horaires d'ouverture</h6>
-    <p class="paragraph-rubik-r">LUN-VEN : 9h – 22h</p>
-    <p class="paragraph-rubik-r">SAMEDI : 9h – 20h</p>
-    <p class="paragraph-rubik-r">Dimanche : Fermé</p>
+    <p class="paragraph-rubik-r">LUN-VEN : 8h - 17h</p>
+    <p class="paragraph-rubik-r">SAMEDI : 9h - 12h</p>
+    <p class="paragraph-rubik-r">DIMANCHE : Fermé</p>
 </div>
+
 
                         </div>
                     </div>
