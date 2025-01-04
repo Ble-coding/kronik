@@ -17,6 +17,7 @@ $routes = [
     '/programs' => 'program.php',
     '/terms' => 'terms.php',        // Fichier pour les "Conditions d'utilisation"
     '/privacy' => 'privacy.php',  
+    '/contribute' => 'contribute.php',
 ];
 
 // Vérifiez si la route existe

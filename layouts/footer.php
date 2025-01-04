@@ -38,11 +38,11 @@
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="presentation.php">Présentation concise</a> -->
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="statistiques.php">Statistiques Clés</a> -->
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="programmes.php">Nos Programmes en un coup d'œil</a> -->
-                        <a class="hover-effect paragraph-base grey-100 pt-2" href="/">À Propos</a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="./about">À Propos</a>
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="./about/mission">Notre Mission</a> -->
                         <a class="hover-effect paragraph-base grey-100 pt-2" href="./contact">Contact</a>
                         <a class="hover-effect paragraph-base grey-100 pt-2" href="/">Actualités</a>
-                        <a class="hover-effect paragraph-base grey-100 pt-2" href="/programs">Programmes</a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="./programs">Programmes</a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
@@ -50,9 +50,8 @@
                     <div class="d-flex flex-column align-items-start">
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="programme-education.php">Éducation</a> -->
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="programme-sante.php">Santé</a> -->
-                        <a class="hover-effect paragraph-base grey-100 pt-2" href="/">Formation</a>
-                        <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="/formation/formation-en-ligne">Formation en Ligne</a> -->
-                        <a class="hover-effect paragraph-base grey-100 pt-2" href="/">Mentorat</a>
+                        <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="/">Formation</a> <a class="hover-effect paragraph-base grey-100 pt-2" href="/formation/formation-en-ligne">Formation en Ligne</a> -->
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="./contribute">Contribuez</a>
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="mentorat-jeunes.php">Mentorat pour les Jeunes</a> -->
                         <a class="hover-effect paragraph-base grey-100 pt-2" href="./faq">Faqs</a>
                     </div>

@@ -130,7 +130,7 @@
                     </li> -->
 
                     <!-- Mentorat -->
-                    <li class="nav-item"><a class="nav-link fw-medium" href="/">Mentorat</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="./contribute">Contribuez à Kronik-X Health</a></li>
                     <!-- <li class="nav-item dropdown menu-item-has-children">
                         <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mentorat</a>
                         <ul class="dropdown-menu">
