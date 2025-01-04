@@ -63,7 +63,7 @@
                 </div>
             </div>
         </nav>
-        <!-- offCanvas-menu -->
+        <!-- home5-menu -->
         <div class="offCanvas__info">
             <div class="offCanvas__close-icon menu-close">
                 <button>
@@ -159,34 +159,34 @@
             </div>
             <div class="side-gallery mb-4">
                 <div class="pt-1"></div>
-                <h4 class="mt-3 mb-3">Gallery</h4>
+                <h4 class="mt-3 mb-3">Galerie</h4>
                 <div class="grid-items">
                     <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                        <img class="g-col-4" src="assets/imgs/pages/offcanvas/gallery-1.png" alt="vatech" />
+                        <img class="g-col-4" src="assets/imgs/pages/home5/gallery-1.png" alt="kronik" />
                     </div>
                     <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                        <img class="g-col-4" src="assets/imgs/pages/offcanvas/gallery-2.png" alt="vatech" />
+                        <img class="g-col-4" src="assets/imgs/pages/home5/gallery-2.png" alt="kronik" />
                     </div>
                     <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                        <img class="g-col-4" src="assets/imgs/pages/offcanvas/gallery-3.png" alt="vatech" />
+                        <img class="g-col-4" src="assets/imgs/pages/home5/gallery-3.png" alt="kronik" />
                     </div>
                     <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                        <img class="g-col-4" src="assets/imgs/pages/offcanvas/gallery-4.png" alt="vatech" />
+                        <img class="g-col-4" src="assets/imgs/pages/home5/gallery-4.png" alt="kronik" />
                     </div>
                     <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                        <img class="g-col-4" src="assets/imgs/pages/offcanvas/gallery-5.png" alt="vatech" />
+                        <img class="g-col-4" src="assets/imgs/pages/home5/gallery-5.png" alt="kronik" />
                     </div>
                     <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                        <img class="g-col-4" src="assets/imgs/pages/offcanvas/gallery-6.png" alt="vatech" />
+                        <img class="g-col-4" src="assets/imgs/pages/home5/gallery-6.png" alt="kronik" />
                     </div>
                     <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                        <img class="g-col-4" src="assets/imgs/pages/offcanvas/gallery-7.png" alt="vatech" />
+                        <img class="g-col-4" src="assets/imgs/pages/home5/gallery-7.png" alt="kronik" />
                     </div>
                     <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                        <img class="g-col-4" src="assets/imgs/pages/offcanvas/gallery-8.png" alt="vatech" />
+                        <img class="g-col-4" src="assets/imgs/pages/home5/gallery-8.png" alt="kronik" />
                     </div>
                     <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                        <img class="g-col-4" src="assets/imgs/pages/offcanvas/gallery-9.png" alt="vatech" />
+                        <img class="g-col-4" src="assets/imgs/pages/home5/gallery-9.png" alt="kronik" />
                     </div>
                 </div>
             </div>
