@@ -14,6 +14,7 @@ $routes = [
     '/about' => 'about.php',
     '/faq' => 'faq.php',
     '/contact' => 'contact.php',
+    '/programs' => 'program.php',
     '/terms' => 'terms.php',        // Fichier pour les "Conditions d'utilisation"
     '/privacy' => 'privacy.php',  
 ];

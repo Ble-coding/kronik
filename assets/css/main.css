@@ -9791,6 +9791,7 @@ a.btn.text-secondary:hover {
 .paragraph-rubik-m {
   font-size: 16px;
   line-height: 24px;
+  color: #FFF;
   font-weight: 500;
   font-family: var(--tc-rubik-font-family);
 }
@@ -15703,6 +15704,12 @@ h6 {
   background-size: cover;
 }
 
+.box-faq-single-banner-programs {
+  background-image: url(../imgs/pages/home5/bnr.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
 
 
 .box-faq-single-banner-inner {
@@ -16437,11 +16444,16 @@ h6 {
   fill: var(--tc-theme-main);
 }
 
+
 .sidebar-brochure {
-  background-color: var(--tc-theme-bg-1);
+  background-color: var(--kronik-blue);
   border-radius: 10px;
   padding: 26px 30px;
   margin-bottom: 30px;
+}
+
+.sidebar-brochure .sub-heading-ag-xl{
+  color: #fff;
 }
 
 .link-download a {
@@ -16472,7 +16484,7 @@ h6 {
   content: "";
   height: 4px;
   border-radius: 100px;
-  background-color: var(--tc-primary-home);
+  background-color: #FFF;
   width: 30px;
   position: absolute;
   bottom: 0px;
@@ -16489,12 +16501,17 @@ textarea.form-control {
   line-height: 28px;
   font-weight: 400;
   font-family: var(--tc-rubik-font-family);
-  color: var(--tc-neutral-2600);
+  color: #000;
 }
 .service-detail ul {
   list-style: none;
   padding: 0px;
   margin: 0px 0px 20px 0px;
+}
+
+
+.service-detail h1 {
+  color: var(--kronik-intense-dark-green)!important;
 }
 .service-detail ul li {
   padding: 0px 0px 0px 30px;
@@ -16511,14 +16528,21 @@ textarea.form-control {
   margin-bottom: 60px;
 }
 
+.box-questions p{
+  color: white;
+}
+
 .box-questions .accordion-item {
   border: 0px;
   box-shadow: none;
   margin-bottom: 20px;
 }
+
+
 .box-questions .accordion-button {
   border-radius: 5px;
-  background-color: var(--tc-theme-bg-1);
+  background-color: var(--kronik-natural-green);
+  color: #FFF;
   font-size: 18px;
   font-family: var(--tc-ag-font-family);
   line-height: 30px;
@@ -16530,7 +16554,7 @@ textarea.form-control {
   transform: rotate(0deg);
 }
 .box-questions .accordion-button::after {
-  background-image: url(../imgs/pages/services/down.png);
+  background-image: url(../imgs/pages/services/down-blue.png);
 }
 .box-questions .accordion-body {
   padding-top: 20px;
@@ -16539,6 +16563,17 @@ textarea.form-control {
 .box-questions .accordion-button:not(.collapsed) {
   background-color: var(--tc-primary-home);
   color: var(--tc-theme-main);
+}
+
+
+.box-questions .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.box-questions .accordion-button:active {
+  outline: none;
+  box-shadow: none;
 }
 
 .footer-red .slide-footer-brand-inner-2 {

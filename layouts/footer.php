@@ -42,12 +42,12 @@
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="./about/mission">Notre Mission</a> -->
                         <a class="hover-effect paragraph-base grey-100 pt-2" href="./contact">Contact</a>
                         <a class="hover-effect paragraph-base grey-100 pt-2" href="/">Actualités</a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="/programs">Programmes</a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h3 class="text-footer pb-1">Liens Utiles</h3>
                     <div class="d-flex flex-column align-items-start">
-                        <a class="hover-effect paragraph-base grey-100 pt-4" href="/">Programmes</a>
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="programme-education.php">Éducation</a> -->
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="programme-sante.php">Santé</a> -->
                         <a class="hover-effect paragraph-base grey-100 pt-2" href="/">Formation</a>
