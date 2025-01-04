@@ -90,7 +90,7 @@
                             <div class="card-info">
                                 <h3 class="heading-ag-xl">Acceleration et Incubations </h3>
                                 <p class="paragraph-rubik-r dark-950-70">Deux parcours adaptés à vos besoins : l’Incubateur Kronik-X Lab et l’Accélérateur Kronik-X Growth.</p>
-                                <a href="#" class="btn btn-border-small">
+                                <a href="./programs#pills-acceleration" class="btn btn-border-small">
                                    Rejoignez nous
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="10" cy="10.5" r="10" fill="#000407" />
@@ -115,7 +115,7 @@
                             <div class="card-info">
                                 <h3 class="heading-ag-xl">Projets Pilotes</h3>
                                 <p class="paragraph-rubik-r dark-950-70">Nous testons des solutions dans des hôpitaux partenaires pour garantir leur pertinence et leur impact, avant un déploiement à grande échelle.</p>
-                                <a href="#" class="btn btn-border-small">
+                                <a href="./programs#pills-projet" class="btn btn-border-small">
                                 Découvrir l'impact 
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="10" cy="10.5" r="10" fill="#000407" />
@@ -140,7 +140,7 @@
                             <div class="card-info">
                                 <h3 class="heading-ag-xl">Formation et Ressources</h3>
                                 <p class="paragraph-rubik-r dark-950-70">Proposer des outils et formations pour renforcer les compétences des professionnels de santé.</p>
-                                <a href="#" class="btn btn-border-small">
+                                <a href="./programs#pills-formation" class="btn btn-border-small">
                                 Découvrir nos formations
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="10" cy="10.5" r="10" fill="#000407" />

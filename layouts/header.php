@@ -119,7 +119,7 @@
                     </li> -->
 
                     <!-- Formation -->
-                    <li class="nav-item"><a class="nav-link fw-medium" href="/">Formation</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link fw-medium" href="/">Formation</a></li> -->
                     <!-- <li class="nav-item dropdown menu-item-has-children">
                         <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
                         <ul class="dropdown-menu">

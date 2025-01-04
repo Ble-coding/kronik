@@ -16518,12 +16518,21 @@ textarea.form-control {
   background: url(../imgs/pages/services/tick.png) no-repeat left center;
   margin-bottom: 10px;
 }
+
+.service-detail ol li {
+  padding: 0px 0px 0px 30px;
+  /* background: url(../imgs/pages/services/tick.png) no-repeat left center; */
+  margin-bottom: 10px;
+}
+
+
+
 .service-detail img {
   margin-bottom: 30px;
 }
 
 .service-detail {
-  border-bottom: 1px solid var(--tc-theme-border-6);
+  /* border-bottom: 1px solid var(--tc-theme-border-6); */
   padding-bottom: 40px;
   margin-bottom: 60px;
 }
@@ -16531,6 +16540,11 @@ textarea.form-control {
 .box-questions p{
   color: white;
 }
+
+.box-questions .p-classik{
+  color: var(--tc-neutral-2600);
+}
+
 
 .box-questions .accordion-item {
   border: 0px;
