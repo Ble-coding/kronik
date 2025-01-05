@@ -1,5 +1,6 @@
 
 
+    <!-- <script  src="assets/js/vendors/intervention.js"></script> -->
     <script  src="assets/js/vendors/ancres.js"></script>
     <script  src="assets/js/vendors/display.js"></script>
     <script  src="assets/js/vendors/displayMentor.js"></script>
