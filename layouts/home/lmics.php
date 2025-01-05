@@ -11,7 +11,7 @@
                         <p class="mb-4">Chez Kronik-X Health, nous aidons à relever ces défis grâce à l’innovation en santé numérique, en incubant des startups locales, lançant des projets pilotes, et renforçant les capacités des systèmes de santé dans les LMICs.</p>
 
                         <div class="mb-5"></div>
-                        <a href="./lmics/lmics-definition" class="btn btn-primary-home">
+                        <a href="./lmic" class="btn btn-primary-home">
                             En savoir plus sur les LMICs
                             <img src="assets/imgs/template/icons/plus-sm.svg" alt="En savoir plus" />
                         </a>
