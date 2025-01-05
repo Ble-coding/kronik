@@ -1,73 +1,19 @@
-<!doctype php>
-<php lang="en">
+<?php
+$pageTitle = 'Oops! Page Introuvable - Kronik-X Health'; // Titre spécifique pour la page 404
+ob_start(); // Capture le contenu de la page
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Kronik-X Health - Innover pour transformer la gestion des maladies chroniques en Afrique et dans les LMICs</title>
-    <?php
-			require __DIR__ . '/layouts/head.php';
-		?>
-</head>
-
-<body>
-    <!-- prettier-ignore -->
-    <!--Preloader-->
-    <?php
-			require __DIR__ . '/layouts/preloader.php';
-		?>
-    <!--Preloader-end -->
-    <!-- <div id="myOverlay" class="overlay search-popup">
-        <div class="overlay-content">
-            <span class="search-close closebtn" onclick="closeSearch()">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
-                    <path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"></path>
-                </svg>
-            </span>
-            <form action="#">
-                <input type="text" placeholder="Search.." name="search" />
-                <button type="submit" class="btn btn-primary-500">Search</button>
-            </form>
+<!-- Contenu spécifique à la page 404 -->
+<section class="position-relative overflow-hidden box-latest-blog-3 box-latest-blog-12">
+    <div class="container">
+        <div class="text-center">
+            <img src="assets/imgs/pages/404/404_resized.webp" alt="kronik" class="mb-30" />
+            <h3 class="heading-inter-44 secondery-500 mb-4">Oops! Page Introuvable.</h3>
+            <a href="/" class="btn btn-primary-home btn-inter">Retour à la page d'accueil</a>
         </div>
-    </div> -->
-
-    <!-- Navbar -->
-    <?php
-                require __DIR__ . '/layouts/header.php';
-            ?>
-
-    <main>
-        <!-- prettier-ignore -->
-        <!--Home 11 Section 9 -->
-        <section class="position-relative overflow-hidden box-latest-blog-3 box-latest-blog-12">
-            <div class="container">
-                <div class="text-center">
-                    <img src="assets/imgs/pages/404/404_resized.webp" alt="kronik" class="mb-30" />
-                    <h3 class="heading-inter-44 secondery-500 mb-4">Oops! Page Introuvable.</h3>
-                    <a href="/" class="btn btn-primary-home btn-inter">Retour à la page d'accueil</a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-    <!-- prettier-ignore -->
-    <?php
-                require __DIR__ . '/layouts/footer.php';
-            ?>
-
-
-    <!-- Scroll top -->
-    <div class="btn-scroll-top">
-        <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
-            <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
-        </svg>
     </div>
+</section>
 
-    <?php
-                require __DIR__ . '/layouts/scripts.php';
-            ?>
-
-</body>
-
-</html>
+<?php
+$content = ob_get_clean(); // Capture et stocke le contenu
+require __DIR__ . '/layouts/base.php'; // Inclut le layout principal

@@ -18,13 +18,13 @@
 
                                 </div>
                                 <div class="box-image-about-big">
-                                    <img src="assets/imgs/pages/home7/icon3.png" class="icon-3" alt="kronik" />
+                                    <img src="assets/imgs/pages/home5/icon3.png" class="icon-3" alt="kronik" />
                                     <img src="assets/imgs/pages/home5/siting_health.png" alt="kronik" />
                                 </div>
                             </div>
                             <div class="image-right">
                                 <div class="box-image-about-big">
-                                    <img src="assets/imgs/pages/home7/icon2.png" class="icon-2" alt="kronik" />
+                                    <img src="assets/imgs/pages/home5/icon2.png" class="icon-2" alt="kronik" />
                                     <img src="assets/imgs/pages/home5/x_health_kronik.png" alt="kronik" />
                                 </div>
                                 <!-- <div class="card-experience">
