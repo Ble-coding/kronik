@@ -165,30 +165,6 @@
                            </div>
                          </div>
                        </div>
-                       <div class="accordion-item wow fadeInUp">
-                         <h5 class="accordion-header" id="headingApproach">
-                           <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseApproach" aria-expanded="false" aria-controls="collapseApproach">
-                             <p>Pourquoi cette approche fonctionne ?</p>
-                           </button>
-                         </h5>
-                         <div class="accordion-collapse collapse" id="collapseApproach" aria-labelledby="headingApproach" data-bs-parent="#accordionFAQ">
-                           <div class="accordion-body">
-                             <h6 class="mb-3">Découvrez les raisons derrière l'efficacité de cette méthode.</h6>
-                             <h4>Points Clés :</h4>
-                             <ol>
-                               <li>
-                                 <strong>Clarté :</strong> Les visiteurs peuvent facilement comprendre les différences entre l’incubation et l’accélération, ce qui les aide à choisir le programme qui correspond à leur stade de développement.
-                               </li>
-                               <li>
-                                 <strong>Engagement :</strong> Les CTA stratégiquement placés facilitent la navigation et encouragent les candidatures.
-                               </li>
-                               <li>
-                                 <strong>Visibilité des services :</strong> Les contenus spécifiques dans chaque sous-section renforcent la crédibilité et mettent en valeur l’expertise de l’incubateur et de l’accélérateur.
-                               </li>
-                             </ol>
-                           </div>
-                         </div>
-                       </div>
                      </div>
                    </div>
                  </div>

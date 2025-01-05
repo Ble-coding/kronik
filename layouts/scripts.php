@@ -1,6 +1,7 @@
 
 
     <script  src="assets/js/vendors/ancres.js"></script>
+    <script  src="assets/js/vendors/display.js"></script>
     <script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
     <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
     <script src="assets/js/vendors/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>

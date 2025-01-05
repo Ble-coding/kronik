@@ -14,12 +14,24 @@
                   <input type="text" class="form-control" placeholder="Nom du projet/startup" required />
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Technologies utilisées" required />
-                </div>
-              </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <select class="form-control" id="technologiesSelect" required>
+        <option value="" disabled selected>Technologies utilisées</option>
+        <option value="IA">Intelligence Artificielle</option>
+        <option value="Big Data">Big Data</option>
+        <option value="IoT">Objets connectés</option>
+        <option value="plateformes-numeriques">Plateformes numériques</option>
+        <option value="autre">Autres (précisez ci-dessous)</option>
+      </select>
+    </div>
+  </div>
             </div>
+            <div class="form-group" id="otherTechnologyField" style="display: none;">
+
+      <input type="text" class="form-control" placeholder="Précisez les autres technologies (si applicable)" />
+    </div>
+
             <div class="form-group">
               <textarea class="form-control" rows="4" placeholder="Résumé du projet (200 mots maximum)" required></textarea>
             </div>
@@ -70,18 +82,33 @@
               </div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" rows="3" placeholder="Présentation de l’équipe (compétences principales)" required></textarea>
+              <textarea class="form-control" rows="3" placeholder="Présentation de l’équipe (compétences principales)  (Décrivez brièvement les membres clés de l’équipe et leurs compétences principales.)" required></textarea>
             </div>
+            
+<div class="form-group">
+  <label for="uploadCV" class="form-label">Téléversement des CV : <span class="text-muted">(Formats acceptés : PDF, Word)</span></label>
+  <input type="file" id="uploadCV" class="form-control" accept=".pdf, .doc, .docx" multiple required />
+</div>
             <h4 class="mt-4 mb-3">3. Impact et Modèle Économique</h4>
             <div class="form-group">
               <textarea class="form-control" rows="3" placeholder="Impact attendu (Comment améliorerez-vous les parcours de santé ?)" required></textarea>
             </div>
             <div class="form-group">
-              <textarea class="form-control" rows="3" placeholder="Public cible" required></textarea>
+              <textarea class="form-control" rows="3" placeholder="Public cible  (Qui sont les utilisateurs finaux ? Patients, professionnels de santé, institutions, etc.)" required></textarea>
             </div>
             <div class="form-group">
-              <textarea class="form-control" rows="3" placeholder="Modèle économique" required></textarea>
+              <textarea class="form-control" rows="3" placeholder="Modèle économique  (Décrivez comment votre solution générera des revenus ou sera financièrement durable.)" required></textarea>
             </div>
+
+            <h4 class="mt-4 mb-3">4. Partenariats et Ressources</h4>
+<div class="form-group">
+  <textarea class="form-control" rows="3" placeholder="Partenaires actuels (Listez les institutions ou entreprises qui soutiennent déjà votre projet.)"></textarea>
+</div>
+<div class="form-group">
+  <textarea class="form-control" rows="3" placeholder="Ressources nécessaires (De quelles ressources avez-vous besoin pour faire avancer votre projet ? Ex. : financement, expertise technique, etc.)"></textarea>
+</div>
+
+
             <h4 class="mt-4 mb-3">5. Documents Complémentaires</h4>
             <div class="form-group">
               <label for="presentation-detaillée">Présentation détaillée du projet :</label>
@@ -95,11 +122,14 @@
               <label for="autres-documents">Autres documents pertinents :</label>
               <input type="file" class="form-control" id="autres-documents" multiple />
             </div>
-            <h4 class="mt-4 mb-3">4. Consentement</h4>
-            <div class="form-group">
-              <label>
-                <input type="checkbox" required /> Je certifie que les informations fournies sont exactes et j'accepte les termes et conditions. </label>
-            </div>
+            <h4 class="mt-4 mb-3">6. Consentement</h4>
+<div class="form-group">
+  <label>
+    <input type="checkbox" required />
+    Je certifie que les informations fournies dans ce formulaire sont exactes et j’accepte les termes et conditions de participation au programme Kronik X Health.
+  </label>
+</div>
+
             <div class="form-group mt-5">
               <button type="submit" class="btn btn-primary-home-square w-100"> Soumettre ma candidature </button>
             </div>
