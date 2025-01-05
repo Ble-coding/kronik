@@ -10,3 +10,5 @@
       otherTechnologyField.style.display = 'none'; // Masquer le champ texte
     }
   });
+
+
