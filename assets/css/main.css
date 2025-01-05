@@ -10770,6 +10770,13 @@ h6 {
   font-weight: 600;
   color: var(--tc-dark-950);
 }
+
+.accordion .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
 .accordion-button p {
   margin-bottom: 0px;
 }
