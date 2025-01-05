@@ -212,7 +212,7 @@ Table of contents
   --tc-primary-1200: #1fb795;
   --tc-primary-1300: #024cbc;
   --tc-primary-1400: #0075dc;
-  --tc-primary-1500: #2ab882;
+  --tc-primary-1500: #4a864c;
   --tc-secondery-300: #2cb881;
   --tc-secondery-400: #174b68;
   --tc-secondery-500: #012b43;
@@ -14821,10 +14821,10 @@ h6 {
   right: -20px;
 }
 .box-faqs-12 .accordion-button::after {
-  background-image: url(../imgs/pages/home12/plus.png);
+  background-image: url(../imgs/pages/home5/plus.png);
 }
 .box-faqs-12 .accordion-button:not(.collapsed)::after {
-  background-image: url(../imgs/pages/home12/minus.png);
+  background-image: url(../imgs/pages/home5/minus.png);
 }
 .box-faqs-12 .accordion-collapse {
   border-top: 1px solid var(--tc-graay-100);

@@ -128,11 +128,11 @@
                 <div class="d-flex align-items-center">
     <a href="/programs" class="btn btn-linear-03 me-3" title="Rejoignez notre accélérateur ou incubateur">
         Accélérez
-        <img src="assets/imgs/pages/home8/arrow-right.png" alt="Kronik" />
+        <img src="assets/imgs/pages/home5/arrow-right.png" alt="Kronik" />
     </a>
     <a href="/contribute" class="btn btn-outline-white" title="Devenez mentor, coach ou partenaire">
         Contribuez
-        <img src="assets/imgs/pages/home8/arrow-right.png" alt="Kronik" />
+        <img src="assets/imgs/pages/home5/arrow-right.png" alt="Kronik" />
     </a>
 </div>
 
