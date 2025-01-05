@@ -23,7 +23,7 @@
                                 <li><a class="dropdown-item" href="equipe.php">Notre Équipe et Partenaires</a></li>
                             </ul>
                         </li> -->
-                        <li class="nav-item"><a class="nav-link fw-medium" href="/">LMICs</a></li>
+                        <li class="nav-item"><a class="nav-link fw-medium" href="./lmic">LMICs</a></li>
                         <!-- <li class="nav-item dropdown menu-item-has-children">
                             <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">LMICs</a>
                             <ul class="dropdown-menu">
@@ -96,7 +96,7 @@
                             <li><a class="dropdown-item" href="equipe.php">Notre Équipe et Partenaires</a></li>
                         </ul>
                     </li> -->
-                    <li class="nav-item"><a class="nav-link fw-medium" href="/">LMICs</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="./lmic">LMICs</a></li>
                     <!-- <li class="nav-item dropdown menu-item-has-children">
                         <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">LMICs</a>
                         <ul class="dropdown-menu">

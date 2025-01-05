@@ -43,6 +43,7 @@
                         <a class="hover-effect paragraph-base grey-100 pt-2" href="./contact">Contact</a>
                         <a class="hover-effect paragraph-base grey-100 pt-2" href="/">Actualités</a>
                         <a class="hover-effect paragraph-base grey-100 pt-2" href="./programs">Programmes</a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="./lmic">LMICs</a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">

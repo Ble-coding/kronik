@@ -18,6 +18,7 @@ $routes = [
     '/terms' => 'terms.php',        // Fichier pour les "Conditions d'utilisation"
     '/privacy' => 'privacy.php',  
     '/contribute' => 'contribute.php',
+    '/lmic' => 'lmic.php',  
 ];
 
 // Vérifiez si la route existe

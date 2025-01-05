@@ -1529,7 +1529,7 @@ img {
 }
 
 .btn-linear-03 {
-  background-image: linear-gradient(to right, #1ab69d, #31b978);
+  background-color: var(--kronik-blue);
   color: var(--tc-theme-main);
   font-size: 16px;
   line-height: 32px;
@@ -1546,7 +1546,28 @@ img {
   margin: -2px 0px 0px 5px;
 }
 .btn-linear-03:hover {
+  background-color: var(--kronik-light-blue);
   color: var(--tc-theme-main);
+}
+
+
+
+.btn-outline-white {
+  background-color:  var(--kronik-light-green-gray);
+  color: #000;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 14px 30px;
+  text-transform: uppercase;
+  font-family: var(--tc-ag-font-family);
+  border: 0px;
+}
+
+.btn-outline-white:hover {
+  color: #000;
+  border: var(--kronik-light-green-gray);
 }
 
 .btn-linear-02-md {
@@ -15710,6 +15731,24 @@ h6 {
   background-position: top left;
   background-size: cover;
 }
+
+.box-faq-single-banner-contribute{
+  background-image: url(../imgs/pages/home5/banner_1_contribute.webp);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
+
+
+
+.box-faq-single-banner-lmics {
+  background-image: url(../imgs/pages/home5/lmics_banner.webp);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
 
 
 .box-faq-single-banner-inner {
