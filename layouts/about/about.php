@@ -19,7 +19,7 @@
                                 </div>
                                 <div class="box-image-about-big">
                                     <img src="assets/imgs/pages/home5/icon3.png" class="icon-3" alt="kronik" />
-                                    <img src="assets/imgs/pages/home5/x_health_kronik.png" alt="kronik" />
+                                    <img src="assets/imgs/pages/home5/x_health_kronik.jpg" alt="kronik" />
                                 </div>
                             </div>
                             <div class="image-right">
