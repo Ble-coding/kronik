@@ -1,5 +1,5 @@
     <!-- Favicon icon-->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/kronik_resized_ico.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/Kronik_reduce_256x256.png" />
     
     <!-- Libs CSS -->
     <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
