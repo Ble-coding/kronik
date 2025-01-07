@@ -157,7 +157,7 @@
 
                 </ul>
             </div>
-            <div class="side-gallery mb-4">
+            <!-- <div class="side-gallery mb-4">
                 <div class="pt-1"></div>
                 <h4 class="mt-3 mb-3">Galerie</h4>
                 <div class="grid-items">
@@ -189,7 +189,7 @@
                         <img class="g-col-4" src="assets/imgs/pages/home5/gallery-9.png" alt="kronik" />
                     </div>
                 </div>
-            </div>
+            </div> -->
             <?php
                 require __DIR__ . '/box-contactus.php';
             ?>
