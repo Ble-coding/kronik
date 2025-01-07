@@ -147,7 +147,7 @@ try {
 } catch (Exception $e) {
     error_log("Erreur lors de l'envoi de l'email : {$mail->ErrorInfo}");
     $_SESSION['mail_error'] = "Une erreur est survenue lors de l'envoi de l'email.";
-    header("location: ../program");
+    header("location: ../programs");
     exit;
 }
 ?>
