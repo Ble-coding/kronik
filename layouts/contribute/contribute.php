@@ -71,7 +71,7 @@
                    <!-- <h1 class="heading-ag-3xl mb-20"></h1> -->
                    <h4 class="heading-ag-lg dark-950 mb-30">Devenir Mentor au Kronik X Health</h4>
                    <div>
-                     <img src="assets/imgs/pages/services/mentorat_web.webp" alt="Kronik" />
+                     <img src="assets/imgs/pages/services/mentorat_web.jpg" alt="Kronik" />
                    </div>
                    <div class="service-detail">
                      <p class="p-classik"> Partagez votre expertise pour transformer la prise en charge des maladies chroniques grâce à l’innovation. En rejoignant le réseau de mentors du <strong>Kronik X Health</strong>, vous contribuez directement à guider et accompagner des startups et innovateurs dans le développement de solutions numériques adaptées aux défis réels des patients et des professionnels de santé. </p>
@@ -264,7 +264,7 @@
                    <!-- <h1 class="heading-ag-3xl mb-20"></h1> -->
                    <h4 class="heading-ag-lg dark-950 mb-30">Devenir Coach au Kronik X Health</h4>
                    <div>
-                     <img src="assets/imgs/pages/services/coach_web.webp" alt="Kronik" />
+                     <img src="assets/imgs/pages/services/coach_web.jpg" alt="Kronik" />
                    </div>
                    <div class="service-detail">
                      <p class="p-classik"> Accompagnez les innovateurs dans leur parcours pour transformer la prise en charge des maladies chroniques grâce à des solutions numériques. En intégrant l'équipe des mentors du <strong>Kronik X Health</strong>, vous jouez un rôle déterminant dans la transformation d'idées novatrices en outils concrets et impactants pour les patients et les professionnels de santé. </p>
@@ -454,7 +454,7 @@
                    <!-- <h1 class="heading-ag-3xl mb-20"></h1> -->
                    <h4 class="heading-ag-lg dark-950 mb-30">Devenir Mentor au Kronik X Health</h4>
                    <div>
-                     <img src="assets/imgs/pages/services/partner_web.webp" alt="Kronik" />
+                     <img src="assets/imgs/pages/services/partner_web.jpg" alt="Kronik" />
                    </div>
                    <div class="service-detail">
     <p class="p-classik">

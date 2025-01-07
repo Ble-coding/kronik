@@ -4,10 +4,10 @@
                     <div class="col-lg-6 mb-4">
                         <div class="box-happy-customers">
                             <div class="box-happy-img-1">
-                                <img src="assets/imgs/pages/home5/kronx_resized_322x407.png" alt="Kronik" data-aos="fade-up" data-aos-duration="200" />
+                                <img src="assets/imgs/pages/home5/kronx_resized_322x407.jpg" alt="Kronik" data-aos="fade-up" data-aos-duration="200" />
                             </div>
                             <div class="box-happy-img-2">
-                                <img src="assets/imgs/pages/home5/test_kronik_resized.png" alt="Kronik" data-aos="fade-up" data-aos-duration="1000" />
+                                <img src="assets/imgs/pages/home5/test_kronik_resized.jpg" alt="Kronik" data-aos="fade-up" data-aos-duration="1000" />
                             </div>
                         </div>
                     </div>

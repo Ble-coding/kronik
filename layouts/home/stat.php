@@ -57,6 +57,7 @@
     <p>
         En 2016, plus de 13,7 millions de décès dans les pays à revenu faible et intermédiaire ont été causés par des maladies chroniques. 
         Ces chiffres alarmants mettent en lumière l'urgence d'initiatives de prévention et de prise en charge pour réduire ce fardeau mondial.
+        Investir dans l'innovation peut sauver des vies.
     </p>
     <!-- <a href="#" class="link-more">
         En savoir plus
@@ -97,14 +98,14 @@
                                     <div class="card-icon">
                                         <div class="icon-right">04</div>
                                         <div class="icon-left">
-                                        
+                                     
                                         </div>
                                     </div>
                                     <div class="card-info">
-                                    <h4>Plan Stratégique : Santé Mentale</h4>
+                                    <h4>Plan Stratégique : Lutte Contre le Diabète</h4>
     <p>
-        En Afrique subsaharienne, 10% de la population est touchée par des troubles mentaux, mais moins de 10% des patients reçoivent un traitement. 
-        Ces chiffres mettent en évidence un besoin urgent de renforcer les infrastructures de santé mentale et d'améliorer l'accès aux soins spécialisés.
+        Dans certaines régions d'Afrique, 1 adulte sur 10 est touché par le diabète. Ce chiffre inquiétant souligne l'importance 
+        de campagnes de sensibilisation, de dépistage précoce, et d'accès à des soins abordables pour endiguer cette épidémie silencieuse.
     </p>
                                         <!-- <a href="#" class="link-more">
                                             Read More
@@ -120,14 +121,14 @@
                                     <div class="card-icon">
                                         <div class="icon-right">05</div>
                                         <div class="icon-left">
-                                     
+                                        
                                         </div>
                                     </div>
                                     <div class="card-info">
-                                    <h4>Plan Stratégique : Lutte Contre le Diabète</h4>
+                                    <h4>Plan Stratégique : Santé Mentale</h4>
     <p>
-        Dans certaines régions d'Afrique, 1 adulte sur 10 est touché par le diabète. Ce chiffre inquiétant souligne l'importance 
-        de campagnes de sensibilisation, de dépistage précoce, et d'accès à des soins abordables pour endiguer cette épidémie silencieuse.
+        En Afrique subsaharienne, 10% de la population est touchée par des troubles mentaux, mais moins de 10% des patients reçoivent un traitement. 
+        Ces chiffres mettent en évidence un besoin urgent de renforcer les infrastructures de santé mentale et d'améliorer l'accès aux soins spécialisés. 
     </p>
                                         <!-- <a href="#" class="link-more">
                                             Read More

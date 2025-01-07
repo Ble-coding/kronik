@@ -5,10 +5,10 @@
         <div class="col-lg-6 mb-4">
                         <div class="position-relative d-inline-block w-100">
                             <div class="image-faq-1">
-                                <img class="wow img-custom-anim-left" src="assets/imgs/pages/home5/medecine_afro.webp" alt="Kronik" />
+                                <img class="wow img-custom-anim-left" src="assets/imgs/pages/home5/medecine_afro.jpg" alt="Kronik" />
                             </div>
                             <div class="image-faq-2">
-                                <img class="wow img-custom-anim-right" src="assets/imgs/pages/home5/medecine.webp" alt="Kronik" />
+                                <img class="wow img-custom-anim-right" src="assets/imgs/pages/home5/medecine.jpg" alt="Kronik" />
                             </div>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
             <!-- Colonne Image -->
             <div class="col-lg-6 mb-4">
                 <div class="box-image-about-8">
-                <img src="assets/imgs/pages/home5/pourpalet.webp" alt="Kronik" />
+                <img src="assets/imgs/pages/home5/pourpalet.jpg" alt="Kronik" />
                 </div>
             </div>
 
@@ -121,22 +121,31 @@
                     <li><strong>3. Renforçant les capacités :</strong> Offrir des formations sur l’utilisation de technologies comme l’intelligence artificielle et la télémédecine.</li>
                 </ul>
 
-                <h3 class="heading-md-2 color-white mb-20">Appel à l’Action</h3>
                 <p class="paragraph-rubik-r color-white mb-30">
                     Vous souhaitez faire partie du changement ? Rejoignez-nous pour transformer les soins de santé dans les LMICs.
                 </p>
-                <div class="d-flex align-items-center">
-    <a href="/programs" class="btn btn-linear-03 me-3" title="Rejoignez notre accélérateur ou incubateur">
-        Accélérez
+        
+            </div>
+            <div class="d-flex align-items-center">
+    <a href="./programs" class="btn btn-linear-03 mb-1 me-3" title="Rejoignez notre accélérateur ou incubateur"> 
+        Startup
         <img src="assets/imgs/pages/home5/arrow-right.png" alt="Kronik" />
     </a>
-    <a href="/contribute" class="btn btn-outline-white" title="Devenez mentor, coach ou partenaire">
-        Contribuez
+    <a href="./contribute#pills-mentorat" class="btn btn-outline-white me-3 mb-1" title="Devenez mentor">
+        Devenir Mentor
+        <img src="assets/imgs/pages/home5/arrow-right.png" alt="Kronik" />
+    </a>
+    <a href="./contribute#pills-coach" class="btn btn-linear-04 me-3" title="Devenez coach">
+        Devenir Coach
+        <img src="assets/imgs/pages/home5/arrow-right.png" alt="Kronik" />
+    </a>
+    <a href="./contribute#pills-partner" class="btn btn-linear-02  me-3" title="Devenez partenaire">
+        Devenir Partenaire
         <img src="assets/imgs/pages/home5/arrow-right.png" alt="Kronik" />
     </a>
 </div>
 
-            </div>
+
         </div>
     </div>
 </section>

@@ -119,30 +119,30 @@
             <div class="service-right">
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="tab-service-1" role="tabpanel" aria-labelledby="nav-service-1-tab" tabindex="0">
-                                <img src="assets/imgs/pages/home5/x_h_kronik_resized_1024x1024.png" alt="kronik" />
+                                <img src="assets/imgs/pages/home5/x_h_kronik_resized_1024x1024.jpg" alt="kronik" />
                             </div>
                             <div class="tab-pane fade" id="tab-service-2" role="tabpanel" aria-labelledby="nav-service-2-tab" tabindex="0">
-                                <img src="assets/imgs/pages/home5/x_h_kronik_resized_1024x1024.png" alt="kronik" />
+                                <img src="assets/imgs/pages/home5/x_h_kronik_resized_1024x1024.jpg" alt="kronik" />
                             </div>
                             <div class="tab-pane fade" id="tab-service-3" role="tabpanel" aria-labelledby="nav-service-3-tab" tabindex="0">
-                                <img src="assets/imgs/pages/home5/x_h_kronik_resized_1024x1024.png" alt="kronik" />
+                                <img src="assets/imgs/pages/home5/x_h_kronik_resized_1024x1024.jpg" alt="kronik" />
                             </div>
                             <div class="tab-pane fade" id="tab-service-4" role="tabpanel" aria-labelledby="nav-service-4-tab" tabindex="0">
-                                <img src="assets/imgs/pages/home5/x_h_kronik_resized_1024x1024.png" alt="kronik" />
+                                <img src="assets/imgs/pages/home5/x_h_kronik_resized_1024x1024.jpg" alt="kronik" />
                             </div>
                             <div class="tab-pane fade" id="tab-service-5" role="tabpanel" aria-labelledby="nav-service-5-tab" tabindex="0">
-                                <img src="assets/imgs/pages/home5/x_h_kronik_resized_1024x1024.png" alt="kronik" />
+                                <img src="assets/imgs/pages/home5/x_h_kronik_resized_1024x1024.jpg" alt="kronik" />
                             </div>
                         </div>
                     </div>
         </div>
 
         <!-- CTA -->
-        <div class="mt-5 text-center" data-aos="fade-up">
+        <!-- <div class="mt-5 text-center" data-aos="fade-up">
             <a href="#" class="btn btn-primary-square-2">
                 En savoir plus
                 <img src="assets/imgs/template/icons/plus-sm.svg" alt="En savoir plus" />
             </a>
-        </div>
+        </div> -->
     </div>
 </section>

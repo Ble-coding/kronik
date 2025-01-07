@@ -19,6 +19,8 @@ $routes = [
     '/privacy' => 'privacy.php',  
     '/contribute' => 'contribute.php',
     '/lmic' => 'lmic.php',  
+    '/mail-error' => 'mail/mail-error.php',
+    '/mail-success' => 'mail/mail-success.php'
 ];
 
 // Vérifiez si la route existe

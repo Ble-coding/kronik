@@ -28,7 +28,7 @@
                             <div class="swiper-slide">
                                 <div class="card-project-2">
                                     <div class="card-image">
-                                        <a href="#"><img src="assets/imgs/pages/home5/portfolio.webp" alt="Kronik" /></a>
+                                        <a href="#"><img src="assets/imgs/pages/home5/portfolio.jpg" alt="Kronik" /></a>
                                     </div>
                                     <div class="card-info">
                                         <div class="card-info-inner">
@@ -44,7 +44,7 @@
                             <div class="swiper-slide">
                                 <div class="card-project-2">
                                     <div class="card-image">
-                                        <a href="#"><img src="assets/imgs/pages/home5/portfolio1.webp" alt="Kronik" /></a>
+                                        <a href="#"><img src="assets/imgs/pages/home5/portfolio1.jpg" alt="Kronik" /></a>
                                     </div>
                                     <div class="card-info">
                                         <div class="card-info-inner">
@@ -60,7 +60,7 @@
                             <div class="swiper-slide">
                                 <div class="card-project-2">
                                     <div class="card-image">
-                                        <a href="#"><img src="assets/imgs/pages/home5/portfolio2.webp" alt="Kronik" /></a>
+                                        <a href="#"><img src="assets/imgs/pages/home5/portfolio2.jpg" alt="Kronik" /></a>
                                     </div>
                                     <div class="card-info">
                                         <div class="card-info-inner">
@@ -76,7 +76,7 @@
                             <div class="swiper-slide">
                                 <div class="card-project-2">
                                     <div class="card-image">
-                                        <a href="#"><img src="assets/imgs/pages/home5/porfolio3.webp" alt="Kronik" /></a>
+                                        <a href="#"><img src="assets/imgs/pages/home5/porfolio3.jpg" alt="Kronik" /></a>
                                     </div>
                                     <div class="card-info">
                                         <div class="card-info-inner">
@@ -89,7 +89,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <!-- <div class="swiper-slide">
                                 <div class="card-project-2">
                                     <div class="card-image">
                                         <a href="#"><img src="assets/imgs/pages/home5/portfolio4.webp" alt="Kronik" /></a>
@@ -104,7 +104,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

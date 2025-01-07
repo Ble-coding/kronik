@@ -19,13 +19,13 @@
                                 </div>
                                 <div class="box-image-about-big">
                                     <img src="assets/imgs/pages/home5/icon3.png" class="icon-3" alt="kronik" />
-                                    <img src="assets/imgs/pages/home5/siting_health.png" alt="kronik" />
+                                    <img src="assets/imgs/pages/home5/x_health_kronik.png" alt="kronik" />
                                 </div>
                             </div>
                             <div class="image-right">
                                 <div class="box-image-about-big">
                                     <img src="assets/imgs/pages/home5/icon2.png" class="icon-2" alt="kronik" />
-                                    <img src="assets/imgs/pages/home5/x_health_kronik.png" alt="kronik" />
+                                    <img src="assets/imgs/pages/home5/siting_health.jpg" alt="kronik" />
                                 </div>
                                 <!-- <div class="card-experience">
                                     <h3 class="heading-ag-3xl"><span class="odometer" data-count="10"></span><span class="d-inline-block align-middle">+</span></h3>
@@ -38,7 +38,7 @@
                         <div class="banner-small-title-black line-primary-1000">À Propos</div>
                         <h2 class="heading-ag-3xl dark-950 mb-3">
                             Kronik-X Health <br class="d-none d-lg-block" />
-                            est un incubateur
+                            est un accélérateur et incubateur
                         </h2>
                         <p class="mb-20 paragraph-rubik-r neutral-1700">"Spécialisé dans l'innovation en santé numérique, visant à transformer la gestion des maladies chroniques dans les pays à revenu faible et intermédiaire (LMICs)."</p>
 

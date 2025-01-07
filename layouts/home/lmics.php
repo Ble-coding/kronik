@@ -2,7 +2,7 @@
             <div class="container" data-aos="fade-up">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-4">
-                        <img src="assets/imgs/pages/home5/kronik_health_resized_1024x1024.png" alt="Kronik" />
+                        <img src="assets/imgs/pages/home5/kronik_health_resized_1024x1024.jpg" alt="Kronik" />
                     </div>
                     <div class="col-lg-6 mb-4">
                         <div class="banner-small-title-black line-primary-home">LMICs : Transformer la Santé dans les Pays à Revenu Faible et Intermédiaire</div>
