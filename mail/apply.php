@@ -31,6 +31,7 @@ $target_audience = htmlspecialchars($_POST['target_audience'] ?? '');
 $business_model = htmlspecialchars($_POST['business_model'] ?? '');
 $partners = htmlspecialchars($_POST['partners'] ?? '');
 $resources = htmlspecialchars($_POST['resources'] ?? '');
+$prototype_demo = htmlspecialchars($_POST['prototype_demo'] ?? '');
 $consent = $_POST['consent'] ?? '';
 
 // Validation des champs obligatoires
@@ -87,6 +88,10 @@ $email_message = "
 <h3>4. Partenariats et Ressources</h3>
 <strong>Partenaires actuels :</strong><br>$partners<br><br>
 <strong>Ressources nécessaires :</strong><br>$resources<br><br>
+
+<h3>5. Prototype et Documents Complémentaires</h3>
+<strong>Prototype ou démo :</strong><br>" . (!empty($prototype_demo) ? $prototype_demo : "Non spécifié") . "<br><br>
+
 ";
 
 $mail = new PHPMailer(true);
@@ -120,6 +125,18 @@ try {
             $name = $_FILES['cv_files']['name'][$i];
             if (is_uploaded_file($tmp_name)) {
                 $mail->addAttachment($tmp_name, $name);
+            }
+        }
+    }
+
+    if (!empty($_FILES['project_presentation']['tmp_name'])) {
+        $mail->addAttachment($_FILES['project_presentation']['tmp_name'], $_FILES['project_presentation']['name']);
+    }
+
+    if (isset($_FILES['additional_documents'])) {
+        foreach ($_FILES['additional_documents']['tmp_name'] as $index => $tmp_name) {
+            if (is_uploaded_file($tmp_name)) {
+                $mail->addAttachment($tmp_name, $_FILES['additional_documents']['name'][$index]);
             }
         }
     }
