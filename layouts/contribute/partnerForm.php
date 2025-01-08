@@ -1,17 +1,9 @@
-<section class="box-section box-contact-section-2">
-  <div class="container" data-aos="fade-up">
-    <h1 class="heading-jakarta-55 dark-950 mb-5">
-      Devenir Partenaire
-    </h1>
-    <p class="p-classik mb-4">
-      Merci de votre intérêt à devenir partenaire de Kronik X health. Veuillez remplir ce formulaire pour nous permettre de mieux comprendre votre organisation et identifier des opportunités de collaboration.
-    </p>
+<?php
 
-    <div class="col-lg-12">
-      <div class="form-contact-us">
-      <?php
+// Charger les traductions pour le formulaire
+$form_translations = include __DIR__ . "/../../languages/{$lang}/contribute/partnerForm.php";
 if (!isset($_SESSION)) {
-    session_start();
+session_start();
 }
 
 $errors_partner = $_SESSION['partner_form_errors'] ?? [];
@@ -23,7 +15,20 @@ unset($_SESSION['partner_form_old']);
 
 error_log("errors_partner on form display: " . print_r($errors_partner, true));
 ?>
-<form action="mail/partnerMail.php" method="post" enctype="multipart/form-data">
+
+<section class="box-section box-contact-section-2">
+  <div class="container" data-aos="fade-up">
+  <h1 class="heading-jakarta-55 dark-950 mb-5">
+  <?= htmlspecialchars($form_translations['title']) ?>
+</h1>
+<p class="p-classik mb-4">
+  <?= htmlspecialchars($form_translations['description']) ?>
+</p>
+
+    <div class="col-lg-12">
+      <div class="form-contact-us">
+
+<form action="mail/partnerMail.php?lang=<?= htmlspecialchars($lang) ?>" method="post" enctype="multipart/form-data">
     <!-- Section 1: Informations Générales sur l’Organisation -->
     <h4 class="mb-3">1. Informations Générales sur l’Organisation</h4>
     <div class="form-group">

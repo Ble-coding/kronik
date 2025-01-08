@@ -6,6 +6,8 @@ $lang = $lang ?? 'en'; // Définit une langue par défaut si $lang n'est pas dé
 // Charger les traductions spécifiques à la page "contribute"
 $contribute_translations = include "{$base_path}/languages/{$lang}/contribute/contribute.php";
 $service_detail = $contribute_translations['service_detail'];
+$service_detail_coach = $contribute_translations['service_detail_coach'];
+$service_detail_partner = $contribute_translations['service_detail_partner'];
 ?>
    <!-- prettier-ignore -->
      <section class="box-section overflow-hidden section-service-detail">
@@ -254,186 +256,217 @@ $service_detail = $contribute_translations['service_detail'];
                <div class="tab-pane fade show  service-detail" id="pills-coach" role="tabpanel" aria-labelledby="pills-coach-tab">
                  <div class="box-questions">
                    <!-- <h1 class="heading-ag-3xl mb-20"></h1> -->
-                   <h4 class="heading-ag-lg dark-950 mb-30">Devenir Coach au Kronik X Health</h4>
+                   <h4 class="heading-ag-lg dark-950 mb-30"><?= htmlspecialchars($contribute_translations['coach_title']) ?></h4>
                    <div>
                      <img src="assets/imgs/pages/services/coach_web.jpg" alt="Kronik" />
                    </div>
                    <div class="service-detail">
-                     <p class="p-classik"> Accompagnez les innovateurs dans leur parcours pour transformer la prise en charge des maladies chroniques grâce à des solutions numériques. En intégrant l'équipe des mentors du <strong>Kronik X Health</strong>, vous jouez un rôle déterminant dans la transformation d'idées novatrices en outils concrets et impactants pour les patients et les professionnels de santé. </p>
-                     <p class="p-classik"> En tant que mentor, vous guidez les startups sur des sujets essentiels tels que l’optimisation technologique, la stratégie de mise sur le marché et la conformité réglementaire en santé numérique. Vous contribuez directement à l’ <strong>amélioration des parcours de santé</strong> en garantissant que chaque solution est adaptée aux besoins réels des utilisateurs et à leur contexte local. Collaborer avec les hôpitaux partenaires permet également de tester et d’affiner les innovations en conditions réelles pour un impact maximal. </p>
-                     <h3>Principaux Avantages d’Être Coach au Kronik X Health</h3>
-                     <div class="row">
-                       <div class="col-md-6">
-                         <ul>
-                           <li>Encadrement de startups pour développer des solutions adaptées aux réalités locales.</li>
-                           <li>Contribution à des projets ayant un impact direct sur les systèmes de santé en LMICs.</li>
-                           <li>Participation à des tests en milieu réel pour valider l’efficacité des innovations.</li>
-                           <li>Transfert de connaissances en stratégie, business model et technologies émergentes.</li>
-                           <li>Soutien dans l’adoption d’outils numériques pour améliorer l’accès aux soins.</li>
-                         </ul>
-                       </div>
-                       <div class="col-md-6">
-                         <ul>
-                           <li>Impact positif sur les parcours de soins pour les patients atteints de maladies chroniques.</li>
-                           <li>Collaboration avec des professionnels de santé pour ajuster les solutions.</li>
-                           <li>Optimisation de l’utilisation des ressources disponibles dans les environnements sous-équipés.</li>
-                           <li>Renforcement des relations entre startups, patients et professionnels de santé.</li>
-                           <li>Participation à des initiatives qui révolutionnent la prise en charge des maladies chroniques.</li>
-                         </ul>
-                       </div>
-                     </div>
-                   </div>
+    <p class="p-classik">
+        <?= $service_detail_coach['intro'] ?>
+    </p>
+    <p class="p-classik">
+        <?= $service_detail_coach['importance'] ?>
+    </p>
+    <h3><?= $service_detail_coach['advantages_title'] ?></h3>
+    <div class="row">
+        <div class="col-md-6">
+            <ul>
+                <?php foreach ($service_detail_coach['advantages']['left'] as $advantage): ?>
+                    <li><?= $advantage ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul>
+                <?php foreach ($service_detail_coach['advantages']['right'] as $advantage): ?>
+                    <li><?= $advantage ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
+</div>
                    <div class="block-faqs">
                      <div class="accordion" id="accordionFAQ">
                        <div id="accordionFAQ" class="accordion">
                          <!-- Pourquoi devenir coach ? -->
                          <div class="accordion-item wow fadeInUp">
-                           <h5 class="accordion-header" id="headingWhyCoach">
-                             <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWhyCoach" aria-expanded="true" aria-controls="collapseWhyCoach"> Pourquoi devenir coach ? </button>
-                           </h5>
-                           <div class="accordion-collapse collapse" id="collapseWhyCoach" aria-labelledby="headingWhyCoach" data-bs-parent="#accordionFAQ">
-                             <div class="accordion-body">
-                               <ul>
-                                 <li>
-                                   <strong>Soutenez l’innovation locale :</strong> Aidez les startups à concrétiser leurs idées et à relever les défis de la santé en Afrique.
-                                 </li>
-                                 <li>
-                                   <strong>Apportez un impact tangible :</strong> Contribuez à l’amélioration des parcours de soins pour des millions de patients.
-                                 </li>
-                                 <li>
-                                   <strong>Développez vos compétences :</strong> Interagissez avec des équipes dynamiques et découvrez de nouvelles perspectives.
-                                 </li>
-                                 <li>
-                                   <strong>Faites partie d’un écosystème :</strong> Rejoignez une communauté d’experts, d’entrepreneurs et de partenaires stratégiques.
-                                 </li>
-                               </ul>
-                             </div>
-                           </div>
-                         </div>
+    <h5 class="accordion-header" id="headingWhyCoach">
+        <button class="accordion-button text-heading-5 collapsed" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseWhyCoach" 
+                aria-expanded="true" 
+                aria-controls="collapseWhyCoach">
+            <?= htmlspecialchars($contribute_translations['why_coach']['title']) ?>
+        </button>
+    </h5>
+    <div class="accordion-collapse collapse" id="collapseWhyCoach" aria-labelledby="headingWhyCoach" data-bs-parent="#accordionFAQ">
+        <div class="accordion-body">
+            <ul>
+                <?php foreach ($contribute_translations['why_coach']['list'] as $reason): ?>
+                    <li>
+                        <strong><?= htmlspecialchars($reason['title']) ?></strong> 
+                        <?= htmlspecialchars($reason['description']) ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
+</div>
+
                          <!-- Profil des coaches recherchés -->
-                         <div class="accordion-item wow fadeInUp">
-                           <h5 class="accordion-header" id="headingCoachProfile">
-                             <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCoachProfile" aria-expanded="true" aria-controls="collapseCoachProfile"> Profil des coaches recherchés </button>
-                           </h5>
-                           <div class="accordion-collapse collapse" id="collapseCoachProfile" aria-labelledby="headingCoachProfile" data-bs-parent="#accordionFAQ">
-                             <div class="accordion-body">
-                               <ul>
-                                 <li>
-                                   <strong>Santé et médecine :</strong> Expertise en oncologie, maladies chroniques (diabète, hypertension, etc.), gestion des soins.
-                                 </li>
-                                 <li>
-                                   <strong>Technologies numériques :</strong> Connaissances en intelligence artificielle, Big Data, objets connectés.
-                                 </li>
-                                 <li>
-                                   <strong>Gestion d’entreprise :</strong> Stratégie, marketing, finance, ou développement commercial.
-                                 </li>
-                                 <li>
-                                   <strong>Compétences personnelles :</strong> Leadership, communication, gestion d’équipe.
-                                 </li>
-                               </ul>
-                             </div>
-                           </div>
-                         </div>
-                         <!-- Rôles et responsabilités des coaches -->
-                         <div class="accordion-item wow fadeInUp">
-                           <h5 class="accordion-header" id="headingRoles">
-                             <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRoles" aria-expanded="true" aria-controls="collapseRoles"> Rôles et responsabilités des coaches </button>
-                           </h5>
-                           <div class="accordion-collapse collapse" id="collapseRoles" aria-labelledby="headingRoles" data-bs-parent="#accordionFAQ">
-                             <div class="accordion-body">
-                               <ul>
-                                 <li>Accompagner les équipes dans les stratégies de développement, commercialisation et mise à l’échelle.</li>
-                                 <li>Former les équipes sur la gestion de projet, la communication, et les relations avec les parties prenantes.</li>
-                                 <li>Suivre les progrès des startups et aider à établir des objectifs clairs.</li>
-                                 <li>Motiver les équipes et fournir un soutien moral et professionnel.</li>
-                               </ul>
-                             </div>
-                           </div>
-                         </div>
-                         <!-- Engagement demandé -->
-                         <div class="accordion-item wow fadeInUp">
-                           <h5 class="accordion-header" id="headingCommitment">
-                             <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCommitment" aria-expanded="true" aria-controls="collapseCommitment"> Engagement demandé </button>
-                           </h5>
-                           <div class="accordion-collapse collapse" id="collapseCommitment" aria-labelledby="headingCommitment" data-bs-parent="#accordionFAQ">
-                             <div class="accordion-body">
-                               <ul>
-                                 <li>
-                                   <strong>Durée :</strong> Engagement flexible, généralement de 3 à 6 mois.
-                                 </li>
-                                 <li>
-                                   <strong>Fréquence :</strong> Sessions hebdomadaires ou bimensuelles, en ligne ou en présentiel.
-                                 </li>
-                                 <li>
-                                   <strong>Interactions :</strong> Participation à des ateliers, réunions stratégiques et feedbacks réguliers.
-                                 </li>
-                               </ul>
-                             </div>
-                           </div>
-                         </div>
-                         <!-- Avantages pour les coaches -->
-                         <div class="accordion-item wow fadeInUp">
-                           <h5 class="accordion-header" id="headingBenefits">
-                             <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBenefits" aria-expanded="true" aria-controls="collapseBenefits"> Avantages pour les coaches </button>
-                           </h5>
-                           <div class="accordion-collapse collapse" id="collapseBenefits" aria-labelledby="headingBenefits" data-bs-parent="#accordionFAQ">
-                             <div class="accordion-body">
-                               <ul>
-                                 <li>
-                                   <strong>Reconnaissance :</strong> Votre contribution sera mise en valeur dans les communications officielles.
-                                 </li>
-                                 <li>
-                                   <strong>Réseautage :</strong> Accédez à une communauté internationale d’entrepreneurs et d’experts.
-                                 </li>
-                                 <li>
-                                   <strong>Développement professionnel :</strong> Développez vos compétences en mentorat tout en contribuant à un projet d’impact social.
-                                 </li>
-                               </ul>
-                             </div>
-                           </div>
-                         </div>
-                         <!-- Comment devenir coach ? -->
-                         <div class="accordion-item wow fadeInUp">
-                           <h5 class="accordion-header" id="headingBecomeCoach">
-                             <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBecomeCoach" aria-expanded="true" aria-controls="collapseBecomeCoach"> Comment devenir coach ? </button>
-                           </h5>
-                           <div class="accordion-collapse collapse" id="collapseBecomeCoach" aria-labelledby="headingBecomeCoach" data-bs-parent="#accordionFAQ">
-                             <div class="accordion-body">
-                               <ol>
-                                 <li>
-                                   <strong>Remplir le formulaire :</strong> Accédez au formulaire de candidature en ligne.
-                                 </li>
-                                 <li>
-                                   <strong>Entretien :</strong> Un entretien sera organisé pour évaluer vos compétences.
-                                 </li>
-                                 <li>
-                                   <strong>Intégration :</strong> Une fois sélectionné(e), vous recevrez un guide pour commencer votre mission.
-                                 </li>
-                               </ol>
-                             </div>
-                           </div>
-                         </div>
-                         <!-- Contact pour plus d'informations -->
-                         <div class="accordion-item wow fadeInUp">
-                           <h5 class="accordion-header" id="headingContactInfo">
-                             <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContactInfo" aria-expanded="true" aria-controls="collapseContactInfo"> Contact pour plus d’informations </button>
-                           </h5>
-                           <div class="accordion-collapse collapse" id="collapseContactInfo" aria-labelledby="headingContactInfo" data-bs-parent="#accordionFAQ">
-                             <div class="accordion-body">
-                               <p>Pour toute question ou demande d’information, contactez notre équipe :</p>
-                               <ul>
-                                 <li>
-                                   <strong>Email :</strong>
-                                   <a href="mailto:coaches@kroniklab.ci">coaches@kroniklab.ci</a>
-                                 </li>
-                                 <li>
-                                   <strong>Téléphone :</strong>
-                                   <a href="tel:+2250123456789">+225 01 23 45 67 89</a>
-                                 </li>
-                               </ul>
-                             </div>
-                           </div>
-                         </div>
+<div class="accordion-item wow fadeInUp">
+    <h5 class="accordion-header" id="headingCoachProfile">
+        <button class="accordion-button text-heading-5 collapsed" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseCoachProfile" 
+                aria-expanded="true" 
+                aria-controls="collapseCoachProfile">
+            <?= htmlspecialchars($contribute_translations['coach_profile']['title']) ?>
+        </button>
+    </h5>
+    <div class="accordion-collapse collapse" id="collapseCoachProfile" aria-labelledby="headingCoachProfile" data-bs-parent="#accordionFAQ">
+        <div class="accordion-body">
+            <ul>
+                <?php foreach ($contribute_translations['coach_profile']['list'] as $profile): ?>
+                    <li>
+                        <strong><?= htmlspecialchars($profile['title']) ?></strong> 
+                        <?= htmlspecialchars($profile['description']) ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Rôles et responsabilités des coaches -->
+<div class="accordion-item wow fadeInUp">
+    <h5 class="accordion-header" id="headingRoles">
+        <button class="accordion-button text-heading-5 collapsed" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseRoles" 
+                aria-expanded="true" 
+                aria-controls="collapseRoles">
+            <?= htmlspecialchars($contribute_translations['roles_and_responsibilities']['title']) ?>
+        </button>
+    </h5>
+    <div class="accordion-collapse collapse" id="collapseRoles" aria-labelledby="headingRoles" data-bs-parent="#accordionFAQ">
+        <div class="accordion-body">
+            <ul>
+                <?php foreach ($contribute_translations['roles_and_responsibilities']['list'] as $role): ?>
+                    <li><?= htmlspecialchars($role) ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                      <!-- Engagement demandé -->
+<div class="accordion-item wow fadeInUp">
+    <h5 class="accordion-header" id="headingCommitment">
+        <button class="accordion-button text-heading-5 collapsed" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseCommitment" 
+                aria-expanded="true" 
+                aria-controls="collapseCommitment">
+            <?= htmlspecialchars($contribute_translations['commitment']['title']) ?>
+        </button>
+    </h5>
+    <div class="accordion-collapse collapse" id="collapseCommitment" aria-labelledby="headingCommitment" data-bs-parent="#accordionFAQ">
+        <div class="accordion-body">
+            <ul>
+                <?php foreach ($contribute_translations['commitment']['list'] as $item): ?>
+                    <li>
+                        <strong><?= htmlspecialchars($item['title']) ?></strong>
+                        <?= htmlspecialchars($item['description']) ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Avantages pour les coaches -->
+<div class="accordion-item wow fadeInUp">
+    <h5 class="accordion-header" id="headingBenefits">
+        <button class="accordion-button text-heading-5 collapsed" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseBenefits" 
+                aria-expanded="true" 
+                aria-controls="collapseBenefits">
+            <?= htmlspecialchars($contribute_translations['benefits']['title']) ?>
+        </button>
+    </h5>
+    <div class="accordion-collapse collapse" id="collapseBenefits" aria-labelledby="headingBenefits" data-bs-parent="#accordionFAQ">
+        <div class="accordion-body">
+            <ul>
+                <?php foreach ($contribute_translations['benefits']['list'] as $item): ?>
+                    <li>
+                        <strong><?= htmlspecialchars($item['title']) ?></strong>
+                        <?= htmlspecialchars($item['description']) ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                      <!-- Comment devenir coach ? -->
+<div class="accordion-item wow fadeInUp">
+    <h5 class="accordion-header" id="headingBecomeCoach">
+        <button class="accordion-button text-heading-5 collapsed" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseBecomeCoach" 
+                aria-expanded="true" 
+                aria-controls="collapseBecomeCoach">
+            <?= htmlspecialchars($contribute_translations['how_to_become_coach']['title']) ?>
+        </button>
+    </h5>
+    <div class="accordion-collapse collapse" id="collapseBecomeCoach" aria-labelledby="headingBecomeCoach" data-bs-parent="#accordionFAQ">
+        <div class="accordion-body">
+            <ol>
+                <?php foreach ($contribute_translations['how_to_become_coach']['steps'] as $step): ?>
+                    <li>
+                        <strong><?= htmlspecialchars($step['title']) ?></strong>
+                        <?= htmlspecialchars($step['description']) ?>
+                    </li>
+                <?php endforeach; ?>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- Contact pour plus d'informations -->
+<div class="accordion-item wow fadeInUp">
+    <h5 class="accordion-header" id="headingContactInfo">
+        <button class="accordion-button text-heading-5 collapsed" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseContactInfo" 
+                aria-expanded="true" 
+                aria-controls="collapseContactInfo">
+            <?= htmlspecialchars($contribute_translations['contact_info_coach']['title']) ?>
+        </button>
+    </h5>
+    <div class="accordion-collapse collapse" id="collapseContactInfo" aria-labelledby="headingContactInfo" data-bs-parent="#accordionFAQ">
+        <div class="accordion-body">
+            <p><?= htmlspecialchars($contribute_translations['contact_info_coach']['description']) ?></p>
+            <ul>
+                <li>
+                    <strong>Email :</strong>
+                    <a href="mailto:<?= htmlspecialchars($contribute_translations['contact_info_coach']['email']) ?>">
+                        <?= htmlspecialchars($contribute_translations['contact_info_coach']['email']) ?>
+                    </a>
+                </li>
+                <li>
+                    <strong>Téléphone :</strong>
+                    <a href="tel:<?= htmlspecialchars($contribute_translations['contact_info_coach']['phone']) ?>">
+                        <?= htmlspecialchars($contribute_translations['contact_info_coach']['phone']) ?>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
                        </div>
                      </div>
                    </div> <?php
@@ -444,149 +477,198 @@ $service_detail = $contribute_translations['service_detail'];
                <div class="tab-pane fade show  service-detail" id="pills-partner" role="tabpanel" aria-labelledby="pills-partner-tab">
                  <div class="box-questions">
                    <!-- <h1 class="heading-ag-3xl mb-20"></h1> -->
-                   <h4 class="heading-ag-lg dark-950 mb-30">Devenir Mentor au Kronik X Health</h4>
+                   <h4 class="heading-ag-lg dark-950 mb-30"><?= htmlspecialchars($contribute_translations['partner_title']) ?></h4>
                    <div>
                      <img src="assets/imgs/pages/services/partner_web.jpg" alt="Kronik" />
                    </div>
-                   <div class="service-detail">
+        
+<div class="service-detail">
     <p class="p-classik">
-        Rejoignez-nous pour faire partie d'une initiative qui révolutionne la prise en charge des maladies chroniques en Afrique de l’Ouest. 
-        En collaborant avec le <strong>Kronik X Health</strong>, vous participez activement à l’amélioration des parcours de soins grâce à des solutions numériques et des technologies avancées. 
-        Nous invitons les mentors, partenaires, et coachs à jouer un rôle clé dans cette transformation, en accompagnant les innovateurs et en contribuant à développer des outils qui répondent aux besoins des patients et des professionnels de santé.
+        <?= htmlspecialchars_decode($service_detail_partner['intro']) ?>
     </p>
     <p class="p-classik">
-        Associez-vous à cette mission pour relever les défis complexes des maladies chroniques dans les LMICs (Low and Middle-Income Countries). 
-        Vous travaillerez aux côtés d'experts en santé numérique, de startups innovantes et d’institutions médicales pour co-créer des solutions adaptées aux réalités locales. 
-        Chaque contribution compte dans la construction d’un écosystème qui met l’innovation au service des populations les plus vulnérables.
+        <?= htmlspecialchars_decode($service_detail_partner['importance']) ?>
     </p>
-    <h3>Principaux Avantages de Rejoindre Kronik X Health</h3>
+    <h3><?= htmlspecialchars($service_detail_partner['advantages_title']) ?></h3>
     <div class="row">
         <div class="col-md-6">
             <ul>
-                <li>Participation active à la transformation des systèmes de santé en Afrique de l’Ouest.</li>
-                <li>Collaboration avec des startups pour concevoir des solutions adaptées aux contextes locaux.</li>
-                <li>Accès à un réseau d'experts en santé numérique et innovation.</li>
-                <li>Contribution à des projets ayant un impact direct sur les parcours de soins des patients.</li>
-                <li>Opportunité de co-créer des outils technologiques pour améliorer l'accès aux soins.</li>
+                <?php foreach ($service_detail_partner['advantages']['left'] as $advantage): ?>
+                    <li><?= htmlspecialchars($advantage) ?></li>
+                <?php endforeach; ?>
             </ul>
         </div>
         <div class="col-md-6">
             <ul>
-                <li>Impact significatif sur la prise en charge des maladies chroniques.</li>
-                <li>Renforcement des capacités des innovateurs à travers mentorat et coaching.</li>
-                <li>Partenariat avec des institutions médicales pour tester et affiner les innovations.</li>
-                <li>Développement de solutions numériques en collaboration avec les professionnels de santé.</li>
-                <li>Participation à des initiatives révolutionnaires pour répondre aux besoins des LMICs.</li>
+                <?php foreach ($service_detail_partner['advantages']['right'] as $advantage): ?>
+                    <li><?= htmlspecialchars($advantage) ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
+                   <div class="block-faqs">
+                     <div class="accordion" id="accordionFAQ">
+                     <div id="accordionFAQ" class="accordion">
+  <!-- Pourquoi devenir partenaire ? -->
+<div class="accordion-item wow fadeInUp">
+    <h5 class="accordion-header" id="headingWhyPartner">
+        <button class="accordion-button text-heading-5 collapsed" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseWhyPartner" 
+                aria-expanded="true" 
+                aria-controls="collapseWhyPartner">
+            <?= htmlspecialchars($contribute_translations['why_partner']['title']) ?>
+        </button>
+    </h5>
+    <div class="accordion-collapse collapse" id="collapseWhyPartner" aria-labelledby="headingWhyPartner" data-bs-parent="#accordionFAQ">
+        <div class="accordion-body">
+            <ul>
+                <?php foreach ($contribute_translations['why_partner']['list'] as $item): ?>
+                    <li>
+                        <strong><?= htmlspecialchars($item['title']) ?></strong>
+                        <?= htmlspecialchars($item['description']) ?>
+                    </li>
+                <?php endforeach; ?>
             </ul>
         </div>
     </div>
 </div>
 
-                   <div class="block-faqs">
-                     <div class="accordion" id="accordionFAQ">
-                     <div id="accordionFAQ" class="accordion">
-    <!-- Pourquoi devenir partenaire ? -->
-    <div class="accordion-item wow fadeInUp">
-        <h5 class="accordion-header" id="headingWhyPartner">
-            <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWhyPartner" aria-expanded="true" aria-controls="collapseWhyPartner"> Pourquoi devenir partenaire ? </button>
-        </h5>
-        <div class="accordion-collapse collapse" id="collapseWhyPartner" aria-labelledby="headingWhyPartner" data-bs-parent="#accordionFAQ">
-            <div class="accordion-body">
-                <ul>
-                    <li><strong>Contribuez à un impact social :</strong> Soutenez des projets qui améliorent la qualité de vie des patients atteints de maladies chroniques et graves.</li>
-                    <li><strong>Stimulez l’innovation locale :</strong> Investissez dans des solutions numériques adaptées aux besoins spécifiques de l’Afrique de l’Ouest.</li>
-                    <li><strong>Rejoignez un réseau stratégique :</strong> Collaborez avec des experts en santé numérique, des startups prometteuses, et des institutions influentes.</li>
-                    <li><strong>Renforcez votre visibilité :</strong> Positionnez votre marque comme un acteur clé dans l’innovation en santé.</li>
-                </ul>
-            </div>
+<!-- Types de partenariats disponibles -->
+<div class="accordion-item wow fadeInUp">
+    <h5 class="accordion-header" id="headingPartnershipTypes">
+        <button class="accordion-button text-heading-5 collapsed" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapsePartnershipTypes" 
+                aria-expanded="true" 
+                aria-controls="collapsePartnershipTypes">
+            <?= htmlspecialchars($contribute_translations['partnership_types']['title']) ?>
+        </button>
+    </h5>
+    <div class="accordion-collapse collapse" id="collapsePartnershipTypes" aria-labelledby="headingPartnershipTypes" data-bs-parent="#accordionFAQ">
+        <div class="accordion-body">
+            <ul>
+                <?php foreach ($contribute_translations['partnership_types']['list'] as $type => $desc): ?>
+                    <li>
+                        <strong><?= htmlspecialchars($type) ?> :</strong>
+                        <?= htmlspecialchars($desc) ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
         </div>
     </div>
-    <!-- Types de partenariats disponibles -->
-    <div class="accordion-item wow fadeInUp">
-        <h5 class="accordion-header" id="headingPartnershipTypes">
-            <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePartnershipTypes" aria-expanded="true" aria-controls="collapsePartnershipTypes"> Types de partenariats disponibles </button>
-        </h5>
-        <div class="accordion-collapse collapse" id="collapsePartnershipTypes" aria-labelledby="headingPartnershipTypes" data-bs-parent="#accordionFAQ">
-            <div class="accordion-body">
-                <ul>
-                    <li><strong>Partenariats financiers :</strong> Soutenez le Kronik X Health par des subventions ou des investissements pour accélérer nos programmes et soutenir les startups incubées.</li>
-                    <li><strong>Partenariats technologiques :</strong> Fournissez des outils, des logiciels ou des infrastructures technologiques pour appuyer le développement des solutions incubées.</li>
-                    <li><strong>Partenariats académiques et de recherche :</strong> Travaillez sur des études cliniques, des projets de recherche en santé numérique et des validations scientifiques.</li>
-                    <li><strong>Partenariats stratégiques :</strong> Aidez à établir des connexions avec des investisseurs, des bailleurs de fonds et des décideurs publics.</li>
-                </ul>
-            </div>
+</div>
+<!-- Engagement des partenaires -->
+<div class="accordion-item wow fadeInUp">
+    <h5 class="accordion-header" id="headingPartnerCommitment">
+        <button class="accordion-button text-heading-5 collapsed" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapsePartnerCommitment" 
+                aria-expanded="true" 
+                aria-controls="collapsePartnerCommitment">
+            <?= htmlspecialchars($contribute_translations['partner_commitment']['title']) ?>
+        </button>
+    </h5>
+    <div class="accordion-collapse collapse" id="collapsePartnerCommitment" aria-labelledby="headingPartnerCommitment" data-bs-parent="#accordionFAQ">
+        <div class="accordion-body">
+            <ul>
+                <?php foreach ($contribute_translations['partner_commitment']['list'] as $title => $desc): ?>
+                    <li>
+                        <strong><?= htmlspecialchars($title) ?> :</strong>
+                        <?= htmlspecialchars($desc) ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
         </div>
     </div>
-    <!-- Engagement des partenaires -->
-    <div class="accordion-item wow fadeInUp">
-        <h5 class="accordion-header" id="headingPartnerCommitment">
-            <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePartnerCommitment" aria-expanded="true" aria-controls="collapsePartnerCommitment"> Engagement des partenaires </button>
-        </h5>
-        <div class="accordion-collapse collapse" id="collapsePartnerCommitment" aria-labelledby="headingPartnerCommitment" data-bs-parent="#accordionFAQ">
-            <div class="accordion-body">
-                <ul>
-                    <li><strong>Flexibilité :</strong> Les partenariats sont adaptés aux objectifs et capacités de chaque organisation.</li>
-                    <li><strong>Durée :</strong> Engagements ponctuels ou sur le long terme.</li>
-                    <li><strong>Implication :</strong> Participation active à des événements, mentorat des startups, ou financement de projets spécifiques.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- Avantages pour les partenaires -->
-    <div class="accordion-item wow fadeInUp">
-        <h5 class="accordion-header" id="headingPartnerBenefits">
-            <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePartnerBenefits" aria-expanded="true" aria-controls="collapsePartnerBenefits"> Avantages pour les partenaires </button>
-        </h5>
-        <div class="accordion-collapse collapse" id="collapsePartnerBenefits" aria-labelledby="headingPartnerBenefits" data-bs-parent="#accordionFAQ">
-            <div class="accordion-body">
-                <ul>
-                    <li><strong>Visibilité renforcée :</strong> Votre logo et votre marque présents dans nos événements, supports de communication et publications officielles.</li>
-                    <li><strong>Réseautage stratégique :</strong> Accès exclusif à notre réseau de startups, experts en santé numérique, et partenaires internationaux.</li>
-                    <li><strong>Impact mesurable :</strong> Suivi et reporting des résultats obtenus grâce à votre partenariat.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- Comment devenir partenaire ? -->
-    <div class="accordion-item wow fadeInUp">
-        <h5 class="accordion-header" id="headingBecomePartner">
-            <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBecomePartner" aria-expanded="true" aria-controls="collapseBecomePartner"> Comment devenir partenaire ? </button>
-        </h5>
-        <div class="accordion-collapse collapse" id="collapseBecomePartner" aria-labelledby="headingBecomePartner" data-bs-parent="#accordionFAQ">
-            <div class="accordion-body">
-                <ol>
-                    <li><strong>Contactez-nous :</strong> Remplissez le formulaire ou envoyez un email à notre équipe.</li>
-                    <li><strong>Définissez vos objectifs :</strong> Discutons ensemble de vos priorités et de la manière dont nous pouvons collaborer.</li>
-                    <li><strong>Formalisez le partenariat :</strong> Signature d’un accord précisant les engagements des deux parties.</li>
-                </ol>
-            </div>
-        </div>
-    </div>
+</div>
 
-    <!-- Contact pour plus d'informations -->
+<!-- Avantages pour les partenaires -->
+<div class="accordion-item wow fadeInUp">
+    <h5 class="accordion-header" id="headingPartnerBenefits">
+        <button class="accordion-button text-heading-5 collapsed" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapsePartnerBenefits" 
+                aria-expanded="true" 
+                aria-controls="collapsePartnerBenefits">
+            <?= htmlspecialchars($contribute_translations['partner_benefits']['title']) ?>
+        </button>
+    </h5>
+    <div class="accordion-collapse collapse" id="collapsePartnerBenefits" aria-labelledby="headingPartnerBenefits" data-bs-parent="#accordionFAQ">
+        <div class="accordion-body">
+            <ul>
+                <?php foreach ($contribute_translations['partner_benefits']['list'] as $title => $desc): ?>
+                    <li>
+                        <strong><?= htmlspecialchars($title) ?> :</strong>
+                        <?= htmlspecialchars($desc) ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Comment devenir partenaire -->
+<div class="accordion-item wow fadeInUp">
+    <h5 class="accordion-header" id="headingBecomePartner">
+        <button class="accordion-button text-heading-5 collapsed" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseBecomePartner" 
+                aria-expanded="true" 
+                aria-controls="collapseBecomePartner">
+            <?= htmlspecialchars($contribute_translations['how_to_become_partner']['title']) ?>
+        </button>
+    </h5>
+    <div class="accordion-collapse collapse" id="collapseBecomePartner" aria-labelledby="headingBecomePartner" data-bs-parent="#accordionFAQ">
+        <div class="accordion-body">
+            <ol>
+                <?php foreach ($contribute_translations['how_to_become_partner']['steps'] as $step): ?>
+                    <li>
+                        <strong><?= htmlspecialchars($step['title']) ?></strong>
+                        <?= htmlspecialchars($step['description']) ?>
+                    </li>
+                <?php endforeach; ?>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- Contact pour plus d'informations -->
 <div class="accordion-item wow fadeInUp">
     <h5 class="accordion-header" id="headingContactInfo">
-        <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContactInfo" aria-expanded="true" aria-controls="collapseContactInfo">
-            Contact pour plus d’informations
+        <button class="accordion-button text-heading-5 collapsed" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseContactInfo" 
+                aria-expanded="true" 
+                aria-controls="collapseContactInfo">
+            <?= htmlspecialchars($contribute_translations['contact_info_partner']['title']) ?>
         </button>
     </h5>
     <div class="accordion-collapse collapse" id="collapseContactInfo" aria-labelledby="headingContactInfo" data-bs-parent="#accordionFAQ">
         <div class="accordion-body">
-            <p>Pour toute question ou demande d’information, contactez notre équipe :</p>
+            <p><?= htmlspecialchars($contribute_translations['contact_info_partner']['description']) ?></p>
             <ul>
                 <li>
                     <strong>Email :</strong>
-                    <a href="mailto:partenaires@kronikxhealth.ci">partenaires@kronikxhealth.ci</a>
+                    <a href="mailto:<?= htmlspecialchars($contribute_translations['contact_info_partner']['email']) ?>">
+                        <?= htmlspecialchars($contribute_translations['contact_info_partner']['email']) ?>
+                    </a>
                 </li>
-             
-     <li><strong>Téléphone :</strong> <a href="tel:+2250123456789">+225 01 23 45 67 89</a></li>
-                    <strong>Adresse :</strong>
-                    Abidjan, Côte d’Ivoire
+                <li>
+                    <strong>Phone :</strong>
+                    <a href="tel:<?= htmlspecialchars($contribute_translations['contact_info_partner']['phone']) ?>">
+                        <?= htmlspecialchars($contribute_translations['contact_info_partner']['phone']) ?>
+                    </a>
+                </li>
+                <li>
+                    <strong>Address :</strong>
+                    <?= htmlspecialchars($contribute_translations['contact_info_partner']['address']) ?>
                 </li>
             </ul>
         </div>
     </div>
 </div>
+
 
 </div>
 
