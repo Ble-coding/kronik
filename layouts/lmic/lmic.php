@@ -126,7 +126,7 @@
                 </p>
         
             </div>
-            <div class="d-flex align-items-center">
+            <div class="d-flex flex-wrap align-items-center justify-content-center gap-2">
     <a href="./programs" class="btn btn-linear-03 mb-1 me-3" title="Rejoignez notre accélérateur ou incubateur"> 
         Startup
         <img src="assets/imgs/pages/home5/arrow-right.png" alt="Kronik" />
