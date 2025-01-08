@@ -55,7 +55,7 @@ if (empty($consent)) $errors['consent'] = "Veuillez accepter les termes et condi
 if (!empty($errors)) {
     $_SESSION['errors'] = $errors;
     $_SESSION['old'] = $_POST;
-    header("location: ../program.php");
+    header("location: ../programs");
     exit;
 }
 

@@ -1,4 +1,4 @@
-<section class="position-relative overflow-hidden box-section box-meet-experts">
+<!-- <section class="position-relative overflow-hidden box-section box-meet-experts">
             <div class="container" data-aos="fade-up">
                 <div class="row align-items-end">
                 <div class="col-lg-7 mb-30" data-aos="fade-up">
@@ -126,4 +126,4 @@
                 </div>
             </div>
         </section>
-  
+   -->
