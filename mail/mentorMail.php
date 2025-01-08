@@ -10,6 +10,22 @@ use PHPMailer\PHPMailer\Exception;
 
 require '../vendor/autoload.php';
 
+// Charger la langue sélectionnée
+session_start();
+$lang = isset($_GET['lang']) ? $_GET['lang'] : (isset($_SESSION['lang']) ? $_SESSION['lang'] : 'fr');
+$lang_path = "../languages/{$lang}/contribute/mentorForm.php";
+
+// Charger les traductions ou utiliser une langue par défaut
+if (file_exists($lang_path)) {
+    $translations = include $lang_path;
+} else {
+    $translations = include "../languages/fr/contribute/mentorForm.php"; // Langue par défaut
+}
+
+if (!isset($_SESSION)) {
+    session_start();
+}
+
 session_start();
 $errors = [];
 
@@ -33,60 +49,103 @@ $date = htmlspecialchars($_POST['date'] ?? '');
 $confirmation = $_POST['confirmation'] ?? '';
 
 // Validation des champs obligatoires
-if (empty($full_name)) $errors['full_name'] = "Le nom complet est requis.";
-if (empty($address)) $errors['address'] = "L'adresse est requise.";
-if (empty($phone)) $errors['phone'] = "Le numéro de téléphone est requis.";
-if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) $errors['email'] = "Adresse e-mail invalide.";
-if (empty($expertise)) $errors['expertise'] = "Veuillez sélectionner un domaine d'expertise.";
-if ($expertise === 'autre' && empty($other_expertise)) $errors['other_expertise'] = "Veuillez préciser votre expertise.";
-if (empty($experience)) $errors['experience'] = "Veuillez décrire votre expérience professionnelle.";
-if (empty($motivation)) $errors['motivation'] = "Veuillez indiquer votre motivation.";
-if (empty($signatory_name)) $errors['signatory_name'] = "Le nom du signataire est requis.";
-if (empty($function)) $errors['function'] = "La fonction est requise.";
-if (empty($date)) $errors['date'] = "La date est requise.";
-if (empty($confirmation)) $errors['confirmation'] = "Vous devez confirmer que les informations sont exactes.";
+if (empty($full_name)) {
+    $errors['full_name'] = $translations['errors']['full_name'] ?? 'Le nom complet est requis.';
+}
+
+if (empty($address)) {
+    $errors['address'] = $translations['errors']['address'] ?? 'L\'adresse est requise.';
+}
+
+if (empty($phone)) {
+    $errors['phone'] = $translations['errors']['phone'] ?? 'Le numéro de téléphone est requis.';
+}
+
+if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $errors['email'] = $translations['errors']['email'] ?? 'Adresse e-mail invalide.';
+}
+
+if (empty($expertise)) {
+    $errors['expertise'] = $translations['errors']['expertise'] ?? 'Veuillez sélectionner un domaine d\'expertise.';
+} elseif ($expertise === 'autre' && empty($other_expertise)) {
+    $errors['other_expertise'] = $translations['errors']['other_expertise'] ?? 'Veuillez préciser votre expertise.';
+}
+
+if (empty($experience)) {
+    $errors['experience'] = $translations['errors']['experience'] ?? 'Veuillez décrire votre expérience professionnelle.';
+}
+
+if (empty($motivation)) {
+    $errors['motivation'] = $translations['errors']['motivation'] ?? 'Veuillez indiquer votre motivation.';
+}
+
+if (empty($signatory_name)) {
+    $errors['signatory_name'] = $translations['errors']['signatory_name'] ?? 'Le nom du signataire est requis.';
+}
+
+if (empty($function)) {
+    $errors['function'] = $translations['errors']['function'] ?? 'La fonction est requise.';
+}
+
+if (empty($date)) {
+    $errors['date'] = $translations['errors']['date'] ?? 'La date est requise.';
+}
+
+if (empty($confirmation)) {
+    $errors['confirmation'] = $translations['errors']['confirmation'] ?? 'Vous devez confirmer que les informations sont exactes.';
+}
 
 // Gestion des erreurs
 if (!empty($errors)) {
     $_SESSION['errors'] = $errors;
     $_SESSION['old'] = $_POST;
-    header("location: ../contribute#pills-mentorat");
+    error_log("Errors detected: " . print_r($errors, true));
+    header("Location: ../contribute?lang=" . htmlspecialchars($lang) . "#pills-mentorat");
     exit;
 }
 
+// Si aucune erreur, continuer avec le traitement
+
 // Construction du message de l'email
-$contribution_list = implode(", ", $contribution);
+$labels = $translations['labels'] ?? [];
+$section_titles = $translations['section_titles'] ?? [];
+
+// Préparer la liste des contributions
+$contribution_list = implode(", ", array_map(function ($value) use ($translations) {
+    return $translations['contribution_options'][$value] ?? $value;
+}, $contribution));
+$title = isset($translations['title']) ? $translations['title'] : 'Nouvelle candidature de mentor reçue';
+// Construire le message de l'email
 $email_message = "
-<h2>Nouvelle candidature de mentor reçue</h2>
+<h2>{$title}</h2>
+<h3>" . ($section_titles['personal_info'] ?? '1. Informations Générales') . "</h3>
+<strong>" . ($labels['full_name'] ?? 'Nom complet') . " :</strong> $full_name<br>
+<strong>" . ($labels['address'] ?? 'Adresse') . " :</strong> $address<br>
+<strong>" . ($labels['phone'] ?? 'Numéro de téléphone') . " :</strong> $phone<br>
+<strong>" . ($labels['email'] ?? 'Adresse e-mail') . " :</strong> $email<br>
+<strong>" . ($labels['website'] ?? 'Site web ou LinkedIn') . " :</strong> " . (!empty($website) ? $website : ($translations['defaults']['not_specified'] ?? 'Non spécifié')) . "<br><br>
 
-<h3>1. Informations Générales</h3>
-<strong>Nom complet :</strong><br>$full_name<br><br>
-<strong>Adresse :</strong><br>$address<br><br>
-<strong>Numéro de téléphone :</strong><br>$phone<br><br>
-<strong>Adresse e-mail :</strong><br>$email<br><br>
-<strong>Site web ou LinkedIn :</strong><br>" . (!empty($website) ? $website : "Non spécifié") . "<br><br>
+<h3>" . ($section_titles['experience_and_skills'] ?? '2. Expérience et Compétences') . "</h3>
+<strong>" . ($labels['expertise_label'] ?? 'Domaines d\'expertise') . " :</strong> $expertise<br>
+" . (!empty($other_expertise) ? "<strong>" . ($labels['other_expertise_label'] ?? 'Autres domaines') . " :</strong> $other_expertise<br>" : "") . "
+<strong>" . ($labels['experience'] ?? 'Expérience professionnelle') . " :</strong> $experience<br>
+<strong>" . ($labels['projects'] ?? 'Projets ou startups accompagnés') . " :</strong> " . (!empty($projects) ? $projects : ($translations['defaults']['not_specified'] ?? 'Non spécifié')) . "<br>
+<strong>" . ($labels['certifications'] ?? 'Certifications') . " :</strong> " . (!empty($certifications) ? $certifications : ($translations['defaults']['not_specified'] ?? 'Non spécifié')) . "<br><br>
 
-<h3>2. Expérience et Compétences</h3>
-<strong>Domaines d'expertise :</strong><br>$expertise<br>
-" . (!empty($other_expertise) ? "<strong>Autres domaines :</strong><br>$other_expertise<br>" : "") . "
-<strong>Expérience professionnelle :</strong><br>$experience<br><br>
-<strong>Projets ou startups accompagnés :</strong><br>" . (!empty($projects) ? $projects : "Non spécifié") . "<br><br>
-<strong>Certifications :</strong><br>" . (!empty($certifications) ? $certifications : "Non spécifié") . "<br><br>
+<h3>" . ($section_titles['motivation'] ?? '3. Motivations') . "</h3>
+<strong>" . ($labels['motivation'] ?? 'Motivation') . " :</strong> $motivation<br>
+<strong>" . ($labels['contribution'] ?? 'Contribution prévue') . " :</strong> $contribution_list<br>
+" . (!empty($other_contribution) ? "<strong>" . ($labels['other_contribution'] ?? 'Autres contributions') . " :</strong> $other_contribution<br>" : "") . "<br>
 
-<h3>3. Motivations</h3>
-<strong>Motivation :</strong><br>$motivation<br><br>
-<strong>Contribution prévue :</strong><br>$contribution_list<br>
-" . (!empty($other_contribution) ? "<strong>Autres contributions :</strong><br>$other_contribution<br>" : "") . "
-
-<h3>4. Déclaration et Signature</h3>
-<strong>Nom du signataire :</strong><br>$signatory_name<br><br>
-<strong>Fonction :</strong><br>$function<br><br>
-<strong>Date :</strong><br>$date<br><br>
+<h3>" . ($section_titles['declaration_and_signature'] ?? '4. Déclaration et Signature') . "</h3>
+<strong>" . ($labels['signatory_name'] ?? 'Nom du signataire') . " :</strong> $signatory_name<br>
+<strong>" . ($labels['function'] ?? 'Fonction') . " :</strong> $function<br>
+<strong>" . ($labels['date'] ?? 'Date') . " :</strong> $date<br>
 ";
 
 // Envoi de l'email via PHPMailer
 $mail = new PHPMailer(true);
-
+ 
 try {
     // Configuration SMTP
     $mail->isSMTP();
@@ -121,13 +180,15 @@ try {
         $mail->addAttachment($_FILES['cv']['tmp_name'], $_FILES['cv']['name']);
     }
 
-    $mail->send();
-    header("location: ../mail-success");
-    exit;
-
-} catch (Exception $e) {
-    error_log("Erreur lors de l'envoi de l'email : {$mail->ErrorInfo}");
-    $_SESSION['mail_error'] = "Une erreur est survenue lors de l'envoi de l'email.";
-    header("location: ../contribute");
-    exit;
+      // Envoi de l'email
+      $mail->send();
+      header("location: ../mail-success?lang=" . htmlspecialchars($lang));
+      exit;
+  
+  } catch (Exception $e) {
+      error_log("Erreur lors de l'envoi de l'email : {$mail->ErrorInfo}");
+      $_SESSION['mail_error'] = $translations['email_error'] ?? "Une erreur est survenue lors de l'envoi de l'email.";
+      header("location: ../contribute?lang=" . htmlspecialchars($lang));
+      exit;
 }
+  

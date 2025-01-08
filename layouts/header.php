@@ -158,7 +158,7 @@
                     </li> -->
 
                     <!-- News -->
-                    <li class="nav-item"><a class="nav-link fw-medium" href="/">Actualités</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link fw-medium" href="/">Actualités</a></li> -->
                     <!-- <li class="nav-item dropdown menu-item-has-children">
                         <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Actualités</a>
                         <ul class="dropdown-menu">

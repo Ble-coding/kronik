@@ -55,4 +55,5 @@ return [
     'from_name' => 'Kronik-X Health',
     'reply_to_name' => 'Support Kronik-X Health',
     'email_subject' => 'Nouvelle demande de contact',
+    'email_subject' => 'Nouvelle candidature de coach', 
 ];

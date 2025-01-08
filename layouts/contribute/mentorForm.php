@@ -1,81 +1,105 @@
-<section class="box-section box-contact-section-2">
-  <div class="container" data-aos="fade-up">
-    <h1 class="heading-jakarta-55 dark-950 mb-5">Devenir Mentor</h1>
-    <p class="mb-4">Rejoignez notre programme de mentorat et soutenez les innovateurs en santé numérique dans les LMICs.</p>
+<?php
 
-    <div class="col-lg-12">
-      <div class="form-contact-us">
-      <?php
-session_start();
+// Charger les traductions pour le formulaire
+$form_translations = include __DIR__ . "/../../languages/{$lang}/contribute/mentorForm.php";
+
 $errors = $_SESSION['errors'] ?? [];
 $old = $_SESSION['old'] ?? [];
 session_destroy(); // Supprimer les erreurs après affichage
 ?>
+<section class="box-section box-contact-section-2">
+  <div class="container" data-aos="fade-up">
+  <h1 class="heading-jakarta-55 dark-950 mb-5">
+        <?= htmlspecialchars($form_translations['title']) ?>
+    </h1>
+    <p class="p-classik mb-4">
+        <?= htmlspecialchars($form_translations['description']) ?>
+    </p>
+    <div class="col-lg-12">
+      <div class="form-contact-us">
+  
 
-<form class="form" action="mail/mentorMail.php" method="POST" enctype="multipart/form-data">
-    <!-- Section 1: Informations Générales -->
-    <h4 class="mb-3">1. Informations Générales</h4>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <input type="text" name="full_name" class="form-control" placeholder="Nom complet" value="<?= htmlspecialchars($old['full_name'] ?? '') ?>"  />
-                <?php if (isset($errors['full_name'])): ?>
-                    <small class="text-danger"><?= $errors['full_name'] ?></small>
-                <?php endif; ?>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <input type="text" name="address" class="form-control" placeholder="Adresse (Ville, Pays)" value="<?= htmlspecialchars($old['address'] ?? '') ?>"  />
-                <?php if (isset($errors['address'])): ?>
-                    <small class="text-danger"><?= $errors['address'] ?></small>
-                <?php endif; ?>
-            </div>
+<form class="form" action="mail/mentorMail.php?lang=<?= htmlspecialchars($lang) ?>" method="POST" enctype="multipart/form-data">
+  <!-- Section 1: Informations Générales -->
+<h4 class="mb-3"><?= htmlspecialchars($form_translations['section_titles']['general_info']) ?></h4>
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <input type="text" name="full_name" class="form-control" 
+                   placeholder="<?= htmlspecialchars($form_translations['placeholders']['full_name']) ?>" 
+                   value="<?= htmlspecialchars($old['full_name'] ?? '') ?>" />
+            <?php if (isset($errors['full_name'])): ?>
+                <small class="text-danger"><?= htmlspecialchars($form_translations['errors']['full_name']) ?></small>
+            <?php endif; ?>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <input type="tel" name="phone" class="form-control" placeholder="Numéro de téléphone" value="<?= htmlspecialchars($old['phone'] ?? '') ?>"  />
-                <?php if (isset($errors['phone'])): ?>
-                    <small class="text-danger"><?= $errors['phone'] ?></small>
-                <?php endif; ?>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <input type="email" name="email" class="form-control" placeholder="Adresse e-mail" value="<?= htmlspecialchars($old['email'] ?? '') ?>"  />
-                <?php if (isset($errors['email'])): ?>
-                    <small class="text-danger"><?= $errors['email'] ?></small>
-                <?php endif; ?>
-            </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <input type="text" name="address" class="form-control" 
+                   placeholder="<?= htmlspecialchars($form_translations['placeholders']['address']) ?>" 
+                   value="<?= htmlspecialchars($old['address'] ?? '') ?>" />
+            <?php if (isset($errors['address'])): ?>
+                <small class="text-danger"><?= htmlspecialchars($form_translations['errors']['address']) ?></small>
+            <?php endif; ?>
         </div>
     </div>
-    <div class="form-group">
-        <input type="url" name="website" class="form-control" placeholder="Site web ou Profil LinkedIn (facultatif)" value="<?= htmlspecialchars($old['website'] ?? '') ?>" />
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <input type="tel" name="phone" class="form-control" 
+                   placeholder="<?= htmlspecialchars($form_translations['placeholders']['phone']) ?>" 
+                   value="<?= htmlspecialchars($old['phone'] ?? '') ?>" />
+            <?php if (isset($errors['phone'])): ?>
+                <small class="text-danger"><?= htmlspecialchars($form_translations['errors']['phone']) ?></small>
+            <?php endif; ?>
+        </div>
     </div>
-
-    <h4 class="mt-4 mb-3">2. Expérience et Compétences</h4>
+    <div class="col-md-6">
+        <div class="form-group">
+            <input type="email" name="email" class="form-control" 
+                   placeholder="<?= htmlspecialchars($form_translations['placeholders']['email']) ?>" 
+                   value="<?= htmlspecialchars($old['email'] ?? '') ?>" />
+            <?php if (isset($errors['email'])): ?>
+                <small class="text-danger"><?= htmlspecialchars($form_translations['errors']['email']) ?></small>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
 <div class="form-group">
-    <label for="technologiesSelect">Domaines d'expertise</label>
+    <input type="url" name="website" class="form-control" 
+           placeholder="<?= htmlspecialchars($form_translations['placeholders']['website']) ?>" 
+           value="<?= htmlspecialchars($old['website'] ?? '') ?>" />
+</div>
+
+<h4 class="mt-4 mb-3"><?= htmlspecialchars($form_translations['section_titles']['experience_and_skills']) ?></h4>
+
+<!-- Domaine d'expertise -->
+<div class="form-group">
+    <label for="technologiesSelect"><?= htmlspecialchars($form_translations['labels']['expertise']) ?></label>
     <select 
         class="form-control <?= isset($errors['expertise']) ? 'is-invalid' : '' ?>" 
         id="technologiesSelect" 
         name="expertise"
     >
-        <option value="" disabled <?= empty($old['expertise']) ? 'selected' : '' ?>>Choisissez un domaine</option>
-        <option value="IA" <?= ($old['expertise'] ?? '') === 'IA' ? 'selected' : '' ?>>Intelligence Artificielle</option>
-        <option value="Big Data" <?= ($old['expertise'] ?? '') === 'Big Data' ? 'selected' : '' ?>>Big Data</option>
-        <option value="IoT" <?= ($old['expertise'] ?? '') === 'IoT' ? 'selected' : '' ?>>Objets connectés</option>
-        <option value="strategie" <?= ($old['expertise'] ?? '') === 'strategie' ? 'selected' : '' ?>>Stratégie</option>
-        <option value="autre" <?= ($old['expertise'] ?? '') === 'autre' ? 'selected' : '' ?>>Autres</option>
+        <option value="" disabled <?= empty($old['expertise']) ? 'selected' : '' ?>>
+            <?= htmlspecialchars($form_translations['placeholders']['expertise']) ?>
+        </option>
+        <?php foreach ($form_translations['expertise_options'] as $value => $label): ?>
+            <option value="<?= htmlspecialchars($value) ?>" <?= ($old['expertise'] ?? '') === $value ? 'selected' : '' ?>>
+                <?= htmlspecialchars($label) ?>
+            </option>
+        <?php endforeach; ?>
+        <option value="autre" <?= ($old['expertise'] ?? '') === 'autre' ? 'selected' : '' ?>>
+            <?= htmlspecialchars($form_translations['labels']['other']) ?>
+        </option>
     </select>
     <?php if (isset($errors['expertise'])): ?>
-        <small class="text-danger"><?= $errors['expertise'] ?></small>
+        <small class="text-danger"><?= htmlspecialchars($errors['expertise']) ?></small>
     <?php endif; ?>
 </div>
 
-<!-- Champ pour "Autres domaines" -->
+<!-- Champ "Autres domaines" -->
 <div 
     class="form-group" 
     id="otherExpertiseContainer" 
@@ -85,84 +109,165 @@ session_destroy(); // Supprimer les erreurs après affichage
         name="other_expertise" 
         class="form-control <?= isset($errors['other_expertise']) ? 'is-invalid' : '' ?>" 
         rows="3" 
-        placeholder="Précisez les autres domaines d'expertise"
+        placeholder="<?= htmlspecialchars($form_translations['placeholders']['other_expertise']) ?>"
     ><?= htmlspecialchars($old['other_expertise'] ?? '') ?></textarea>
     <?php if (isset($errors['other_expertise'])): ?>
-        <small class="text-danger"><?= $errors['other_expertise'] ?></small>
+        <small class="text-danger"><?= htmlspecialchars($errors['other_expertise']) ?></small>
     <?php endif; ?>
 </div>
 
-    <div class="form-group">
-        <textarea name="experience" class="form-control" rows="4" placeholder="Expérience professionnelle pertinente" ><?= htmlspecialchars($old['experience'] ?? '') ?></textarea>
-        <?php if (isset($errors['experience'])): ?>
-            <small class="text-danger"><?= $errors['experience'] ?></small>
-        <?php endif; ?>
-    </div>
-    <div class="form-group">
-        <textarea name="projects" class="form-control" rows="4" placeholder="Projets ou startups accompagnés (facultatif)"><?= htmlspecialchars($old['projects'] ?? '') ?></textarea>
-    </div>
-    <div class="form-group">
-        <textarea name="certifications" class="form-control" rows="3" placeholder="Formations ou certifications (ex. : MBA, Santé numérique)"><?= htmlspecialchars($old['certifications'] ?? '') ?></textarea>
-    </div>
+<!-- Expérience professionnelle -->
+<div class="form-group">
+    <textarea 
+        name="experience" 
+        class="form-control <?= isset($errors['experience']) ? 'is-invalid' : '' ?>" 
+        rows="4" 
+        placeholder="<?= htmlspecialchars($form_translations['placeholders']['experience']) ?>"
+    ><?= htmlspecialchars($old['experience'] ?? '') ?></textarea>
+    <?php if (isset($errors['experience'])): ?>
+        <small class="text-danger"><?= htmlspecialchars($errors['experience']) ?></small>
+    <?php endif; ?>
+</div>
 
-    <!-- Section 3: Motivations -->
-    <h4 class="mt-4 mb-3">3. Motivations</h4>
-    <div class="form-group">
-        <textarea name="motivation" class="form-control" rows="4" placeholder="Pourquoi souhaitez-vous devenir mentor ?" ><?= htmlspecialchars($old['motivation'] ?? '') ?></textarea>
-        <?php if (isset($errors['motivation'])): ?>
-            <small class="text-danger"><?= $errors['motivation'] ?></small>
-        <?php endif; ?>
-    </div>
+<!-- Projets accompagnés -->
+<div class="form-group">
+    <textarea 
+        name="projects" 
+        class="form-control" 
+        rows="4" 
+        placeholder="<?= htmlspecialchars($form_translations['placeholders']['projects']) ?>"
+    ><?= htmlspecialchars($old['projects'] ?? '') ?></textarea>
+</div>
 
-    <!-- Section 4: Documents à Joindre -->
-    <h4 class="mt-4 mb-3">4. Documents à Joindre</h4>
-    <div class="form-group">
-        <label for="logo">Joindre votre logo (facultatif) :</label>
-        <input type="file" name="logo" id="logo" class="form-control" accept=".png, .jpg, .svg" />
-    </div>
-    <div class="form-group">
-        <label for="photo">Joindre votre photo professionnelle :</label>
-        <input type="file" name="photo" id="photo" class="form-control" accept=".png, .jpg, .jpeg"  />
-    </div>
-    <div class="form-group">
-        <label for="cv">Joindre un CV ou portfolio (facultatif) :</label>
-        <input type="file" name="cv" id="cv" class="form-control" accept=".pdf, .doc, .docx" />
-    </div>
+<!-- Formations ou certifications -->
+<div class="form-group">
+    <textarea 
+        name="certifications" 
+        class="form-control" 
+        rows="3" 
+        placeholder="<?= htmlspecialchars($form_translations['placeholders']['certifications']) ?>"
+    ><?= htmlspecialchars($old['certifications'] ?? '') ?></textarea>
+</div>
 
-    <!-- Section 5: Déclaration et Signature -->
-    <h4 class="mt-4 mb-3">5. Déclaration et Signature</h4>
-    <div class="form-group">
-        <input type="text" name="signatory_name" class="form-control" placeholder="Nom du signataire" value="<?= htmlspecialchars($old['signatory_name'] ?? '') ?>"  />
-        <?php if (isset($errors['signatory_name'])): ?>
-            <small class="text-danger"><?= $errors['signatory_name'] ?></small>
-        <?php endif; ?>
-    </div>
-    <div class="form-group">
-        <input type="text" name="function" class="form-control" placeholder="Fonction" value="<?= htmlspecialchars($old['function'] ?? '') ?>"  />
-        <?php if (isset($errors['function'])): ?>
-            <small class="text-danger"><?= $errors['function'] ?></small>
-        <?php endif; ?>
-    </div>
-    <div class="form-group">
-        <input type="date" name="date" class="form-control" value="<?= htmlspecialchars($old['date'] ?? '') ?>"  />
-        <?php if (isset($errors['date'])): ?>
-            <small class="text-danger"><?= $errors['date'] ?></small>
-        <?php endif; ?>
-    </div>
-    <div class="form-group">
-        <label>
-            <input type="checkbox" name="confirmation"  />
-            Je confirme que les informations fournies sont exactes et complètes.
-        </label>
-        <?php if (isset($errors['confirmation'])): ?>
-            <small class="text-danger"><?= $errors['confirmation'] ?></small>
-        <?php endif; ?>
-    </div>
 
-    <!-- Bouton de soumission -->
-    <div class="form-group mt-5">
-        <button type="submit" class="btn btn-primary-home-square w-100">Soumettre le Formulaire</button>
-    </div>
+<!-- Section 3: Motivations -->
+<h4 class="mt-4 mb-3"><?= htmlspecialchars($form_translations['section_titles']['motivations']) ?></h4>
+<div class="form-group">
+    <textarea 
+        name="motivation" 
+        class="form-control <?= isset($errors['motivation']) ? 'is-invalid' : '' ?>" 
+        rows="4" 
+        placeholder="<?= htmlspecialchars($form_translations['placeholders']['motivation']) ?>"
+    ><?= htmlspecialchars($old['motivation'] ?? '') ?></textarea>
+    <?php if (isset($errors['motivation'])): ?>
+        <small class="text-danger"><?= htmlspecialchars($errors['motivation']) ?></small>
+    <?php endif; ?>
+</div>
+
+<!-- Section 4: Documents à Joindre -->
+<h4 class="mt-4 mb-3"><?= htmlspecialchars($form_translations['section_titles']['documents']) ?></h4>
+<div class="form-group">
+    <label for="logo"><?= htmlspecialchars($form_translations['labels']['logo']) ?></label>
+    <input 
+        type="file" 
+        name="logo" 
+        id="logo" 
+        class="form-control <?= isset($errors['logo']) ? 'is-invalid' : '' ?>" 
+        accept=".png, .jpg, .svg" 
+    />
+    <?php if (isset($errors['logo'])): ?>
+        <small class="text-danger"><?= htmlspecialchars($errors['logo']) ?></small>
+    <?php endif; ?>
+</div>
+<div class="form-group">
+    <label for="photo"><?= htmlspecialchars($form_translations['labels']['photo']) ?></label>
+    <input 
+        type="file" 
+        name="photo" 
+        id="photo" 
+        class="form-control <?= isset($errors['photo']) ? 'is-invalid' : '' ?>" 
+        accept=".png, .jpg, .jpeg"  
+    />
+    <?php if (isset($errors['photo'])): ?>
+        <small class="text-danger"><?= htmlspecialchars($errors['photo']) ?></small>
+    <?php endif; ?>
+</div>
+<div class="form-group">
+    <label for="cv"><?= htmlspecialchars($form_translations['labels']['cv']) ?></label>
+    <input 
+        type="file" 
+        name="cv" 
+        id="cv" 
+        class="form-control <?= isset($errors['cv']) ? 'is-invalid' : '' ?>" 
+        accept=".pdf, .doc, .docx" 
+    />
+    <?php if (isset($errors['cv'])): ?>
+        <small class="text-danger"><?= htmlspecialchars($errors['cv']) ?></small>
+    <?php endif; ?>
+</div>
+
+<!-- Section 5: Déclaration et Signature -->
+<h4 class="mt-4 mb-3"><?= htmlspecialchars($form_translations['section_titles']['declaration_and_signature']) ?></h4>
+
+<div class="form-group">
+    <input 
+        type="text" 
+        name="signatory_name" 
+        class="form-control <?= isset($errors['signatory_name']) ? 'is-invalid' : '' ?>" 
+        placeholder="<?= htmlspecialchars($form_translations['placeholders']['signatory_name']) ?>" 
+        value="<?= htmlspecialchars($old['signatory_name'] ?? '') ?>" 
+    />
+    <?php if (isset($errors['signatory_name'])): ?>
+        <small class="text-danger"><?= htmlspecialchars($errors['signatory_name']) ?></small>
+    <?php endif; ?>
+</div>
+
+<div class="form-group">
+    <input 
+        type="text" 
+        name="function" 
+        class="form-control <?= isset($errors['function']) ? 'is-invalid' : '' ?>" 
+        placeholder="<?= htmlspecialchars($form_translations['placeholders']['function']) ?>" 
+        value="<?= htmlspecialchars($old['function'] ?? '') ?>" 
+    />
+    <?php if (isset($errors['function'])): ?>
+        <small class="text-danger"><?= htmlspecialchars($errors['function']) ?></small>
+    <?php endif; ?>
+</div>
+
+<div class="form-group">
+    <input 
+        type="date" 
+        name="date" 
+        class="form-control <?= isset($errors['date']) ? 'is-invalid' : '' ?>" 
+        value="<?= htmlspecialchars($old['date'] ?? '') ?>" 
+    />
+    <?php if (isset($errors['date'])): ?>
+        <small class="text-danger"><?= htmlspecialchars($errors['date']) ?></small>
+    <?php endif; ?>
+</div>
+
+<div class="form-group">
+    <label>
+        <input 
+            type="checkbox" 
+            name="confirmation" 
+            <?= !empty($old['confirmation']) ? 'checked' : '' ?> 
+        />
+        <?= htmlspecialchars($form_translations['labels']['confirmation']) ?>
+    </label>
+    <?php if (isset($errors['confirmation'])): ?>
+        <small class="text-danger"><?= htmlspecialchars($errors['confirmation']) ?></small>
+    <?php endif; ?>
+</div>
+
+<!-- Bouton de soumission -->
+<div class="form-group mt-5">
+    <button type="submit" class="btn btn-primary-home-square w-100">
+        <?= htmlspecialchars($form_translations['buttons']['submit_form']) ?>
+    </button>
+</div>
+
 </form>
 
       </div>
