@@ -1,4 +1,26 @@
 <?php
+
+session_start();
+
+// Définir la langue par défaut
+$default_language = 'fr';
+
+// Récupérer la langue depuis l'URL, la session ou utiliser la langue par défaut
+$lang = $_GET['lang'] ?? $_SESSION['lang'] ?? $default_language;
+
+// Vérifier si le dossier de langue existe
+$lang_path = __DIR__ . "/languages/{$lang}/";
+if (!is_dir($lang_path)) {
+    $lang = $default_language; // Revenir à la langue par défaut si le dossier n'existe pas
+}
+$_SESSION['lang'] = $lang; // Sauvegarder la langue dans la session
+
+// Charger toutes les traductions disponibles dans le dossier de langue
+$translations = [];
+foreach (glob($lang_path . '*.php') as $file) {
+    $translations = array_merge($translations, include $file);
+}
+
 // Récupérer l'URI demandée
 $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
@@ -7,6 +29,8 @@ $basePath = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'])), '/')
 
 // Retirer le chemin de base de l'URI
 $route = str_replace($basePath, '', $requestUri);
+
+
 
 // Définir les routes disponibles
 $routes = [

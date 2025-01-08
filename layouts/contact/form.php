@@ -1,52 +1,68 @@
 <?php
-session_start();
+// Charger les traductions spécifiques au formulaire de contact
+$form_translations = include __DIR__ . "/../../languages/{$lang}/contact/form.php";
+
+// Récupérer les erreurs et anciennes données de formulaire
 $errors = $_SESSION['errors'] ?? [];
 $old = $_SESSION['old'] ?? [];
-session_destroy(); // Supprimer les erreurs après affichage
+
+// Supprimer les erreurs après affichage
+session_destroy();
 ?>
 
-<form class="form" action="mail/contact.php" method="POST">
+<form class="form" action="mail/contact.php?lang=<?= htmlspecialchars($lang) ?>" method="POST">
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <input type="text" name="user" class="form-control user" placeholder="Votre nom" value="<?= htmlspecialchars($old['user'] ?? '') ?>"  />
+                <input type="text" name="user" class="form-control user" 
+                       placeholder="<?= htmlspecialchars($form_translations['form']['name_placeholder']) ?>" 
+                       value="<?= htmlspecialchars($old['user'] ?? '') ?>" />
                 <?php if (isset($errors['user'])): ?>
-                    <small class="text-danger"><?= $errors['user'] ?></small>
+                    <small class="text-danger"><?= htmlspecialchars($form_translations['errors']['user']) ?></small>
                 <?php endif; ?>
             </div>
         </div>
         <div class="col-md-12">
             <div class="form-group">
-                <input type="email" name="email" class="form-control email" placeholder="Votre adresse e-mail" value="<?= htmlspecialchars($old['email'] ?? '') ?>"  />
+                <input type="email" name="email" class="form-control email" 
+                       placeholder="<?= htmlspecialchars($form_translations['form']['email_placeholder']) ?>" 
+                       value="<?= htmlspecialchars($old['email'] ?? '') ?>" />
                 <?php if (isset($errors['email'])): ?>
-                    <small class="text-danger"><?= $errors['email'] ?></small>
+                    <small class="text-danger"><?= htmlspecialchars($form_translations['errors']['email']) ?></small>
                 <?php endif; ?>
             </div>
         </div>
         <div class="col-md-6">
             <div class="form-group">
-                <input type="tel" name="phone" class="form-control phone" placeholder="Votre téléphone" value="<?= htmlspecialchars($old['phone'] ?? '') ?>"  />
+                <input type="tel" name="phone" class="form-control phone" 
+                       placeholder="<?= htmlspecialchars($form_translations['form']['phone_placeholder']) ?>" 
+                       value="<?= htmlspecialchars($old['phone'] ?? '') ?>" />
                 <?php if (isset($errors['phone'])): ?>
-                    <small class="text-danger"><?= $errors['phone'] ?></small>
+                    <small class="text-danger"><?= htmlspecialchars($form_translations['errors']['phone']) ?></small>
                 <?php endif; ?>
             </div>
         </div>
         <div class="col-md-6">
             <div class="form-group">
-                <input type="text" name="note" class="form-control note" placeholder="Objet du message" value="<?= htmlspecialchars($old['note'] ?? '') ?>" />
+                <input type="text" name="note" class="form-control note" 
+                       placeholder="<?= htmlspecialchars($form_translations['form']['subject_placeholder']) ?>" 
+                       value="<?= htmlspecialchars($old['note'] ?? '') ?>" />
             </div>
         </div>
         <div class="col-md-12 mt-5 pt-3">
             <div class="form-group">
-                <input type="text" name="message" class="form-control message" placeholder="Votre message" value="<?= htmlspecialchars($old['message'] ?? '') ?>"  />
+                <textarea name="message" class="form-control message" 
+                          placeholder="<?= htmlspecialchars($form_translations['form']['message_placeholder']) ?>"><?= htmlspecialchars($old['message'] ?? '') ?></textarea>
                 <?php if (isset($errors['message'])): ?>
-                    <small class="text-danger"><?= $errors['message'] ?></small>
+                    <small class="text-danger"><?= htmlspecialchars($form_translations['errors']['message']) ?></small>
                 <?php endif; ?>
             </div>
         </div>
         <div class="col-md-12">
             <div class="form-group mt-5">
-                <button type="submit" class="btn btn-primary-home-square">ENVOYER</button>
+                <button type="submit" class="btn btn-primary-home-square">
+                    <?= htmlspecialchars($form_translations['form']['send_button']) ?>
+                </button>
             </div>
         </div>
     </div>

@@ -1,24 +1,33 @@
   <!-- prettier-ignore -->
   <!-- Contact Section 2 -->
+  <?php
+// Charger les traductions spécifiques à la section "contact"
+$contact_translations = include __DIR__ . "/../../languages/{$lang}/contact/contact.php";
+?>
+
   <section class="box-section box-contact-section-2">
     <div class="container" data-aos="fade-up">
-      <h1 class="heading-jakarta-55 dark-950 mb-5"> Vous avez des questions ? <br /> Contactez-nous ! </h1>
+      <h1 class="heading-jakarta-55 dark-950 mb-5">  <?= $contact_translations['contact_heading'] ?></h1>
       <div class="row">
         <div class="col-lg-5">
-          <div class="box-contact-red">
-            <h3 class="heading-ag-xl color-white mb-3">Informations de l'entreprise</h3>
-            <div class="paragraph-rubik-md-r color-white mb-4">Contactez-nous pour toute question ou assistance.</div>
-            <p class="sub-heading-ag-xl color-white mb-4">
-              <img src="assets/imgs/pages/contact/email.png" alt="Email" class="me-3" /> info@kronikxhealth.com
-            </p>
-            <p class="sub-heading-ag-xl color-white mb-4">
-              <img src="assets/imgs/pages/contact/phone.png" alt="Téléphone" class="me-3" /> (225) 0554 631 663
-            </p>
-            <div class="sub-heading-ag-xl color-white d-flex align-items-center mb-4">
-              <img src="assets/imgs/pages/contact/address_corrected.png" alt="Adresse" class="me-3" />
-              <p class="mb-0">Cocody, Riviera Bonoumin Rue i61, Abidjan, Côte d'Ivoire</p>
-            </div>
-          </div>
+ 
+<div class="box-contact-red">
+    <h3 class="heading-ag-xl color-white mb-3"><?= htmlspecialchars($contact_translations['heading']) ?></h3>
+    <div class="paragraph-rubik-md-r color-white mb-4"><?= htmlspecialchars($contact_translations['description']) ?></div>
+    <p class="sub-heading-ag-xl color-white mb-4">
+        <img src="assets/imgs/pages/contact/email.png" alt="<?= htmlspecialchars($contact_translations['email']['label']) ?>" class="me-3" />
+        <?= htmlspecialchars($contact_translations['email']['value']) ?>
+    </p>
+    <p class="sub-heading-ag-xl color-white mb-4">
+        <img src="assets/imgs/pages/contact/phone.png" alt="<?= htmlspecialchars($contact_translations['phone']['label']) ?>" class="me-3" />
+        <?= htmlspecialchars($contact_translations['phone']['value']) ?>
+    </p>
+    <div class="sub-heading-ag-xl color-white d-flex align-items-center mb-4">
+        <img src="assets/imgs/pages/contact/address_corrected.png" alt="<?= htmlspecialchars($contact_translations['address']['label']) ?>" class="me-3" />
+        <p class="mb-0"><?= htmlspecialchars($contact_translations['address']['value']) ?></p>
+    </div>
+</div>
+
         </div>
         <div class="col-lg-7">
           <div class="form-contact-us">
@@ -53,11 +62,11 @@
               </svg>
             </div>
             <div class="card-info">
-              <h6 class="sub-heading-ag-md mb-3">Horaires d'ouverture</h6>
-              <p class="paragraph-rubik-r">LUN-VEN : 8h - 17h</p>
-              <p class="paragraph-rubik-r">SAMEDI : 9h - 12h</p>
-              <p class="paragraph-rubik-r">DIMANCHE : Fermé</p>
-            </div>
+    <h6 class="sub-heading-ag-md mb-3"><?= htmlspecialchars($contact_translations['opening_hours']['heading']) ?></h6>
+    <p class="paragraph-rubik-r"><?= htmlspecialchars($contact_translations['opening_hours']['weekdays']) ?></p>
+    <p class="paragraph-rubik-r"><?= htmlspecialchars($contact_translations['opening_hours']['saturday']) ?></p>
+    <p class="paragraph-rubik-r"><?= htmlspecialchars($contact_translations['opening_hours']['sunday']) ?></p>
+</div>
           </div>
         </div>
         <div class="col-lg-4">
@@ -69,9 +78,9 @@
               </svg>
             </div>
             <div class="card-info">
-              <h6 class="heading-ag-lg">Adresse</h6>
-              <p class="paragraph-rubik-r">Cocody, Riviera Bonoumin, Rue i61, Abidjan, Côte d'Ivoire</p>
-              <a href="https://maps.app.goo.gl/xNwaEZcmcU5LNZV87" target="blank" class="paragraph-rubik-r">Voir l'emplacement <svg width="31" height="8" viewBox="0 0 31 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <h6 class="heading-ag-lg"><?= htmlspecialchars($contact_translations['company_info']['address']['heading']) ?></h6>
+              <p class="paragraph-rubik-r"><?= htmlspecialchars($contact_translations['company_info']['address']['content']) ?></p>
+              <a href="https://maps.app.goo.gl/xNwaEZcmcU5LNZV87" target="blank" class="paragraph-rubik-r"><?= htmlspecialchars($contact_translations['company_info']['address']['link_text']) ?> <svg width="31" height="8" viewBox="0 0 31 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M30.3536 4.35356C30.5488 4.15829 30.5488 3.84171 30.3536 3.64645L27.1716 0.464468C26.9763 0.269206 26.6597 0.269206 26.4645 0.464468C26.2692 0.659731 26.2692 0.976313 26.4645 1.17158L29.2929 4L26.4645 6.82843C26.2692 7.02369 26.2692 7.34027 26.4645 7.53554C26.6597 7.7308 26.9763 7.7308 27.1716 7.53554L30.3536 4.35356ZM-4.37114e-08 4.5L30 4.5L30 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="" />
                 </svg>
               </a>
@@ -86,9 +95,12 @@
               </svg>
             </div>
             <div class="card-info">
-              <h6 class="sub-heading-ag-md">Contactez-nous</h6>
-              <p class="paragraph-rubik-r">Téléphone : (225) 0554 631 663</p>
-              <p class="paragraph-rubik-r">Email : <a href="mailto:info@kronikxhealth.com">info@kronikxhealth.com</a>
+              <h6 class="sub-heading-ag-md"><?= htmlspecialchars($contact_translations['heading_contact_us']) ?></h6>
+              <p class="paragraph-rubik-r"> <?= htmlspecialchars($contact_translations['phone_label']) ?> : <?= htmlspecialchars($contact_translations['phone_value']) ?></p>
+              <p class="paragraph-rubik-r">  <?= htmlspecialchars($contact_translations['email_label']) ?> : 
+    <a href="mailto:<?= htmlspecialchars($contact_translations['email_value']) ?>">
+        <?= htmlspecialchars($contact_translations['email_value']) ?>
+    </a>
               </p>
               <!-- <a href="#" class="paragraph-rubik-r">Formulaire de contact
 

@@ -10,49 +10,61 @@ use PHPMailer\PHPMailer\Exception;
 
 require '../vendor/autoload.php';
 
+// Charger la langue sélectionnée
+session_start();
+$lang = isset($_GET['lang']) ? $_GET['lang'] : (isset($_SESSION['lang']) ? $_SESSION['lang'] : 'fr');
+$lang_path = "../languages/{$lang}/contact/contact.php";
+
+// Charger les traductions ou utiliser une langue par défaut
+if (file_exists($lang_path)) {
+    $translations = include $lang_path;
+} else {
+    $translations = include "../languages/fr/contact/contact.php"; // Langue par défaut
+}
+
 // Initialiser un tableau pour les erreurs
 $errors = [];
 
 // Récupération des données du formulaire et validation
-$name = htmlspecialchars($_POST['user']);
-$email = htmlspecialchars($_POST['email']);
-$phone = htmlspecialchars($_POST['phone']);
-$subject = htmlspecialchars($_POST['note']) ?? 'Objet non spécifié';
-$message = htmlspecialchars($_POST['message']);
+$name = htmlspecialchars(isset($_POST['user']) ? $_POST['user'] : '');
+$email = htmlspecialchars(isset($_POST['email']) ? $_POST['email'] : '');
+$phone = htmlspecialchars(isset($_POST['phone']) ? $_POST['phone'] : '');
+$subject = htmlspecialchars(isset($_POST['note']) ? $_POST['note'] : (isset($translations['defaults']['subject']) ? $translations['defaults']['subject'] : 'Objet non spécifié'));
+$message = htmlspecialchars(isset($_POST['message']) ? $_POST['message'] : '');
 
 // Vérification des champs obligatoires
 if (empty($name)) {
-    $errors['user'] = 'Veuillez entrer votre nom.';
+    $errors['user'] = isset($translations['errors']['user']) ? $translations['errors']['user'] : 'Veuillez entrer votre nom.';
 }
 if (empty($email)) {
-    $errors['email'] = 'Veuillez entrer votre adresse e-mail.';
+    $errors['email'] = isset($translations['errors']['email_required']) ? $translations['errors']['email_required'] : 'Veuillez entrer une adresse e-mail.';
 } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    $errors['email'] = 'Adresse e-mail invalide.';
+    $errors['email'] = isset($translations['errors']['email_invalid']) ? $translations['errors']['email_invalid'] : 'Adresse e-mail invalide.';
 }
 if (empty($phone)) {
-    $errors['phone'] = 'Veuillez entrer votre numéro de téléphone.';
+    $errors['phone'] = isset($translations['errors']['phone']) ? $translations['errors']['phone'] : 'Veuillez entrer votre numéro de téléphone.';
 }
 if (empty($message)) {
-    $errors['message'] = 'Veuillez entrer votre message.';
+    $errors['message'] = isset($translations['errors']['message']) ? $translations['errors']['message'] : 'Veuillez entrer votre message.';
 }
 
 if (!empty($errors)) {
-    session_start();
     $_SESSION['errors'] = $errors;
     $_SESSION['old'] = $_POST;
-    header("location: ../contact.php");
+    header("location: ../contact?lang=" . htmlspecialchars($lang));
     exit;
 }
 
+// Charger les traductions des libellés
+$labels = isset($translations['labels']) ? $translations['labels'] : [];
+
 // Construire le message de l'email
 $email_message = "
-Nom : $name
-Email : $email
-Téléphone : $phone
-Objet : $subject
-
-Message :
-$message
+<strong>" . (isset($labels['name']) ? $labels['name'] : 'Nom') . " :</strong> $name<br>
+<strong>" . (isset($labels['email']) ? $labels['email'] : 'Email') . " :</strong> $email<br>
+<strong>" . (isset($labels['phone']) ? $labels['phone'] : 'Téléphone') . " :</strong> $phone<br>
+<strong>" . (isset($labels['subject']) ? $labels['subject'] : 'Objet') . " :</strong> $subject<br><br>
+<strong>" . (isset($labels['message']) ? $labels['message'] : 'Message') . " :</strong><br>$message
 ";
 
 $mail = new PHPMailer(true);
@@ -62,36 +74,30 @@ try {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'levisble@gmail.com';
-    $mail->Password = 'iruallnurlzqvkto'; //ce{Ne0#YQr2& Mot de passe Gmail ou mot de passe d'application
+    $mail->Password = 'iruallnurlzqvkto'; // Mot de passe Gmail ou mot de passe d'application
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
-    $mail->setFrom('levisble@gmail.com', 'Nom de l\'expéditeur');
-    // $mail->addAddress('levisble@gmail.com');
-    $mail->addReplyTo('levisble@gmail.com', 'Support Kronik-X Health');
+    $mail->setFrom('levisble@gmail.com', (isset($translations['from_name']) ? $translations['from_name'] : 'Kronik-X Health'));
+    $mail->addReplyTo('levisble@gmail.com', (isset($translations['reply_to_name']) ? $translations['reply_to_name'] : 'Support Kronik-X Health'));
     $mail->addAddress('levisble@gmail.com');
     $mail->addReplyTo($email, $name);
 
     $mail->CharSet = 'UTF-8';
     $mail->Encoding = 'base64';
     $mail->isHTML(true);
-    $mail->Subject = 'Nouvelle demande de contact';
+    $mail->Subject = isset($translations['email_subject']) ? $translations['email_subject'] : 'Nouvelle demande de contact';
     $mail->Body = nl2br($email_message);
-    $mail->AltBody = $email_message;
+    $mail->AltBody = strip_tags($email_message);
 
     $mail->send();
-    header("location: ../mail-success");
+    header("location: ../mail-success?lang=" . htmlspecialchars($lang));
     exit;
 } catch (Exception $e) {
-    session_start();
     $_SESSION['mail_error'] = $mail->ErrorInfo;
-    header("location: ../contact");
+    header("location: ../contact?lang=" . htmlspecialchars($lang));
     exit;
 }
-
-
-
-    
 
 // ~4V%nDt=e]P+(suppot) Adresses email génériques pour un projet
 // Adresses générales pour contact :

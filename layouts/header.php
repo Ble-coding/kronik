@@ -34,14 +34,8 @@
                             </ul>
                         </li> -->
                         <li class="nav-item"><a class="nav-link fw-medium" href="./programs">Programmes</a></li>
-                        <!-- <li class="nav-item dropdown menu-item-has-children">
-                            <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programmes</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="incubation.php">Programme d’Incubation</a></li>
-                                <li><a class="dropdown-item" href="pilotes.php">Projets Pilotes</a></li>
-                                <li><a class="dropdown-item" href="formation.php">Formation et Renforcement de Capacités</a></li>
-                            </ul>
-                        </li> -->
+                      
+                        
                         <li class="nav-item"><a class="nav-link fw-medium" href="./contact">Contactez-Nous</a></li>
                         <!-- <li class="nav-item dropdown menu-item-has-children">
                             <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contactez-Nous</a>
@@ -50,6 +44,30 @@
                                 <li><a class="dropdown-item" href="localisation.php">Localisation et informations</a></li>
                             </ul>
                         </li> -->
+
+                        <li class="nav-item dropdown menu-item-has-children">
+    <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <?php if ($lang === 'fr'): ?>
+            <img src="assets/imgs/template/fr.png" class="me-1" alt="Français" > Français
+        <?php elseif ($lang === 'en'): ?>
+            <img src="assets/imgs/template/us.png" class="me-1" alt="Anglais" > Anglais
+        <?php endif; ?>
+    </a>
+    <ul class="dropdown-menu">
+        <li>
+            <a class="dropdown-item" href="?lang=fr">
+                <img src="assets/imgs/template/fr.png" class="me-1" alt="Français" > Français
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="?lang=en">
+                <img src="assets/imgs/template/us.png" class="me-1" alt="Anglais" > Anglais
+            </a>
+        </li>
+    </ul>
+</li>
+
+
                     </ul>
                     <div class="d-flex align-items-center">
                         <a href="javascript:void(0)" class="menu-tigger btn-navbar px-2 d-flex align-items-center justify-content-center btn-menu">
@@ -149,6 +167,31 @@
                             <li><a class="dropdown-item" href="evenements.php">Événements</a></li>
                         </ul>
                     </li> -->
+
+
+                    <li class="nav-item dropdown menu-item-has-children">
+    <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <?php if ($lang === 'fr'): ?>
+            <img src="assets/imgs/template/fr.png" class="me-1" alt="Français" > Français
+        <?php elseif ($lang === 'en'): ?>
+            <img src="assets/imgs/template/us.png" class="me-1" alt="Anglais" > Anglais
+        <?php endif; ?>
+    </a>
+    <ul class="dropdown-menu">
+        <li>
+            <a class="dropdown-item" href="?lang=fr">
+                <img src="assets/imgs/template/fr.png" class="me-1" alt="Français" > Français
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="?lang=en">
+                <img src="assets/imgs/template/us.png" class="me-1" alt="Anglais" > Anglais
+            </a>
+        </li>
+    </ul>
+</li>
+
+
 
                     <!-- Contact -->
                     <li class="nav-item">

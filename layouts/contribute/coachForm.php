@@ -1,16 +1,8 @@
 
-<section class="box-section box-contact-section-2">
-  <div class="container" data-aos="fade-up">
-    <h1 class="heading-jakarta-55 dark-950 mb-5">
-      Devenir Coach
-    </h1>
-    <p class="p-classik mb-4">
-      Merci de votre intérêt à rejoindre notre équipe en tant que coach pour Kronik X Health. Veuillez remplir ce formulaire pour nous permettre de mieux comprendre vos compétences et votre expertise.
-    </p>
+<?php
+      // Charger les traductions pour le formulaire
+$form_translations = include __DIR__ . "/../../languages/{$lang}/contribute/coachForm.php";
 
-    <div class="col-lg-12">
-      <div class="form-contact-us">
-      <?php
 if (!isset($_SESSION)) {
     session_start();
 }
@@ -24,6 +16,18 @@ unset($_SESSION['coach_form_old']);
 
 error_log("errors_coach on form display: " . print_r($errors_coach, true));
 ?>
+<section class="box-section box-contact-section-2">
+  <div class="container" data-aos="fade-up">
+    <h1 class="heading-jakarta-55 dark-950 mb-5">
+    <?= htmlspecialchars($form_translations['title']) ?>
+</h1>
+<p class="p-classik mb-4">
+    <?= htmlspecialchars($form_translations['description']) ?>
+</p>
+
+    <div class="col-lg-12">
+      <div class="form-contact-us">
+ 
 
 <form action="mail/coachMail.php" method="post" enctype="multipart/form-data">
   <!-- Section 1: Informations Personnelles -->
