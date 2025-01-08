@@ -81,12 +81,23 @@
                                 </button>
                             </h5>
                             <div class="accordion-collapse collapse" id="collapseExamples" aria-labelledby="headingExamples" data-bs-parent="#accordionLMICs">
-                                <div class="accordion-body">
-                                    <strong>Afrique :</strong> Côte d’Ivoire, Ghana, Kenya, Nigeria, Tanzanie. <br />
-                                    <strong>Asie :</strong> Inde, Bangladesh, Indonésie, Philippines. <br />
-                                    <strong>Amérique Latine et Caraïbes :</strong> Bolivie, Honduras, Haïti. <br />
-                                    <strong>Moyen-Orient et Afrique du Nord :</strong> Égypte, Maroc, Tunisie.
-                                </div>
+                            <div class="accordion-body">
+    <strong>Afrique :</strong> 
+    Burundi, Mali, Niger, République Démocratique du Congo (RDC), Soudan du Sud (Revenu faible). <br />
+    Côte d’Ivoire, Ghana, Kenya, Sénégal, Zimbabwe (Revenu intermédiaire inférieur). <br />
+    Afrique du Sud, Botswana, Maroc, Namibie, Tunisie (Revenu intermédiaire supérieur). <br />
+    
+    <strong>Asie :</strong> 
+    Afghanistan, Népal, Yémen (Revenu faible). <br />
+    Bangladesh, Cambodge, Myanmar, Pakistan, Vietnam (Revenu intermédiaire inférieur). <br />
+    Inde, Indonésie, Philippines, Sri Lanka, Thaïlande (Revenu intermédiaire supérieur). <br />
+    
+    <strong>Amérique Latine et Caraïbes :</strong> 
+    Haïti (souvent revenu faible). <br />
+    Honduras, Nicaragua, Paraguay, Salvador (Revenu intermédiaire inférieur). <br />
+    Brésil, Colombie, Mexique, Pérou, République Dominicaine (Revenu intermédiaire supérieur). <br />
+</div>
+
                             </div>
                         </div>
                     </div>
