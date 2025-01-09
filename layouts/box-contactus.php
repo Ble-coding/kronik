@@ -13,8 +13,14 @@
         </p>
         <p class="hour-work-2 text-md-medium neutral-1000">
         <strong><?= htmlspecialchars($translations['phone_label']) ?> : </strong>
-            <a href="tel:<?= htmlspecialchars($translations['phone_link']) ?>">
+            <a href="callto:<?= htmlspecialchars($translations['phone_link']) ?>">
                 <?= htmlspecialchars($translations['phone']) ?>
+            </a>
+        </p>
+        <p class="hour-work-2 text-md-medium neutral-1000">
+        <strong><?= htmlspecialchars($translations['email_label']) ?> : </strong>
+            <a href="mailto:<?= htmlspecialchars($translations['email_link']) ?>">
+                <?= htmlspecialchars($translations['email']) ?>
             </a>
         </p>
     </div>

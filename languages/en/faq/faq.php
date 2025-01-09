@@ -38,7 +38,7 @@ return [
         [
             'title' => "How can I contact you for more information?",
             'content' => "<ul>
-                            <li>Email: <a href='mailto:info@kronikxhealth.com'>info@kronikxhealth.com</a></li>
+                            <li>Email: <a href='mailto:info@kxhealth.org'>info@kxhealth.org</a></li>
                             <li>Phone: <a href='tel:+2250554631663'>(225) 0554 631 663</a></li>
                             <li>Address: Cocody, Riviera Bonoumin Rue i61, Abidjan, Côte d'Ivoire</li>
                           </ul>"

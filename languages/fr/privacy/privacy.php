@@ -83,7 +83,7 @@ return [
             'title' => '8. Contact',
             'content' => 'Pour toute question ou préoccupation concernant notre politique de confidentialité, veuillez nous contacter à :',
             'details' => [
-                '<strong>Adresse e-mail :</strong> <a href="mailto:info@kronikxhealth.com">info@kronikxhealth.com</a>',
+                '<strong>Adresse e-mail :</strong> <a href="mailto:info@kxhealth.org">info@kxhealth.org</a>',
                 '<strong>Téléphone :</strong> <a href="tel:+2250554631663">+225 0554 631 663</a>',
                 '<strong>Adresse :</strong> Cocody, Riviera Bonoumin Rue i61 Abidjan, Côte d\'Ivoire',
             ],

@@ -14,4 +14,7 @@ return [
         'address_label' => 'Adresse',
         'hours_label' => 'Horaires',
         'phone_label' => 'Téléphone',
+        'email_label' => 'Email',
+        'email' => 'info@kxhealth.org',
+        'email_link' => 'info@kxhealth.org',
 ];

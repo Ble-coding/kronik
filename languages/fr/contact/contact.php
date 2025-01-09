@@ -5,7 +5,7 @@ return [
     'description' => 'Contactez-nous pour toute question ou assistance.',
     'email' => [
         'label' => 'Email',
-        'value' => 'info@kronikxhealth.com',
+        'value' => 'info@kxhealth.org',
     ],
     'phone' => [
         'label' => 'Téléphone',
@@ -33,7 +33,7 @@ return [
     'phone_label' => 'Téléphone',
     'phone_value' => '(225) 0554 631 663',
     'email_label' => 'Email',
-    'email_value' => 'info@kronikxhealth.com',
+    'email_value' => 'info@kxhealth.org',
 
     'labels' => [
         'name' => 'Nom',

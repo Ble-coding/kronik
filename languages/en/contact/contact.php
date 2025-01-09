@@ -5,7 +5,7 @@ return [
     'description' => 'Contact us for any questions or assistance.',
     'email' => [
         'label' => 'Email',
-        'value' => 'info@kronikxhealth.com',
+        'value' => 'info@kxhealth.org',
     ],
     'phone' => [
         'label' => 'Phone',
@@ -33,7 +33,7 @@ return [
     'phone_label' => 'Phone',
     'phone_value' => '(225) 0554 631 663',
     'email_label' => 'Email',
-    'email_value' => 'info@kronikxhealth.com',
+    'email_value' => 'info@kxhealth.org',
 'labels' => [
         'name' => 'Name',
         'email' => 'Email',

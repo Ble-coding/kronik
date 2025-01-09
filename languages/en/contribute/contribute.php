@@ -139,7 +139,7 @@ return [
         'details' => [
             'email' => [
                 'label' => 'Email:',
-                'value' => 'mentors@kronikxhealth.ci',
+                'value' => 'mentor@kxhealth.org',
             ],
             'phone' => [
                 'label' => 'Phone:',
@@ -274,7 +274,7 @@ return [
     'contact_info_coach' => [
         'title' => 'Contact for More Information',
         'description' => 'For any questions or requests for information, contact our team:',
-        'email' => 'coaches@kroniklab.ci',
+        'email' => 'coach@kxhealth.org',
         'phone' => '+225 01 23 45 67 89',
     ],
     'partner_title' => 'Become a Partner at Kronik X Health',
@@ -366,7 +366,7 @@ return [
     'contact_info_partner' => [
         'title' => 'Contact for more information',
         'description' => 'For any questions or requests for information, contact our team:',
-        'email' => 'partners@kronikxhealth.ci',
+        'email' => 'partners@kxhealth.org',
         'phone' => '+225 01 23 45 67 89',
         'address' => 'Abidjan, Côte d’Ivoire',
     ],

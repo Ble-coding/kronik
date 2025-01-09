@@ -16,7 +16,7 @@ return [
     'faq' => "Faqs",
     'stay_in_touch' => "Stay in touch",
     'phone' => "(225) 0554 631 663",
-    'email' => "info@kronikxhealth.com",
+    'email' => "info@kxhealth.org",
     'address' => "Cocody, Riviera Bonoumin Rue i61 Abidjan, Côte d'Ivoire",
     'copyright' => "© Copyright",
     'all_rights_reserved' => "All rights reserved by",
