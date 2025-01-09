@@ -69,4 +69,5 @@ return [
         'business_model' => 'Le modèle économique est requis.',
         'consent' => 'Vous devez accepter les termes et conditions.',
     ],
+    'email_subject' => 'Nouvelle candidature Kronik-X Health',  
 ];

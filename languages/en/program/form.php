@@ -69,4 +69,5 @@ return [
         'business_model' => 'The business model is required.',
         'consent' => 'You must agree to the terms and conditions.',
     ],
+   'email_subject' => 'New Kronik-X Health Application',
 ];
