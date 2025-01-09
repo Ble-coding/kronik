@@ -4,12 +4,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
-                    <a class="navbar-brand pe-4" href="/"><img src="assets/imgs/template/kronik_resized_145x56.png" alt /></a>
-                    <?php
+                <?php
 // Détection de la langue courante
 $lang = $_SESSION['lang'] ?? 'en'; // Exemple : utiliser une session pour gérer la langue
 $footer_translations = include __DIR__ . "/../languages/{$lang}/footer.php";
 ?>
+                    <a class="navbar-brand pe-4" href="  <?= generate_url('./', $lang) ?>"><img src="assets/imgs/template/kronik_resized_145x56.png" alt /></a>
+    
                     <p class="paragraph-base color-white pt-4 pb-2">
     <?= htmlspecialchars($footer_translations['message']) ?>
 </p>
@@ -49,12 +50,13 @@ $footer_translations = include __DIR__ . "/../languages/{$lang}/footer.php";
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="presentation.php">Présentation concise</a> -->
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="statistiques.php">Statistiques Clés</a> -->
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="programmes.php">Nos Programmes en un coup d'œil</a> -->
-                        <a class="hover-effect paragraph-base grey-100 pt-2" href="./about"><?= htmlspecialchars($footer_translations['about']) ?></a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="  <?= generate_url('./about', $lang) ?>"><?= htmlspecialchars($footer_translations['about']) ?></a>
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="./about/mission">Notre Mission</a> -->
-                        <a class="hover-effect paragraph-base grey-100 pt-2" href="./contact"><?= htmlspecialchars($footer_translations['contact']) ?></a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="
+                          <?= generate_url('./contact', $lang) ?>"><?= htmlspecialchars($footer_translations['contact']) ?></a>
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="/">Actualités</a> -->
-                        <a class="hover-effect paragraph-base grey-100 pt-2" href="./programs"><?= htmlspecialchars($footer_translations['programs']) ?></a>
-                        <a class="hover-effect paragraph-base grey-100 pt-2" href="./lmic"><?= htmlspecialchars($footer_translations['lmic']) ?></a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="  <?= generate_url('./programs', $lang) ?>"><?= htmlspecialchars($footer_translations['programs']) ?></a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="  <?= generate_url('./lmic', $lang) ?>"><?= htmlspecialchars($footer_translations['lmic']) ?></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
@@ -63,10 +65,10 @@ $footer_translations = include __DIR__ . "/../languages/{$lang}/footer.php";
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="programme-education.php">Éducation</a> -->
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="programme-sante.php">Santé</a> -->
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="/">Formation</a> <a class="hover-effect paragraph-base grey-100 pt-2" href="/formation/formation-en-ligne">Formation en Ligne</a> -->
-                        <a class="hover-effect paragraph-base grey-100 pt-2" href="./contribute#pills-mentorat"><?= htmlspecialchars($footer_translations['mentor']) ?></a>
-        <a class="hover-effect paragraph-base grey-100 pt-2" href="./contribute#pills-coach"><?= htmlspecialchars($footer_translations['coach']) ?></a>
-        <a class="hover-effect paragraph-base grey-100 pt-2" href="./contribute#pills-partner"><?= htmlspecialchars($footer_translations['partner']) ?></a>
-        <a class="hover-effect paragraph-base grey-100 pt-2" href="./faq"><?= htmlspecialchars($footer_translations['faq']) ?></a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="<?= generate_url('./contribute#pills-mentorat', $lang) ?>"><?= htmlspecialchars($footer_translations['mentor']) ?></a>
+        <a class="hover-effect paragraph-base grey-100 pt-2" href="<?= generate_url('./contribute#pills-coach', $lang) ?>"><?= htmlspecialchars($footer_translations['coach']) ?></a>
+        <a class="hover-effect paragraph-base grey-100 pt-2" href="<?= generate_url('./contribute#pills-partner', $lang) ?>"><?= htmlspecialchars($footer_translations['partner']) ?></a>
+        <a class="hover-effect paragraph-base grey-100 pt-2" href="<?= generate_url('./faq', $lang) ?>"><?= htmlspecialchars($footer_translations['faq']) ?></a>
                     </div>
                 </div>
 
@@ -118,8 +120,8 @@ $footer_translations = include __DIR__ . "/../languages/{$lang}/footer.php";
     </div>
     <div class="col d-flex justify-content-end">
         <ul class="menu-footer">
-            <li><a href="./terms"><?= htmlspecialchars($footer_translations['conditions']) ?></a></li>
-            <li><a href="./privacy"><?= htmlspecialchars($footer_translations['privacy']) ?></a></li>
+            <li><a href="<?= generate_url('./terms', $lang) ?>"><?= htmlspecialchars($footer_translations['conditions']) ?></a></li>
+            <li><a href="<?= generate_url('./privacy', $lang) ?>"><?= htmlspecialchars($footer_translations['privacy']) ?></a></li>
         </ul>
     </div>
 </div>

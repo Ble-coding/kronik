@@ -162,7 +162,7 @@ try {
     $mail->addReplyTo('levisble@gmail.com', $translations['reply_to_name'] ?? 'Support Kronik-X Health');
     $mail->addAddress('levisble@gmail.com');
     $mail->addReplyTo($email, $full_name);
-
+  
     // Contenu de l'email
     $mail->CharSet = 'UTF-8';
     $mail->Encoding = 'base64';

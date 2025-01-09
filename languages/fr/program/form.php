@@ -23,7 +23,7 @@ return [
         'prototype_demo' => 'Lien vers une vidéo ou une plateforme démonstrative',
     ],
     'section_titles' => [
-     'general_info' => '1. Informations Générales sur le Projet',
+     'project_info' => '1. Informations Générales sur le Projet',
      'team_info' => '2. Informations sur l’Équipe',
      'impact_and_business_model' => '3. Impact et Modèle Économique',
      'partnerships_and_resources' => '4. Partenariats et Ressources',

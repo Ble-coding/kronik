@@ -7,8 +7,21 @@ set_time_limit(300);
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
+  
 require '../vendor/autoload.php';
+
+
+// Charger la langue sélectionnée
+session_start();
+$lang = isset($_GET['lang']) ? $_GET['lang'] : (isset($_SESSION['lang']) ? $_SESSION['lang'] : 'fr');
+$lang_path = "../languages/{$lang}/program/form.php";
+
+// Charger les traductions ou utiliser une langue par défaut
+if (file_exists($lang_path)) {
+    $translations = include $lang_path;
+} else {
+    $translations = include "../languages/fr/program/form.php"; // Langue par défaut
+}
 
 session_start();
 $errors = [];
