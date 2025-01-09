@@ -8,16 +8,18 @@ $about_translations = include __DIR__ . "/../../languages/{$lang}/home/about.php
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-lg-6 mb-4">
-                        <div class="box-happy-customers">
-                            <div class="box-happy-img-1">
-                            <img class="wow img-custom-anim-left" src="assets/imgs/pages/home5/medecine_afro.jpg" alt="Kronik" />
-                                <!-- <img src="assets/imgs/pages/home5/kronx_resized_322x407.jpg" alt="Kronik" data-aos="fade-up" data-aos-duration="200" /> -->
+                    
+                    <div class="position-relative d-inline-block w-100">
+                            <div class="image-faq-1">
+                                <!-- <img class="wow img-custom-anim-left" src="assets/imgs/pages/home5/medecine_afro.jpg" alt="Kronik" /> -->
+                                <img src="assets/imgs/pages/home5/kronx_resized_322x407.jpg" alt="Kronik" data-aos="fade-up" data-aos-duration="200" />
                             </div>
-                            <div class="box-happy-img-2">
-                            <img class="wow img-custom-anim-right" src="assets/imgs/pages/home5/medecine.jpg" alt="Kronik" />
-                                <!-- <img src="assets/imgs/pages/home5/test_kronik_resized.jpg" alt="Kronik" data-aos="fade-up" data-aos-duration="1000" /> -->
+                            <div class="image-faq-2">
+                                <!-- <img class="wow img-custom-anim-right" src="assets/imgs/pages/home5/medecine.jpg" alt="Kronik" /> -->
+                                <img src="assets/imgs/pages/home5/test_kronik_resized.jpg" alt="Kronik" data-aos="fade-up" data-aos-duration="1000" />
                             </div>
                         </div>
+                       
                     </div>
                     <div class="col-lg-6 mb-4">
     <div class="banner-small-title-black"> <?= htmlspecialchars($about_translations['small_title']) ?></div>
