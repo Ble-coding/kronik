@@ -4,7 +4,15 @@
                 <div class="header-navar">
                     <a class="navbar-brand pe-4" href="./"><img src="assets/imgs/template/kronik_resized.png" alt /></a>
                     <ul class="navbar-nav m-auto gap-1 align-items-lg-center">
-                        <li class="nav-item"><a class="nav-link fw-medium" href="/">Accueil</a></li>
+                    <?php
+// Détection de la langue courante
+$lang = $_SESSION['lang'] ?? 'en'; // Exemple : définir la langue via une session (ou une autre méthode)
+
+// Charger les traductions pour le header
+$header_translations = include __DIR__ . "/../languages/{$lang}/header.php";
+?>
+                     <li class="nav-item">  <a class="nav-link fw-medium" href="/"><?= htmlspecialchars($header_translations['home']) ?></a></li>
+                    
                         <!-- <li class="nav-item dropdown menu-item-has-children">
                             <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
                             <ul class="dropdown-menu">
@@ -13,7 +21,8 @@
                                 <li><a class="dropdown-item" href="programmes.php">Nos Programmes en un coup d'œil</a></li>
                             </ul>
                         </li> -->
-                        <li class="nav-item"><a class="nav-link fw-medium" href="./about">À Propos</a></li>
+                        <li class="nav-item">  <a class="nav-link fw-medium" href="./about"><?= htmlspecialchars($header_translations['about']) ?></a></li>
+
                         <!-- <li class="nav-item dropdown menu-item-has-children">
                             <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">À Propos</a>
                             <ul class="dropdown-menu">
@@ -23,7 +32,7 @@
                                 <li><a class="dropdown-item" href="equipe.php">Notre Équipe et Partenaires</a></li>
                             </ul>
                         </li> -->
-                        <li class="nav-item"><a class="nav-link fw-medium" href="./lmic">LMICs</a></li>
+                        <li class="nav-item">   <a class="nav-link fw-medium" href="./lmic"><?= htmlspecialchars($header_translations['lmic']) ?></a></li>
                         <!-- <li class="nav-item dropdown menu-item-has-children">
                             <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">LMICs</a>
                             <ul class="dropdown-menu">
@@ -33,10 +42,10 @@
                                 <li><a class="dropdown-item" href="lmics-actions.php">Nos Actions dans les LMICs</a></li>
                             </ul>
                         </li> -->
-                        <li class="nav-item"><a class="nav-link fw-medium" href="./programs">Programmes</a></li>
+                        <li class="nav-item">  <a class="nav-link fw-medium" href="./programs"><?= htmlspecialchars($header_translations['programs']) ?></a></li>
                       
                         
-                        <li class="nav-item"><a class="nav-link fw-medium" href="./contact">Contactez-Nous</a></li>
+                        <li class="nav-item">  <a class="nav-link fw-medium" href="./contact"><?= htmlspecialchars($header_translations['contact']) ?></a></li>
                         <!-- <li class="nav-item dropdown menu-item-has-children">
                             <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contactez-Nous</a>
                             <ul class="dropdown-menu">
@@ -95,7 +104,7 @@
             </div>
             <div class="offCanvas__side-info mb-30">
                 <ul class="navbar-nav navbar-nav-mobile">
-                    <li class="nav-item"><a class="nav-link fw-medium" href="/">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="/"><?= htmlspecialchars($header_translations['home']) ?></a></li>
                     <!-- <li class="nav-item dropdown menu-item-has-children">
                         <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
                         <ul class="dropdown-menu">
@@ -104,7 +113,7 @@
                             <li><a class="dropdown-item" href="programmes.php">Nos Programmes en un coup d'œil</a></li>
                         </ul>
                     </li> -->
-                    <li class="nav-item"><a class="nav-link fw-medium" href="./about">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="./about"><a class="nav-link fw-medium" href="/"><?= htmlspecialchars($header_translations['about']) ?></a></a></li>
                     <!-- <li class="nav-item dropdown menu-item-has-children">
                         <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">À Propos</a>
                         <ul class="dropdown-menu">
@@ -114,7 +123,7 @@
                             <li><a class="dropdown-item" href="equipe.php">Notre Équipe et Partenaires</a></li>
                         </ul>
                     </li> -->
-                    <li class="nav-item"><a class="nav-link fw-medium" href="./lmic">LMICs</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="./lmic"><a class="nav-link fw-medium" href="/"><?= htmlspecialchars($header_translations['lmic']) ?></a></a></li>
                     <!-- <li class="nav-item dropdown menu-item-has-children">
                         <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">LMICs</a>
                         <ul class="dropdown-menu">
@@ -125,7 +134,7 @@
                         </ul>
                     </li> -->
                     <!-- Programmes -->
-                    <li class="nav-item"><a class="nav-link fw-medium" href="./programs">Programmes</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="./programs"><a class="nav-link fw-medium" href="/"><?= htmlspecialchars($header_translations['programs']) ?></a></a></li>
                     <!-- <li class="nav-item dropdown menu-item-has-children">
                         <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programmes</a>
                         <ul class="dropdown-menu">
@@ -148,7 +157,10 @@
                     </li> -->
 
                     <!-- Mentorat -->
-                    <li class="nav-item"><a class="nav-link fw-medium" href="./contribute">Contribuez à Kronik-X Health</a></li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link fw-medium" href="./contribute"></a> -->
+                      <a class="nav-link fw-medium" href="./contribute"><?= htmlspecialchars($header_translations['contribute']) ?></a>
+                    </li>
                     <!-- <li class="nav-item dropdown menu-item-has-children">
                         <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mentorat</a>
                         <ul class="dropdown-menu">
@@ -168,6 +180,10 @@
                         </ul>
                     </li> -->
 
+                    <!-- Contact -->
+                    <li class="nav-item">
+                    <a class="nav-link fw-medium" href="/"><?= htmlspecialchars($header_translations['contact']) ?></a>
+                    </li>
 
                     <li class="nav-item dropdown menu-item-has-children">
     <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -190,13 +206,6 @@
         </li>
     </ul>
 </li>
-
-
-
-                    <!-- Contact -->
-                    <li class="nav-item">
-                        <a class="nav-link fw-medium" href="./contact">Contact</a>
-                    </li>
 
                 </ul>
             </div>
