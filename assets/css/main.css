@@ -10784,6 +10784,11 @@ h6 {
   overflow: hidden;
 }
 
+
+.box-swiper  .slider-group-7{
+  cursor: pointer;
+}
+
 .box-testimonials {
   padding: 120px 0px;
   background-color: var(--tc-primary-500_2);
