@@ -96,7 +96,7 @@ if (!empty($additional_docs['tmp_name'][0])) {
 if (empty($confirmation)) {
     $errors['confirmation'] = $translations['errors']['confirmation'] ?? 'Vous devez confirmer que les informations sont exactes.';
 }
-
+ 
 // En cas d'erreurs
 if (!empty($errors)) {
     $_SESSION['coach_form_errors'] = $errors;
@@ -188,7 +188,7 @@ try {
             }
         }
     }
-
+  
     // Envoi de l'email
     $mail->send();
     header("location: ../mail-success?lang=" . htmlspecialchars($lang));

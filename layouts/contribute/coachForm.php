@@ -5,7 +5,7 @@ $form_translations = include __DIR__ . "/../../languages/{$lang}/contribute/coac
 
 if (!isset($_SESSION)) {
     session_start();
-} 
+}   
 
 $errors_coach = $_SESSION['coach_form_errors'] ?? [];
 $old_coach = $_SESSION['coach_form_old'] ?? [];

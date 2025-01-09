@@ -64,5 +64,5 @@ return [
         'Business Models' => 'Modèles économiques et planification financière',
         'Regulation' => 'Réglementation en santé numérique',
     ],
-    'email_subject' => 'Nouvelle candidature de coach',
+    'email_subject' => 'Nouvelle candidature de coach',  
 ];

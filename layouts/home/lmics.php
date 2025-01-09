@@ -1,3 +1,8 @@
+<?php
+// Charger les traductions pour la section "lmic"
+$lang = $_SESSION['lang'] ?? 'en'; // Définir la langue via une session ou autre méthode
+$lmic_translations = include __DIR__ . "/../../languages/{$lang}/home/lmics.php";
+?>
 <section class="position-relative overflow-hidden box-section box-about-us-5">
             <div class="container" data-aos="fade-up">
                 <div class="row align-items-center">
@@ -5,16 +10,21 @@
                         <img src="assets/imgs/pages/home5/kronik_health_resized_1024x1024.jpg" alt="Kronik" />
                     </div>
                     <div class="col-lg-6 mb-4">
-                        <div class="banner-small-title-black line-primary-home">LMICs : Transformer la Santé dans les Pays à Revenu Faible et Intermédiaire</div>
-                        <h2 class="heading-3xl mb-30">Créer un Impact Durable dans les LMICs</h2>
-                        <p class="mb-3">Les LMICs (Low- and Middle-Income Countries) représentent environ 85% de la population mondiale. Ces pays font face à des défis de santé uniques, comme une augmentation rapide des maladies chroniques (diabète, hypertension, cancer) et un accès limité aux soins adaptés.</p>
-                        <p class="mb-4">Chez Kronik-X Health, nous aidons à relever ces défis grâce à l’innovation en santé numérique, en incubant des startups locales, lançant des projets pilotes, et renforçant les capacités des systèmes de santé dans les LMICs.</p>
+                        <div class="banner-small-title-black line-primary-home"><?= htmlspecialchars($lmic_translations['section_title']) ?></div>
+                        <h2 class="heading-3xl mb-30">
+                        <?= htmlspecialchars($lmic_translations['heading']) ?>
+                        </h2>
+                        <?php foreach ($lmic_translations['paragraphs'] as $index => $paragraph): ?>
+    <p class="mb-<?= ($index === array_key_last($lmic_translations['paragraphs'])) ? '4' : '3' ?>">
+        <?= htmlspecialchars($paragraph) ?>
+    </p>
+<?php endforeach; ?>
 
-                        <div class="mb-5"></div>
-                        <a href="./lmic" class="btn btn-primary-home">
-                            En savoir plus sur les LMICs
-                            <img src="assets/imgs/template/icons/plus-sm.svg" alt="En savoir plus" />
-                        </a>
+    <div class="mb-5"></div>
+    <a href="./lmic" class="btn btn-primary-home">
+        <?= htmlspecialchars($lmic_translations['button_text']) ?>
+        <img src="assets/imgs/template/icons/plus-sm.svg" alt="<?= htmlspecialchars($lmic_translations['button_text']) ?>" />
+    </a>
                     </div>
                 </div>
             </div>
