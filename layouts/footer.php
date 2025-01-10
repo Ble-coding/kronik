@@ -9,7 +9,7 @@
 $lang = $_SESSION['lang'] ?? 'en'; // Exemple : utiliser une session pour gérer la langue
 $footer_translations = include __DIR__ . "/../languages/{$lang}/footer.php";
 ?>
-                    <a class="navbar-brand pe-4" href="  <?= generate_url('./', $lang) ?>"><img src="assets/imgs/template/kronik_resized_145x56.png" alt /></a>
+                    <a class="navbar-brand pe-4" href="  <?= generate_url('./', $lang) ?>"><img src="assets/imgs/template/kronik_resized.png" alt /></a>
     
                     <p class="paragraph-base color-white pt-4 pb-2">
     <?= htmlspecialchars($footer_translations['message']) ?>
