@@ -1,0 +1,16 @@
+    <!-- Favicon icon-->
+    <link rel="icon" href="/assets/Kronik_reduce_256x256.png" type="image/x-icon">
+     <link rel="shortcut icon" href="/assets/Kronik_reduce_256x256.png" type="image/x-icon">
+<link rel="icon" type="image/x-icon" href="https://kronik.a-car.ci/assets/Kronik_reduce_256x256.png?v=2" />
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="/assets/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/css/vendors/aos.css" />
+    <link rel="stylesheet" href="/assets/css/vendors/magnific-popup.css" />
+    <link rel="stylesheet" href="/assets/fonts/bootstrap-icons/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/assets/fonts/boxicons/boxicons.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    
