@@ -2,7 +2,7 @@
         <nav class="navbar navbar-expand-lg navbar-light w-100">
             <div class="container px-3">
                 <div class="header-navar">
-                    <a class="navbar-brand pe-4" href="./"><img src="/assets/imgs/template/kronik_resized.png" alt /></a>
+                    <a class="navbar-brand pe-4" href="/"><img src="/assets/imgs/template/kronik_resized.png" alt /></a>
                     <ul class="navbar-nav m-auto gap-1 align-items-lg-center">
                     <?php
 // Détection de la langue courante
