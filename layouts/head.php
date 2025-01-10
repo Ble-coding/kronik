@@ -1,7 +1,7 @@
     <!-- Favicon icon-->
     <link rel="icon" href="/assets/Kronik_reduce_256x256.png" type="image/x-icon">
      <link rel="shortcut icon" href="/assets/Kronik_reduce_256x256.png" type="image/x-icon">
-<link rel="icon" type="image/x-icon" href="/assets/Kronik_reduce_256x256.png?v=2" />
+   <link rel="icon" type="image/x-icon" href="/assets/Kronik_reduce_256x256.png?v=2" />
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="/assets/css/vendors/bootstrap.min.css" />
