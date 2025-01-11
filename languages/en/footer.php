@@ -22,4 +22,11 @@ return [
     'all_rights_reserved' => "All rights reserved by",
     'conditions' => "Terms and Conditions",
     'privacy' => "Privacy Policy",
+
+        // ✅ Subscription response messages
+        'success_message' => '✅ You have successfully subscribed to the newsletter.',
+        'already_subscribed' => '⚠️ This email is already subscribed.',
+        'invalid_email' => '❌ Please enter a valid email address.',
+        'security_error' => '❌ Security error. Please try again.'
+    
 ];
