@@ -56,6 +56,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['newsletter_error'] = $footer_translations['invalid_email'];
     }
 
-    header('Location: ' . $_SERVER['HTTP_REFERER'] . '?lang=' . htmlspecialchars($lang) . '#newsletter');
+    header('Location: ' . $_SERVER['HTTP_REFERER'] . '#newsletter');
     exit;
 }
