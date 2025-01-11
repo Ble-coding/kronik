@@ -33,7 +33,7 @@ if (empty($_SESSION['csrf_token'])) {
 <!-- ✅ Formulaire d'inscription -->
 <div class="pt-3" id="newsletter">
     <div class="form-newsletter">
-        <form action="/mail/newsletter.php" method="POST">
+        <form action="mail/newsletter.php?lang=<?= htmlspecialchars($lang) ?>" method="POST">
             <input 
                 type="email" 
                 name="email"
@@ -41,10 +41,7 @@ if (empty($_SESSION['csrf_token'])) {
                 required
                 placeholder="<?= htmlspecialchars($footer_translations['email_placeholder']) ?>" 
             />
-            
-            <!-- ✅ Champ caché pour le token CSRF -->
             <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token']; ?>">
-
             <input 
                 type="submit" 
                 class="btn btn-newsletter" 
@@ -57,20 +54,11 @@ if (empty($_SESSION['csrf_token'])) {
             <p class="text-success"><?= htmlspecialchars($footer_translations['success_message']) ?></p>
             <?php unset($_SESSION['newsletter_success']); ?>
         <?php elseif (isset($_SESSION['newsletter_error'])): ?>
-            <?php
-                // Associer les messages d'erreur
-                $error_messages = [
-                    "❌ Veuillez entrer une adresse e-mail valide." => $footer_translations['invalid_email'],
-                    "⚠️ Cet email est déjà inscrit." => $footer_translations['already_subscribed'],
-                    "❌ Erreur de sécurité. Veuillez réessayer." => $footer_translations['security_error'],
-                ];
-            ?>
-            <p class="text-danger"><?= $error_messages[$_SESSION['newsletter_error']] ?? $_SESSION['newsletter_error'] ?></p>
+            <p class="text-danger"><?= htmlspecialchars($_SESSION['newsletter_error']) ?></p>
             <?php unset($_SESSION['newsletter_error']); ?>
         <?php endif; ?>
     </div>
 </div>
-
                 </div>
                 <div class="col-lg-2 col-md-6">
                 <h3 class="text-footer pb-1"><?= htmlspecialchars($footer_translations['menu_title']) ?></h3>
