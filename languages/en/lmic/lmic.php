@@ -77,5 +77,5 @@ return [
                 'title' => 'Become a partner',
             ],
         ],
-    ],
+    ], 
 ];
