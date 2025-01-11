@@ -199,24 +199,27 @@ function generate_url($path, $lang) {
                     <li class="nav-item dropdown menu-item-has-children">
     <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         <?php if ($lang === 'fr'): ?>
-            <img src="/assets/imgs/template/fr.png" class="me-1" alt="Français" > Français
+            <img src="assets/imgs/template/fr.png" class="me-1" alt="Français"> Français
         <?php elseif ($lang === 'en'): ?>
-            <img src="/assets/imgs/template/us.png" class="me-1" alt="Anglais" > Anglais
+            <img src="assets/imgs/template/us.png" class="me-1" alt="English"> English
         <?php endif; ?>
     </a>
     <ul class="dropdown-menu">
         <li>
             <a class="dropdown-item" href="?lang=fr">
-                <img src="/assets/imgs/template/fr.png" class="me-1" alt="Français" > Français
+                <img src="assets/imgs/template/fr.png" class="me-1" alt="Français">
+                <?php echo $lang === 'fr' ? 'Français' : 'French'; ?>
             </a>
         </li>
         <li>
             <a class="dropdown-item" href="?lang=en">
-                <img src="/assets/imgs/template/us.png" class="me-1" alt="Anglais" > Anglais
+                <img src="assets/imgs/template/us.png" class="me-1" alt="English">
+                <?php echo $lang === 'fr' ? 'Anglais' : 'English'; ?>
             </a>
         </li>
     </ul>
 </li>
+
 
                 </ul>
             </div>
