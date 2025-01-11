@@ -22,4 +22,10 @@ return [
     'all_rights_reserved' => "Tous droits réservés par",
     'conditions' => "Conditions générales",
     'privacy' => "Politique de confidentialité",
+
+    // ✅ Messages de réception
+    'success_message' => '✅ Vous êtes inscrit à la newsletter.',
+    'already_subscribed' => '⚠️ Cet email est déjà inscrit.',
+    'invalid_email' => '❌ Veuillez entrer une adresse e-mail valide.',
+    'security_error' => '❌ Erreur de sécurité. Veuillez réessayer.'
 ];
