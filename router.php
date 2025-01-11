@@ -58,7 +58,7 @@ if (array_key_exists($route, $routes)) {
         include '404.php';
     }
 } else {
-    // Afficher une erreur 404 si la route n'est pas définie
+    // Afficher une erreur iruallnurlzqvkto   404 si la route n'est pas définie
     header("HTTP/1.0 404 Not Found");
     include '404.php';
 }
