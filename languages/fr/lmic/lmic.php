@@ -1,16 +1,16 @@
 <?php
 return [
-    'sub_heading' => 'Explorer les PMA',
+    'sub_heading' => 'Explorer les LMICs',
     'main_heading' => 'Transformer la Santé dans les Pays à Revenu Faible et Intermédiaire',
     'accordion' => [
         'what_lmics' => [
-            'title' => 'Qu’est-ce que les PMA ?',
-            'content' => 'Les <strong>PMA</strong> (Pays à Revenu Faible et Intermédiaire) sont des nations où les revenus par habitant sont inférieurs à ceux des pays à revenu élevé. Ces pays représentent environ 85 % de la population mondiale et font face à des défis de santé uniques, notamment une augmentation rapide des maladies chroniques.',
+            'title' => 'Qu’est-ce que les LMICs ?',
+            'content' => 'Les <strong>LMICs</strong> (Pays à Revenu Faible et Intermédiaire) sont des nations où les revenus par habitant sont inférieurs à ceux des pays à revenu élevé. Ces pays représentent environ 85 % de la population mondiale et font face à des défis de santé uniques, notamment une augmentation rapide des maladies chroniques.',
         ],
         'key_stats' => [
             'title' => 'Statistiques Clés',
             'content' => [
-                '80 % des décès mondiaux dus aux maladies chroniques surviennent dans les PMA (OMS, 2022).',
+                '80 % des décès mondiaux dus aux maladies chroniques surviennent dans les LMICs (OMS, 2022).',
                 '1 adulte sur 9 en Afrique souffre de diabète, une prévalence en forte augmentation.',
                 '80 % des patients hypertendus en Afrique subsaharienne ne sont ni diagnostiqués ni traités.',
                 'En 2020, environ 1,1 million de nouveaux cas de cancer ont été diagnostiqués en Afrique.',
@@ -18,7 +18,7 @@ return [
             ],
         ],
         'why_lmics' => [
-            'title' => 'Pourquoi se concentrer sur les PMA ?',
+            'title' => 'Pourquoi se concentrer sur les LMICs ?',
             'content' => [
                 [
                     'title' => 'Besoins Urgents',
@@ -35,7 +35,7 @@ return [
             ],
         ],
         'examples' => [
-            'title' => 'Exemples de PMA',
+            'title' => 'Exemples de LMICs',
             'content' => '
                 <strong>Afrique :</strong> Burundi, Mali, Niger, République Démocratique du Congo (RDC), Soudan du Sud (Revenu faible). <br>
                 Côte d’Ivoire, Ghana, Kenya, Sénégal, Zimbabwe (Revenu intermédiaire inférieur). <br>
@@ -51,14 +51,14 @@ return [
     ],
     'actions' => [
         'small_title' => 'Nos Actions',
-        'main_title' => 'Nos Actions dans les PMA',
-        'description' => 'Chez <strong>Kronik-X Santé</strong>, nous nous engageons à avoir un impact mesurable dans les pays à revenu faible et intermédiaire (PMA) en nous concentrant sur trois domaines clés :',
+        'main_title' => 'Nos Actions dans les LMICs',
+        'description' => 'Chez <strong>Kronik-X Santé</strong>, nous nous engageons à avoir un impact mesurable dans les pays à revenu faible et intermédiaire (LMICs) en nous concentrant sur trois domaines clés :',
         'list' => [
             'incubating' => '<strong>1. Incuber des startups locales :</strong> Soutenir les innovateurs pour développer des solutions adaptées aux besoins locaux.',
             'piloting' => '<strong>2. Piloter des projets :</strong> Tester et déployer des technologies dans les hôpitaux et cliniques communautaires.',
             'capacity_building' => '<strong>3. Renforcer les capacités :</strong> Offrir des formations sur des technologies telles que l’intelligence artificielle et la télémédecine.',
         ],
-        'call_to_action' => 'Souhaitez-vous faire partie du changement ? Rejoignez-nous pour transformer les soins de santé dans les PMA.',
+        'call_to_action' => 'Souhaitez-vous faire partie du changement ? Rejoignez-nous pour transformer les soins de santé dans les LMICs.',
         'buttons' => [
             'startup' => [
                 'text' => 'Startup',
