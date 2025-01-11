@@ -1,4 +1,5 @@
 <?php
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -55,8 +56,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['newsletter_error'] = $footer_translations['invalid_email'];
     }
 
-    // ✅ Redirection vers le formulaire avec message
-    header('Location: ' . $_SERVER['HTTP_REFERER'] . '#newsletter');
+    header('Location: ' . $_SERVER['HTTP_REFERER'] . '?lang=' . htmlspecialchars($lang) . '#newsletter');
     exit;
 }
-?>

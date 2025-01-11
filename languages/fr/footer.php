@@ -23,10 +23,11 @@ return [
     'conditions' => "Conditions générales",
     'privacy' => "Politique de confidentialité",
     
-    // ✅ Subscription response messages
-    'success_message' => '✅ You have successfully subscribed to the newsletter.',
-    'already_subscribed' => '⚠️ This email is already subscribed.',
-    'invalid_email' => '❌ Please enter a valid email address.',
-    'security_error' => '❌ Security error. Please try again.'
+    'email_placeholder' => "Entrez votre adresse e-mail",
+    'submit_button' => "S'inscrire",
+    'success_message' => '✅ Vous vous êtes inscrit(e) avec succès à la newsletter.',
+    'already_subscribed' => '⚠️ Cet email est déjà inscrit.',
+    'invalid_email' => '❌ Veuillez entrer une adresse e-mail valide.',
+    'security_error' => '❌ Erreur de sécurité. Veuillez réessayer.',
 
 ];
