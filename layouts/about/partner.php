@@ -46,6 +46,9 @@ $partner_translations = include "{$base_path}/languages/{$lang}/about/partner.ph
       <div class="item-partner">
         <img src="/assets/imgs/pages/home5/innov_keneya.png" alt="kronik" />
       </div>
+      <div class="item-partner">
+        <img src="/assets/imgs/pages/home5/snci.png" alt="kronik" />
+      </div>
     
   
 
