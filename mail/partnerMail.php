@@ -180,16 +180,16 @@ $mail = new PHPMailer(true);
 try {
     // Configuration SMTP
     $mail->isSMTP();
-    $mail->Host = 'smtp.kxhealth.org';
+    $mail->Host = 'mail.kxhealth.org';
     $mail->SMTPAuth = true;
-    $mail->Username = '...@kxhealth.org';
-    $mail->Password = ''; // Utilisez un mot de passe d'application
+    $mail->Username = 'partner@kxhealth.org';
+    $mail->Password = 'P@rtn3r$'; // Utilisez un mot de passe d'application
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
-    $mail->setFrom('...@kxhealth.org', 'Kronik-X Health');
-    $mail->addReplyTo('...@kxhealth.org', 'Support Kronik-X Health');
-    $mail->addAddress('...@kxhealth.org');
+    $mail->setFrom('partner@kxhealth.org', 'Kronik-X Health');
+    $mail->addReplyTo('support@kxhealth.org', 'Support Kronik-X Health');
+    $mail->addAddress('support@kxhealth.org');
     $mail->addReplyTo($contact_email, $contact_name);
 
     // Contenu de l'email

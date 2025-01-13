@@ -71,16 +71,16 @@ $mail = new PHPMailer(true);
 
 try {
     $mail->isSMTP();
-    $mail->Host = 'smtp.kxhealth.org';
+    $mail->Host = 'mail.kxhealth.org';
     $mail->SMTPAuth = true;
-    $mail->Username = '...@kxhealth.org';
-    $mail->Password = ''; // Mot de passe Gmail ou mot de passe d'application
+    $mail->Username = 'info@kxhealth.org';
+    $mail->Password = '4d+5A98raIEh'; // Mot de passe Gmail ou mot de passe d'application
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
-    $mail->setFrom('...@kxhealth.org', (isset($translations['from_name']) ? $translations['from_name'] : 'Kronik-X Health'));
-    $mail->addReplyTo('...@kxhealth.org', (isset($translations['reply_to_name']) ? $translations['reply_to_name'] : 'Support Kronik-X Health'));
-    $mail->addAddress('...@kxhealth.org');
+    $mail->setFrom('info@kxhealth.org', (isset($translations['from_name']) ? $translations['from_name'] : 'Kronik-X Health'));
+    $mail->addReplyTo('support@kxhealth.org', (isset($translations['reply_to_name']) ? $translations['reply_to_name'] : 'Support Kronik-X Health'));
+    $mail->addAddress('support@kxhealth.org');
     $mail->addReplyTo($email, $name);
 
     $mail->CharSet = 'UTF-8';
