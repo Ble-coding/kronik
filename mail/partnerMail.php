@@ -213,12 +213,12 @@ if ($additional_docs && !empty($additional_docs['tmp_name'][0])) {
 }
 
     $mail->send();
-    header("location: ../mail-success");
+    header("location: ../mail-success?lang=" . htmlspecialchars($lang));
     exit;
 
 } catch (Exception $e) {
     error_log("Erreur lors de l'envoi de l'email : {$mail->ErrorInfo}");
     $_SESSION['mail_error'] = "Une erreur est survenue lors de l'envoi de l'email.";
-    header("location: ../contribute");
+    header("Location: ../contribute?lang=" . htmlspecialchars($lang) . "#pills-partner");
     exit;
 }
