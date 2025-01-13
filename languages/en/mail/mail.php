@@ -1,15 +1,18 @@
+
 <?php
 return [
     'success' => [
-        'title' => 'Mail Sent Successfully - Kronik-X Health',
-        'heading' => 'Your message has been sent successfully!',
-        'description' => 'Thank you for contacting us. We will get back to you as soon as possible.',
-        'button' => 'Return to the homepage',
+        'title' => 'Email Sent Successfully - Kronik-X Health',
+        'description' => 'Your message has been successfully sent. We will get back to you shortly.',
+        'message' => '✅ Your email was sent successfully!',
+        'details' => 'Thank you for reaching out to us.',
+        'button' => 'Return to Home'
     ],
     'error' => [
-        'title' => 'Error Sending Mail - Kronik-X Health',
-        'heading' => 'An error occurred while sending the mail.',
-        'description' => 'Please check the information provided and try again.',
-        'button' => 'Return to the contact form',
+        'title' => 'Email Sending Failed - Kronik-X Health',
+        'description' => 'An error occurred while sending your message. Please try again.',
+        'message' => '❌ Error sending your email.',
+        'details' => 'Please check your information and try again.',
+        'button' => 'Back to Contact Form'
     ],
 ];
