@@ -1,24 +1,15 @@
+
+
 <?php
 return [
     'title' => 'Devenir Mentor',
     'description' => 'Rejoignez notre programme de mentorat et soutenez les innovateurs en santé numérique dans les LMICs.',
-'section_titles' => [
+    'section_titles' => [
         'general_info' => 'Informations Générales',
         'experience_and_skills' => 'Expérience et Compétences',
         'motivations' => 'Motivations',
         'documents' => 'Documents à Joindre',
         'declaration_and_signature' => 'Déclaration et Signature',
-    ],
-    'labels' => [
-        'expertise' => 'Domaine d\'expertise',
-        'other' => 'Autres',
-        'logo' => 'Joindre votre logo (facultatif) :',
-        'photo' => 'Joindre votre photo professionnelle :',
-        'cv' => 'Joindre un CV ou portfolio (facultatif) :',
-        'confirmation' => 'Je confirme que les informations fournies sont exactes et complètes.',
-    ],
-    'buttons' => [
-        'submit_form' => 'Soumettre le Formulaire',
     ],
     'placeholders' => [
         'full_name' => 'Nom complet',
@@ -34,6 +25,23 @@ return [
         'motivation' => 'Pourquoi souhaitez-vous devenir mentor ?',
         'signatory_name' => 'Nom du signataire',
         'function' => 'Fonction',
+    ],
+    'labels' => [
+        'expertise' => 'Domaine d\'expertise',
+        'other' => 'Autres',
+        'logo' => 'Joindre votre logo (facultatif) :',
+        'photo' => 'Joindre votre photo professionnelle :',
+        'cv' => 'Joindre un CV ou portfolio (facultatif) :',
+        'confirmation' => 'Je confirme que les informations fournies sont exactes et complètes.',
+    ],
+    'expertise_options' => [
+        'IA' => 'Intelligence Artificielle',
+        'Big Data' => 'Big Data',
+        'IoT' => 'Objets connectés',
+        'Strategy' => 'Stratégie',
+    ],
+    'buttons' => [
+        'submit_form' => 'Soumettre le Formulaire',
     ],
     'errors' => [
         'full_name' => 'Le nom complet est requis.',
@@ -52,13 +60,8 @@ return [
         'date' => 'Veuillez entrer une date valide.',
         'confirmation' => 'Vous devez confirmer que les informations fournies sont exactes.',
     ],
-    'expertise_options' => [
-        'IA' => 'Intelligence Artificielle',
-        'Big Data' => 'Big Data',
-        'IoT' => 'Objets connectés',
-        'strategy' => 'Stratégie',
+    'defaults' => [
+        'not_specified' => 'Non spécifié',
     ],
-  'defaults' => [
-    'not_specified' => 'Non spécifié',
- ],
-];
+    'email_subject' => 'Nouvelle candidature de mentor',
+];  
