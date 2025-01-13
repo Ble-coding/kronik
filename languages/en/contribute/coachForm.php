@@ -1,3 +1,4 @@
+
 <?php
 return [
     'title' => 'Become a Coach',
@@ -14,6 +15,8 @@ return [
         'other_expertise_placeholder' => 'Specify',
         'motivation_placeholder' => 'Why do you want to become a coach?',
         'signatory_name_placeholder' => 'Signatory Name',
+        'availability_placeholder' => 'Availability (optional)',
+        'signature_date_placeholder' => 'Signature Date',
     ],
     'labels' => [
         'profile_photo' => 'Profile Photo (accepted formats: .png, .jpg):',
@@ -28,11 +31,12 @@ return [
         'submit_form' => 'Submit the Form',
     ],
     'section_titles' => [
-        'professional_info' => 'Professional Information',
-        'expertise_and_skills' => 'Areas of Expertise and Skills',
-        'motivation' => 'Motivations for Becoming a Coach',
-        'documents' => 'Additional Documents',
-        'declaration_and_signature' => 'Declaration and Signature',
+        'personal_info' => '1. Personal Information',
+        'professional_info' => '2. Professional Information',
+        'expertise_and_skills' => '3. Areas of Expertise and Skills',
+        'motivation' => '4. Motivations for Becoming a Coach',
+        'documents' => '5. Additional Documents',
+        'declaration_and_signature' => '6. Declaration and Signature',
     ],
     'errors' => [
         'full_name' => 'Full name is required.',
@@ -63,5 +67,5 @@ return [
         'Business Models' => 'Economic Models and Financial Planning',
         'Regulation' => 'Digital Health Regulation',
     ],
-    'email_subject' => 'New Coach Application', // Ajout du sujet de l'email ici
+    'email_subject' => 'New Coach Application',
 ];
