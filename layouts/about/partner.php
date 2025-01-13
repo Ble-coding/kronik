@@ -30,7 +30,7 @@ $partner_translations = include "{$base_path}/languages/{$lang}/about/partner.ph
     <p class="title-line-both neutral-1200">  <?= $partner_translations['our_partners'] ?? 'NOS PARTENAIRES'; ?></p>
   </div>
   <div class="container" data-aos="fade-up">
-    <div class="box-logos-partner box-logos-partner-3-col">
+    <div class="box-logos-partner box-logos-partner-2-col">
       <div class="item-partner">
         <img src="assets/imgs/pages/home5/disd_logo.png" alt="kronik" />
       </div>
