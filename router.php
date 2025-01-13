@@ -13,6 +13,11 @@ $lang_path = __DIR__ . "/languages/{$lang}/";
 if (!is_dir($lang_path)) {
     $lang = $default_language; // Revenir à la langue par défaut si le dossier n'existe pas
 }
+
+// 📥 Charger les traductions des titres
+$title_translations = include __DIR__ . "/languages/{$lang}/titles.php";
+
+
 $_SESSION['lang'] = $lang; // Sauvegarder la langue dans la session
 
 // Charger toutes les traductions disponibles dans le dossier de langue

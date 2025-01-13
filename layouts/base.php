@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title><?php echo $pageTitle ?? 'Kronik-X Health'; ?></title>
+    <!-- ✅ Titre dynamique -->
+    <title><?= htmlspecialchars($pageTitle) ?> - <?= htmlspecialchars(mb_strimwidth($pageDescription ?? 'Kronik-X Health', 0, 60, '...'), ENT_QUOTES, 'UTF-8') ?></title>
+
     <?php require __DIR__ . '/head.php'; ?>
 </head>
 

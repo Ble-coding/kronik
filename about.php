@@ -1,7 +1,9 @@
 <?php
-$pageTitle = 'À propos de nous - Kronik-X Health'; // Titre de la page
-ob_start(); // Commence la capture de contenu
+$pageTitle = $title_translations['about']['title'];
+$pageDescription = $title_translations['about']['description'];
+ob_start();
 ?>
+
 
 <!-- Section Slide -->
 <?php require __DIR__ . '/layouts/about/slide.php'; ?>

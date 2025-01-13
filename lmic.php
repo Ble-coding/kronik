@@ -1,8 +1,8 @@
 <?php
-$pageTitle = 'LMICs : Transformer la Santé dans les Pays à Revenu Faible et Intermédiaire - Kronik-X Health'; // Titre de la page
-ob_start(); // Commence la capture de contenu
+$pageTitle = $title_translations['lmic']['title'];
+$pageDescription = $title_translations['lmic']['description'];
+ob_start();
 ?>
-
 <!-- Section Slide -->
 <?php require __DIR__ . '/layouts/lmic/slide.php'; ?>
 
