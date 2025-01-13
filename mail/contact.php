@@ -71,7 +71,7 @@ $mail = new PHPMailer(true);
 
 try {
     $mail->isSMTP();
-    $mail->Host = 'mail.kxhealth.org';
+    $mail->Host = 'kxhealth.org';
     $mail->SMTPAuth = true;
     $mail->Username = 'info@kxhealth.org';
     $mail->Password = '4d+5A98raIEh'; // Mot de passe Gmail ou mot de passe d'application

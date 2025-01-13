@@ -145,7 +145,7 @@ try {
 
     
     $mail->isSMTP();
-    $mail->Host = 'mail.kxhealth.org';
+    $mail->Host = 'kxhealth.org';
     $mail->SMTPAuth = true;
     $mail->Username = 'mentor@kxhealth.org';
     $mail->Password = 'IF6HntCi?.vn'; // Utilisez un mot de passe d'application

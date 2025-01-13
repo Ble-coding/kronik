@@ -180,7 +180,7 @@ $mail = new PHPMailer(true);
 try {
     // Configuration SMTP
     $mail->isSMTP();
-    $mail->Host = 'mail.kxhealth.org';
+    $mail->Host = 'kxhealth.org';
     $mail->SMTPAuth = true;
     $mail->Username = 'partner@kxhealth.org';
     $mail->Password = 'P@rtn3r$'; // Utilisez un mot de passe d'application
