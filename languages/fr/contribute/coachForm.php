@@ -14,6 +14,8 @@ return [
         'other_expertise_placeholder' => 'Précisez',
         'motivation_placeholder' => 'Pourquoi souhaitez-vous devenir coach ?',
         'signatory_name_placeholder' => 'Nom du signataire',
+        'availability_placeholder' => 'Disponibilité (facultatif)',
+        'signature_date_placeholder' => 'Date de signature',
     ],
     'labels' => [
         'profile_photo' => 'Photo de profil (formats acceptés : .png, .jpg) :',
@@ -24,17 +26,17 @@ return [
         'additional_docs' => 'Autres documents pertinents :',
         'confirmation_label' => 'Je certifie que les informations fournies sont exactes et complètes.',
     ],
-    'section_titles' => [
-        'professional_info' => 'Informations Professionnelles',
-        'expertise_and_skills' => 'Domaines d’Expertise et Compétences',
-        'motivation' => 'Motivations pour Devenir Coach',
-        'documents' => 'Documents Complémentaires',
-        'declaration_and_signature' => 'Déclaration et Signature',
-    ],
     'buttons' => [
         'submit_form' => 'Soumettre le Formulaire',
     ],
-
+    'section_titles' => [
+        'personal_info' => '1. Informations Personnelles',
+        'professional_info' => '2. Informations Professionnelles',
+        'expertise_and_skills' => '3. Domaines d’Expertise et Compétences',
+        'motivation' => '4. Motivations pour Devenir Coach',
+        'documents' => '5. Documents Complémentaires',
+        'declaration_and_signature' => '6. Déclaration et Signature',
+    ],
     'errors' => [
         'full_name' => 'Le nom complet est requis.',
         'address' => 'L\'adresse est requise.',
@@ -64,5 +66,5 @@ return [
         'Business Models' => 'Modèles économiques et planification financière',
         'Regulation' => 'Réglementation en santé numérique',
     ],
-    'email_subject' => 'Nouvelle candidature de coach',  
+    'email_subject' => 'Nouvelle candidature de coach',
 ];
