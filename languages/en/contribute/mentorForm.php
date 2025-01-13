@@ -20,9 +20,9 @@ return [
         'experience' => 'Relevant professional experience',
         'projects' => 'Projects or startups mentored (optional)',
         'certifications' => 'Training or certifications (e.g.: MBA, Digital Health)',
-      'motivation' => 'Why do you want to become a mentor?',
-      'signatory_name' => 'Signatory Name',
-      'function' => 'Function',
+        'motivation' => 'Why do you want to become a mentor?',
+        'signatory_name' => 'Signatory Name',
+        'function' => 'Function',
     ],
     'labels' => [
         'expertise' => 'Area of Expertise',
@@ -33,10 +33,10 @@ return [
         'confirmation' => 'I confirm that the information provided is accurate and complete.',
     ],
     'expertise_options' => [
-        'IA' => 'Artificial Intelligence',
+        'AI' => 'Artificial Intelligence',
         'Big Data' => 'Big Data',
         'IoT' => 'Internet of Things',
-        'strategy' => 'Strategy',
+        'Strategy' => 'Strategy',
     ],
     'buttons' => [
         'submit_form' => 'Submit the Form',
@@ -59,7 +59,7 @@ return [
         'confirmation' => 'You must confirm that the information provided is accurate.',
     ],
     'defaults' => [
-    'not_specified' => 'Not spécified',
-   ],
+        'not_specified' => 'Not specified',
+    ],
+    'email_subject' => 'New Mentor Application',
 ];
- 

@@ -22,11 +22,6 @@ if (file_exists($lang_path)) {
     $translations = include "../languages/fr/contribute/mentorForm.php"; // Langue par défaut
 }
 
-if (!isset($_SESSION)) {
-    session_start();
-}
-
-session_start();
 $errors = [];
 
 // Récupération et validation des données du formulaire
@@ -104,8 +99,6 @@ if (!empty($errors)) {
     exit;
 }
 
-// Si aucune erreur, continuer avec le traitement
-
 // Construction du message de l'email
 $labels = $translations['labels'] ?? [];
 $section_titles = $translations['section_titles'] ?? [];
@@ -114,45 +107,46 @@ $section_titles = $translations['section_titles'] ?? [];
 $contribution_list = implode(", ", array_map(function ($value) use ($translations) {
     return $translations['contribution_options'][$value] ?? $value;
 }, $contribution));
-$title = isset($translations['title']) ? $translations['title'] : 'Nouvelle candidature de mentor reçue';
-// Construire le message de l'email
+
+$title = $translations['title'] ?? 'Nouvelle candidature de mentor reçue';
 $email_message = "
-<h2>{$title}</h2>
-<h3>" . ($section_titles['personal_info'] ?? '1. Informations Générales') . "</h3>
-<strong>" . ($labels['full_name'] ?? 'Nom complet') . " :</strong> $full_name<br>
-<strong>" . ($labels['address'] ?? 'Adresse') . " :</strong> $address<br>
-<strong>" . ($labels['phone'] ?? 'Numéro de téléphone') . " :</strong> $phone<br>
-<strong>" . ($labels['email'] ?? 'Adresse e-mail') . " :</strong> $email<br>
-<strong>" . ($labels['website'] ?? 'Site web ou LinkedIn') . " :</strong> " . (!empty($website) ? $website : ($translations['defaults']['not_specified'] ?? 'Non spécifié')) . "<br><br>
+<h2>{$translations['title']}</h2>
 
-<h3>" . ($section_titles['experience_and_skills'] ?? '2. Expérience et Compétences') . "</h3>
-<strong>" . ($labels['expertise_label'] ?? 'Domaines d\'expertise') . " :</strong> $expertise<br>
-" . (!empty($other_expertise) ? "<strong>" . ($labels['other_expertise_label'] ?? 'Autres domaines') . " :</strong> $other_expertise<br>" : "") . "
-<strong>" . ($labels['experience'] ?? 'Expérience professionnelle') . " :</strong> $experience<br>
-<strong>" . ($labels['projects'] ?? 'Projets ou startups accompagnés') . " :</strong> " . (!empty($projects) ? $projects : ($translations['defaults']['not_specified'] ?? 'Non spécifié')) . "<br>
-<strong>" . ($labels['certifications'] ?? 'Certifications') . " :</strong> " . (!empty($certifications) ? $certifications : ($translations['defaults']['not_specified'] ?? 'Non spécifié')) . "<br><br>
+<h3>" . ($section_titles['general_info'] ?? $translations['section_titles']['general_info']) . "</h3>
+<strong>" . ($labels['full_name'] ?? $translations['placeholders']['full_name']) . " :</strong> $full_name<br>
+<strong>" . ($labels['address'] ?? $translations['placeholders']['address']) . " :</strong> $address<br>
+<strong>" . ($labels['phone'] ?? $translations['placeholders']['phone']) . " :</strong> $phone<br>
+<strong>" . ($labels['email'] ?? $translations['placeholders']['email']) . " :</strong> $email<br>
+<strong>" . ($labels['website'] ?? $translations['placeholders']['website']) . " :</strong> " . (!empty($website) ? $website : $translations['defaults']['not_specified']) . "<br><br>
 
-<h3>" . ($section_titles['motivation'] ?? '3. Motivations') . "</h3>
-<strong>" . ($labels['motivation'] ?? 'Motivation') . " :</strong> $motivation<br>
-<strong>" . ($labels['contribution'] ?? 'Contribution prévue') . " :</strong> $contribution_list<br>
-" . (!empty($other_contribution) ? "<strong>" . ($labels['other_contribution'] ?? 'Autres contributions') . " :</strong> $other_contribution<br>" : "") . "<br>
+<h3>" . ($section_titles['experience_and_skills'] ?? $translations['section_titles']['experience_and_skills']) . "</h3>
+<strong>" . ($labels['expertise'] ?? $translations['placeholders']['expertise']) . " :</strong> $expertise<br>
+" . (!empty($other_expertise) ? "<strong>" . ($labels['other'] ?? $translations['placeholders']['other_expertise']) . " :</strong> $other_expertise<br>" : "") . "
+<strong>" . ($labels['experience'] ?? $translations['placeholders']['experience']) . " :</strong> $experience<br>
+<strong>" . ($labels['projects'] ?? $translations['placeholders']['projects']) . " :</strong> " . (!empty($projects) ? $projects : $translations['defaults']['not_specified']) . "<br>
+<strong>" . ($labels['certifications'] ?? $translations['placeholders']['certifications']) . " :</strong> " . (!empty($certifications) ? $certifications : $translations['defaults']['not_specified']) . "<br><br>
 
-<h3>" . ($section_titles['declaration_and_signature'] ?? '4. Déclaration et Signature') . "</h3>
-<strong>" . ($labels['signatory_name'] ?? 'Nom du signataire') . " :</strong> $signatory_name<br>
-<strong>" . ($labels['function'] ?? 'Fonction') . " :</strong> $function<br>
-<strong>" . ($labels['date'] ?? 'Date') . " :</strong> $date<br>
+<h3>" . ($section_titles['motivations'] ?? $translations['section_titles']['motivations']) . "</h3>
+<strong>" . ($labels['motivation'] ?? $translations['placeholders']['motivation']) . " :</strong> $motivation<br>
+<strong>" . ($labels['contribution'] ?? $translations['placeholders']['contribution']) . " :</strong> $contribution_list<br>
+" . (!empty($other_contribution) ? "<strong>" . ($labels['other'] ?? $translations['placeholders']['other_contribution']) . " :</strong> $other_contribution<br>" : "") . "<br>
+
+<h3>" . ($section_titles['declaration_and_signature'] ?? $translations['section_titles']['declaration_and_signature']) . "</h3>
+<strong>" . ($labels['signatory_name'] ?? $translations['placeholders']['signatory_name']) . " :</strong> $signatory_name<br>
+<strong>" . ($labels['function'] ?? $translations['placeholders']['function']) . " :</strong> $function<br>
+<strong>" . ($labels['date'] ?? $translations['placeholders']['date']) . " :</strong> $date<br>
 ";
 
 // Envoi de l'email via PHPMailer
 $mail = new PHPMailer(true);
- 
+
 try {
     // Configuration SMTP
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'levisble@gmail.com';
-    $mail->Password = ''; // Utilisez un mot de passe d'application
+    $mail->Password = 'iruallnurlzqvkto'; // Utilisez un mot de passe d'application
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
@@ -162,11 +156,10 @@ try {
     $mail->addReplyTo($email, $full_name);
 
     // Contenu de l'email
-    
     $mail->CharSet = 'UTF-8';
     $mail->Encoding = 'base64';
     $mail->isHTML(true);
-    $mail->Subject = 'Nouvelle candidature de mentor';
+    $mail->Subject = $translations['email_subject'] ?? 'Nouvelle candidature de mentor';
     $mail->Body = $email_message;
 
     // Pièces jointes
@@ -180,15 +173,13 @@ try {
         $mail->addAttachment($_FILES['cv']['tmp_name'], $_FILES['cv']['name']);
     }
 
-      // Envoi de l'email
-      $mail->send();
-      header("location: ../mail-success?lang=" . htmlspecialchars($lang));
-      exit;
-  
-  } catch (Exception $e) {
-      error_log("Erreur lors de l'envoi de l'email : {$mail->ErrorInfo}");
-      $_SESSION['mail_error'] = $translations['email_error'] ?? "Une erreur est survenue lors de l'envoi de l'email.";
-      header("location: ../contribute?lang=" . htmlspecialchars($lang));
-      exit;
+    // Envoi de l'email
+    $mail->send();
+    header("location: ../mail-success?lang=" . htmlspecialchars($lang));
+    exit;
+} catch (Exception $e) {
+    error_log("Erreur lors de l'envoi de l'email : {$mail->ErrorInfo}");
+    $_SESSION['mail_error'] = $translations['errors']['email_error'] ?? "Une erreur est survenue lors de l'envoi de l'email.";
+    header("Location: ../contribute?lang=" . htmlspecialchars($lang) . "#pills-mentorat");
+    exit;
 }
-  
