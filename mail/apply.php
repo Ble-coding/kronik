@@ -163,7 +163,7 @@ try {
     $mail->Host = 'mail.kxhealth.org';
     $mail->SMTPAuth = true;
     $mail->Username = 'apply@kxhealth.org';
-    $mail->Password = ''; // Utilisez un mot de passe d'application
+    $mail->Password = '30Nb,WtUHmY%'; // Utilisez un mot de passe d'application
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
