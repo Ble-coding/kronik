@@ -201,13 +201,13 @@ if (isset($_FILES['additional_documents'])) {
 }
 
 
-    $mail->send();
-    header("location: ../mail-success");
-    exit;
+$mail->send();
+header("location: ../mail-success?lang=" . htmlspecialchars($lang));
+exit;
 } catch (Exception $e) {
-    error_log("Erreur lors de l'envoi de l'email : {$mail->ErrorInfo}");
-    $_SESSION['mail_error'] = "Une erreur est survenue lors de l'envoi de l'email.";
-    header("location: ../programs");
-    exit;
+error_log("Erreur lors de l'envoi de l'email : {$mail->ErrorInfo}");
+header("location: ../programs?lang=" . htmlspecialchars($lang));
+exit;
+
 }
 ?>

@@ -1,5 +1,10 @@
 <?php
 return [
+    'program' => [
+        'title' => 'Programmes',
+        'description' => 'Découvrez nos programmes, y compris l’incubation, l’accélération, les projets pilotes et les ressources de formation.',
+    ],  
+
     'title' => 'Programmes',
     'brochure_section' => [
         'title' => 'Brochures',
@@ -62,7 +67,7 @@ return [
             'duration' => '3 à 6 mois.',
         ],
     ],
-    'title' => 'Projets Pilotes',
+    'title_projet' => 'Projets Pilotes',
     'paragraph_1' => 'Avant de lancer une solution à grande échelle, il est essentiel de s’assurer de son <strong>adéquation aux besoins réels</strong> des utilisateurs et du contexte dans lequel elle sera utilisée. En collaborant avec des <strong>hôpitaux partenaires</strong>, nous bénéficions d’un environnement contrôlé pour tester et affiner nos solutions en conditions réelles. Cette approche nous permet de recueillir des retours précis des professionnels de santé et des patients, d’identifier les défis imprévus, et d’apporter les ajustements nécessaires. Ainsi, nous garantissons que chaque solution déployée est adaptée aux réalités locales, maximisant son efficacité et son impact.',
     'paragraph_2' => 'Dans le cadre d’un <strong>projet pilote</strong>, nous avons testé un dispositif connecté pour le suivi des patients diabétiques dans les zones rurales. Ce projet visait à résoudre le problème de <strong>l’accès limité aux soins</strong> dans ces régions. Grâce à ces dispositifs, les patients pouvaient mesurer leurs taux de glucose et partager les données en temps réel avec leurs médecins via une application dédiée. Les résultats ont montré une <strong>amélioration significative</strong> de la gestion des maladies, avec une réduction des complications liées au diabète et une meilleure adhérence au traitement.',
     'benefits_title' => 'Principaux Avantages de Notre Approche',
