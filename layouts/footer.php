@@ -13,7 +13,7 @@ if (empty($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32)); // Générer un token sécurisé
 }
 ?>
-                    <a class="navbar-brand pe-4" href="  <?= generate_url('./', $lang) ?>"><img src="assets/imgs/template/kronik_resized.png" alt /></a>
+                    <a class="navbar-brand pe-4" href="  <?= generate_url('./', $lang) ?>"><img src="assets/imgs/template/kh_white.png" alt /></a>
     
                     <p class="paragraph-base color-white pt-4 pb-2">
     <?= htmlspecialchars($footer_translations['message']) ?>

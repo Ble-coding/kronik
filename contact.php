@@ -1,6 +1,8 @@
+
 <?php
-$pageTitle = 'Contactez-nous - Kronik-X Health';
-ob_start(); // Capture le contenu pour l'injecter dans le layout
+$pageTitle = $title_translations['contact']['title'];
+$pageDescription = $title_translations['contact']['description'];
+ob_start();
 ?>
 
 <?php require __DIR__ . '/layouts/contact/slide.php'; ?>

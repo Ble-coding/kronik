@@ -1,6 +1,7 @@
 <?php
-$pageTitle = 'Politique de Confidentialité - Kronik-X Health'; // Titre spécifique pour la page
-ob_start(); // Capture le contenu de la page
+$pageTitle = $title_translations['privacy']['title'];
+$pageDescription = $title_translations['privacy']['description'];
+ob_start();
 ?>
 
 <!-- Section Slide (Bannière de confidentialité) -->

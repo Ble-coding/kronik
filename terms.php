@@ -1,8 +1,8 @@
 <?php
-$pageTitle = 'Termes et Conditions - Kronik-X Health'; // Titre spécifique pour la page des termes et conditions
-ob_start(); // Capture le contenu de la page
+$pageTitle = $title_translations['terms']['title'];
+$pageDescription = $title_translations['terms']['description'];
+ob_start();
 ?>
-
 <!-- Section Slide (Bannière des termes et conditions) -->
 <?php require __DIR__ . '/layouts/terms/slide.php'; ?>
 

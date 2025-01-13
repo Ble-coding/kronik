@@ -1,8 +1,8 @@
 <?php
-$pageTitle = 'Programmes - Kronik-X Health'; // Titre spécifique pour la page des programmes
-ob_start(); // Capture le contenu de la page
+$pageTitle = $title_translations['program']['title'];
+$pageDescription = $title_translations['program']['description'];
+ob_start();
 ?>
-
 <!-- Section Slide (Bannière des programmes) -->
 <?php require __DIR__ . '/layouts/program/slide.php'; ?>
 

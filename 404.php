@@ -1,6 +1,7 @@
 <?php
-$pageTitle = 'Oops! Page Introuvable - Kronik-X Health'; // Titre spécifique pour la page 404
-ob_start(); // Capture le contenu de la page
+$pageTitle = $title_translations['404']['title'];
+$pageDescription = $title_translations['404']['description'];
+ob_start();
 ?>
 
 <!-- Contenu spécifique à la page 404 -->

@@ -2,7 +2,7 @@
         <nav class="navbar navbar-expand-lg navbar-light w-100">
             <div class="container px-3">
                 <div class="header-navar">
-                    <a class="navbar-brand pe-4" href="./"><img src="assets/imgs/template/kronik_resized.png" alt /></a>
+                    <a class="navbar-brand pe-4" href="./"><img src="assets/imgs/template/kh_white.png" alt /></a>
                     <ul class="navbar-nav m-auto gap-1 align-items-lg-center">
                     <?php
 // Détection de la langue courante
@@ -112,7 +112,7 @@ function generate_url($path, $lang) {
                 </button>
             </div>
             <div class="offCanvas__logo mb-20">
-                <a href="/"><img src="assets/imgs/template/kronik_resized.png" alt="Logo" /></a>
+                <a href="/"><img src="assets/imgs/template/kh2.jpg" alt="Logo" /></a>
             </div>
             <div class="offCanvas__side-info mb-30">
                 <ul class="navbar-nav navbar-nav-mobile">

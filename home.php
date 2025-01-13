@@ -1,6 +1,8 @@
+
 <?php
-$pageTitle = 'Accueil - Kronik-X Health'; // Titre spécifique pour la page d'accueil
-ob_start(); // Capture le contenu de la page
+$pageTitle = $title_translations['home']['title'];
+$pageDescription = $title_translations['home']['description'];
+ob_start();
 ?>
 
 <!-- Section Slide (Bannière d'accueil) -->
