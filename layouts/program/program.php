@@ -3,6 +3,7 @@
 // Charger les traductions pour la section "program"
 $lang = $_SESSION['lang'] ?? 'en'; // Langue définie via session ou autre méthode
 $program_translations = include __DIR__ . "/../../languages/{$lang}/program/program.php";
+
 ?>
      <section class="box-section overflow-hidden section-service-detail">
        <div class="container" data-aos="fade-up">
@@ -182,7 +183,7 @@ $program_translations = include __DIR__ . "/../../languages/{$lang}/program/prog
                <div class="tab-pane fade show service-detail" id="pills-projet" role="tabpanel" aria-labelledby="pills-projet-tab">
      <div class="box-questions">
        <!-- <h1 class="heading-ag-3xl mb-20"></h1> -->
-       <h4 class="heading-ag-lg dark-950 mb-30">  <?= htmlspecialchars($program_translations['title']) ?></h4>
+       <h4 class="heading-ag-lg dark-950 mb-30">  <?= htmlspecialchars($program_translations['title_projet']) ?></h4>
        
        <div>
          <img src="assets/imgs/pages/services/baner_2.jpg" alt="Kronik" />

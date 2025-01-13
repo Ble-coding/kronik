@@ -1,5 +1,9 @@
 <?php
 return [
+    'program' => [
+        'title' => 'Programs',
+        'description' => 'Explore our programs, including incubation, acceleration, pilot projects, and training resources.',
+    ],
     'title' => 'Programs',
     'brochure_section' => [
         'title' => 'Brochures',
@@ -62,7 +66,7 @@ return [
           'duration' => '3 to 6 months.',
       ],
   ],
-   'title' => 'Pilot Projects',
+   'title_projet' => 'Pilot Projects',
   'paragraph_1' => 'Before launching a solution at scale, it is crucial to ensure its <strong>suitability to real needs</strong> of users and the context in which it will be used. By collaborating with <strong>partner hospitals</strong>, we benefit from a controlled environment to test and refine our solutions under real-world conditions. This approach allows us to gather precise feedback from healthcare professionals and patients, identify unexpected challenges, and make necessary adjustments. This ensures that each deployed solution is adapted to local realities, maximizing its effectiveness and impact.',
     'paragraph_2' => 'As part of a <strong>pilot project</strong>, we tested a connected device for monitoring diabetic patients in rural areas. This project aimed to address the issue of <strong>limited access to healthcare</strong> in these regions. Thanks to these devices, patients could measure their glucose levels and share data in real-time with their doctors via a dedicated app. The results showed a <strong>significant improvement</strong> in disease management, with a reduction in diabetes-related complications and better treatment adherence.',
     'benefits_title' => 'Key Benefits of Our Approach',
