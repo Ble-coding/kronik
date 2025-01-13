@@ -183,7 +183,7 @@ try {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'levisble@gmail.com';
-    $mail->Password = ''; // Utilisez un mot de passe d'application
+    $mail->Password = 'iruallnurlzqvkto'; // Utilisez un mot de passe d'application
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
@@ -213,12 +213,12 @@ if ($additional_docs && !empty($additional_docs['tmp_name'][0])) {
 }
 
     $mail->send();
-    header("location: ../mail-success");
+    header("location: ../mail-success?lang=" . htmlspecialchars($lang));
     exit;
 
 } catch (Exception $e) {
     error_log("Erreur lors de l'envoi de l'email : {$mail->ErrorInfo}");
     $_SESSION['mail_error'] = "Une erreur est survenue lors de l'envoi de l'email.";
-    header("location: ../contribute");
+    header("Location: ../contribute?lang=" . htmlspecialchars($lang) . "#pills-partner");
     exit;
 }
