@@ -13,7 +13,7 @@ if (empty($_SESSION['csrf_token'])) {
 }
 
 ?>
-                    <a class="navbar-brand pe-4" href="  <?= generate_url('/', $lang) ?>"><img src="/assets/imgs/template/kh_white.png" alt /></a>
+                    <a class="navbar-brand pe-4" href="  <?= generate_url('/', $lang) ?>"><img src="/assets/imgs/template/white.png" alt /></a>
     
                     <p class="paragraph-base color-white pt-4 pb-2">
     <?= htmlspecialchars($footer_translations['message']) ?>
