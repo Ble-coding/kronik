@@ -146,7 +146,7 @@ try {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'levisble@gmail.com';
-    $mail->Password = 'iruallnurlzqvkto'; // Utilisez un mot de passe d'application
+    $mail->Password = ''; // Utilisez un mot de passe d'application
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
