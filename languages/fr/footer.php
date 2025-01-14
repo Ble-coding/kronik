@@ -3,7 +3,7 @@ return [
     'message' => "Nous repoussons les limites de l'inaction et nous engageons avec audace pour bâtir un avenir où chaque vie compte. Ensemble, faisons la différence.",
     'message_newsletter' => "Rejoignez notre communauté et recevez des mises à jour.",
     'email_placeholder' => "Adresse Email",
-    'submit_button' => "",
+    // 'submit_button' => "",
     'menu_title' => "Menu",
     'about' => "À Propos",
     'contact' => "Contact",

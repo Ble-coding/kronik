@@ -3,7 +3,7 @@ return [
     'message' => "We push the boundaries of inaction and boldly commit to building a future where every life matters. Together, let's make a difference.",
     'message_newsletter' => "Join our community and receive updates.",
     'email_placeholder' => "Email Address",
-    'submit_button' => "",
+    // 'submit_button' => "",
     'menu_title' => "Menu",
     'about' => "About Us",
     'contact' => "Contact",

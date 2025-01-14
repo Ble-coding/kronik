@@ -45,7 +45,7 @@ if (empty($_SESSION['csrf_token'])) {
             <input 
                 type="submit" 
                 class="btn btn-newsletter" 
-                value="<?= htmlspecialchars($footer_translations['']) ?>" 
+                value="" 
             />
         </form>
 
