@@ -6237,7 +6237,7 @@ ul .card-icon-left .card-icon svg {
   width: 20px;
 }
 .offCanvas__logo img {
-  max-height: 34px;
+  /* max-height: 34px; */
 }
 .offCanvas__side-info {
   border-top: 1px solid var(--tc-theme-primary);
