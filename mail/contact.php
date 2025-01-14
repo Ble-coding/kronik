@@ -75,8 +75,8 @@ try {
     $mail->SMTPAuth = true;
     $mail->Username = 'info@kxhealth.org';
     $mail->Password = '4d+5A98raIEh'; // Mot de passe Gmail ou mot de passe d'application
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port = 587;
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;  // Utilisation de SSL/TLS
+    $mail->Port       = 465;     
 
     $mail->setFrom('info@kxhealth.org', (isset($translations['from_name']) ? $translations['from_name'] : 'Kronik-X Health'));
     $mail->addReplyTo('support@kxhealth.org', (isset($translations['reply_to_name']) ? $translations['reply_to_name'] : 'Support Kronik-X Health'));

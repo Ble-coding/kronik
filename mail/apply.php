@@ -164,9 +164,9 @@ try {
     $mail->SMTPAuth = true;
     $mail->Username = 'apply@kxhealth.org';
     $mail->Password = '30Nb,WtUHmY%'; // Utilisez un mot de passe d'application
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port = 587;
-
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;  // Utilisation de SSL/TLS
+    $mail->Port       = 465;     
+    
     // Expéditeur et destinataire
     $mail->setFrom('apply@kxhealth.org', 'Kronik-X Health');
     $mail->addReplyTo('support@kxhealth.org', 'Support Kronik-X Health');
