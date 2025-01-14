@@ -111,7 +111,7 @@ function generate_url($path, $lang) {
                 </button>
             </div>
             <div class="offCanvas__logo mb-20">
-                <a href="/"><img src="/assets/imgs/template/kh2.jpg" alt="Logo" /></a>
+            <a href="/"><img src="assets/imgs/template/kh2.svg" width="230" alt="Logo KRONIK X HEALTH" /></a>
             </div>
             <div class="offCanvas__side-info mb-30">
                 <ul class="navbar-nav navbar-nav-mobile">
