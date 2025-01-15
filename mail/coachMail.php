@@ -150,8 +150,8 @@ try {
     $mail->SMTPAuth = true;
     $mail->Username = 'coach@kxhealth.org';
     $mail->Password = 'C0@ch3r$'; // Remplacez par votre mot de passe d'application
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;  // ✅ STARTTLS
-    $mail->Port       = 587;   
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;  // Utilisation de SSL/TLS
+    $mail->Port       = 465;  
 
     // Informations d'expéditeur et de destinataire
     $mail->setFrom('coach@kxhealth.org', $translations['from_name'] ?? 'Kronik-X Health');
