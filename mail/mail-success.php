@@ -7,7 +7,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 // Définir la langue par défaut
 $lang = $_SESSION['lang'] ?? 'fr';
-$langPath = __DIR__ . "/../languages/{$lang}/mail/mail.php";
+$langPath = __DIR__ . "/../languages/{$lang}/header.php";  
 
 // Charger les traductions
 if (file_exists($langPath)) {
