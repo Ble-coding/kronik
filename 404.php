@@ -8,7 +8,7 @@ ob_start();
 <section class="position-relative overflow-hidden box-latest-blog-3 box-latest-blog-12">
     <div class="container">
         <div class="text-center">
-            <img src="assets/imgs/pages/404/404_resized.webp" alt="kronik" class="mb-30" />
+            <img src="/assets/imgs/pages/404/404_resized.webp" alt="kronik" class="mb-30" />
             <h3 class="heading-inter-44 secondery-500 mb-4">Oops! Page Introuvable.</h3>
             <a href="/" class="btn btn-primary-home btn-inter">Retour à la page d'accueil</a>
         </div>
