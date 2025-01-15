@@ -10,13 +10,19 @@ $lang = $_SESSION['lang'] ?? 'en'; // Exemple : définir la langue via une sessi
 
 // Charger les traductions pour le header
 $header_translations = include __DIR__ . "/../languages/{$lang}/header.php";
-// Fonction pour générer des URLs avec le paramètre de langue
-function generate_url($path, $lang) {
-    return "{$path}?lang={$lang}";
+// Fonction pour générer des URLs avec les paramètres existants
+// Fonction pour générer des URLs avec les paramètres existants
+function generate_url($path, $lang, $preserveParams = true) {
+    // Récupérer les paramètres existants
+    $queryParams = $preserveParams ? $_GET : [];
+    $queryParams['lang'] = $lang; // Ajouter ou mettre à jour le paramètre de langue
+    $queryString = http_build_query($queryParams);
+
+    return "{$path}?{$queryString}";
 }
 
 ?>
-                     <li class="nav-item">  <a class="nav-link fw-medium" href="<?= generate_url('./', $lang) ?>"><?= htmlspecialchars($header_translations['home']) ?></a></li>
+                     <li class="nav-item">  <a class="nav-link fw-medium" href="<?= generate_url('./', $lang, false) ?>"><?= htmlspecialchars($header_translations['home']) ?></a></li>
                     
                         <!-- <li class="nav-item dropdown menu-item-has-children">
                             <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
@@ -26,21 +32,28 @@ function generate_url($path, $lang) {
                                 <li><a class="dropdown-item" href="programmes.php">Nos Programmes en un coup d'œil</a></li>
                             </ul>
                         </li> -->
-                        <li class="nav-item">  <a class="nav-link fw-medium" href="
-                        <?= generate_url('./about', $lang) ?>
-                        "><?= htmlspecialchars($header_translations['about']) ?></a></li>
+                        <!-- <li class="nav-item">  <a class="dropdown-item fw-medium" href="
+                        <?= generate_url('./about', $lang , false) ?>
+                        "><?= htmlspecialchars($header_translations['about']) ?></a></li> -->
 
-                        <!-- <li class="nav-item dropdown menu-item-has-children">
-                            <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">À Propos</a>
+                        <li class="nav-item dropdown menu-item-has-children">
+                            <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><?= htmlspecialchars($header_translations['about']) ?></a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./about/mission">Notre Mission</a></li>
-                                <li><a class="dropdown-item" href="impact.php">Nos Statistiques d’Impact</a></li>
-                                <li><a class="dropdown-item" href="valeurs.php">Nos Valeurs</a></li>
-                                <li><a class="dropdown-item" href="equipe.php">Notre Équipe et Partenaires</a></li>
+                                <li><a class="dropdown-item fw-medium" href="
+                        <?= generate_url('./about', $lang, false) ?>
+                        "><?= htmlspecialchars($header_translations['kroniks']) ?></a></li>
+                                <li><a class="dropdown-item fw-medium" href="<?= generate_url('./team', $lang, false) ?>
+                                "><?= htmlspecialchars($header_translations['team']) ?></a></li>
                             </ul>
-                        </li> -->
-                        <li class="nav-item">   <a class="nav-link fw-medium" href="
-                        <?= generate_url('./lmic', $lang) ?>"><?= htmlspecialchars($header_translations['lmic']) ?></a></li>
+                        </li>
+
+
+                        <li class="nav-item">
+    <a class="nav-link fw-medium" href="<?= generate_url('./lmic', $lang, false) ?>">
+        <?= htmlspecialchars($header_translations['lmic']) ?>
+    </a>
+</li>
+
                         <!-- <li class="nav-item dropdown menu-item-has-children">
                             <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">LMICs</a>
                             <ul class="dropdown-menu">
@@ -51,10 +64,9 @@ function generate_url($path, $lang) {
                             </ul>
                         </li> -->
                         <li class="nav-item">  <a class="nav-link fw-medium" href="
-                         <?= generate_url('./programs', $lang) ?>"><?= htmlspecialchars($header_translations['programs']) ?></a></li>
-                      
+                         <?= generate_url('./programs', $lang, false) ?>"><?= htmlspecialchars($header_translations['programs']) ?></a></li>  
                         
-                        <li class="nav-item">  <a class="nav-link fw-medium" href="<?= generate_url('./contact', $lang) ?>
+                        <li class="nav-item">  <a class="nav-link fw-medium" href="<?= generate_url('./contact', $lang, false) ?>
                         "><?= htmlspecialchars($header_translations['contact']) ?></a></li>
                         <!-- <li class="nav-item dropdown menu-item-has-children">
                             <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contactez-Nous</a>
@@ -64,6 +76,7 @@ function generate_url($path, $lang) {
                             </ul>
                         </li> -->
 
+                        
                         <li class="nav-item dropdown menu-item-has-children">
     <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         <?php if ($lang === 'fr'): ?>
@@ -74,19 +87,20 @@ function generate_url($path, $lang) {
     </a>
     <ul class="dropdown-menu">
         <li>
-            <a class="dropdown-item" href="?lang=fr">
-                <img src="assets/imgs/template/fr.png" class="me-1" alt="Français"> 
-                <?php echo $lang === 'fr' ? 'Français' : 'French'; ?>
+            <a class="dropdown-item" href="<?= generate_url('', 'fr') ?>">
+                <img src="assets/imgs/template/fr.png" class="me-1" alt="Français">
+                <?= $lang === 'fr' ? 'Français' : 'French'; ?>
             </a>
         </li>
         <li>
-            <a class="dropdown-item" href="?lang=en">
-                <img src="assets/imgs/template/us.png" class="me-1" alt="English"> 
-                <?php echo $lang === 'fr' ? 'Anglais' : 'English'; ?>
+            <a class="dropdown-item" href="<?= generate_url('', 'en') ?>">
+                <img src="assets/imgs/template/us.png" class="me-1" alt="English">
+                <?= $lang === 'fr' ? 'Anglais' : 'English'; ?>
             </a>
         </li>
     </ul>
 </li>
+
 
 
                     </ul>
@@ -116,7 +130,7 @@ function generate_url($path, $lang) {
             </div>
             <div class="offCanvas__side-info mb-30">
                 <ul class="navbar-nav navbar-nav-mobile">
-                    <li class="nav-item"><a class="nav-link fw-medium" href="<?= generate_url('./', $lang) ?>"><?= htmlspecialchars($header_translations['home']) ?></a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="<?= generate_url('./', $lang, false) ?>"><?= htmlspecialchars($header_translations['home']) ?></a></li>
                     <!-- <li class="nav-item dropdown menu-item-has-children">
                         <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
                         <ul class="dropdown-menu">
@@ -125,7 +139,7 @@ function generate_url($path, $lang) {
                             <li><a class="dropdown-item" href="programmes.php">Nos Programmes en un coup d'œil</a></li>
                         </ul>
                     </li> -->
-                    <li class="nav-item"><a class="nav-link fw-medium" href="<?= generate_url('./about', $lang) ?>"><a class="nav-link fw-medium" href="/"><?= htmlspecialchars($header_translations['about']) ?></a></a></li>
+                    <!-- <li class="nav-item"><a class="nav-link fw-medium" href="<?= generate_url('./about', $lang, false) ?>"><a class="nav-link fw-medium" href="/"><?= htmlspecialchars($header_translations['about']) ?></a></a></li> -->
                     <!-- <li class="nav-item dropdown menu-item-has-children">
                         <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">À Propos</a>
                         <ul class="dropdown-menu">
@@ -135,7 +149,19 @@ function generate_url($path, $lang) {
                             <li><a class="dropdown-item" href="equipe.php">Notre Équipe et Partenaires</a></li>
                         </ul>
                     </li> -->
-                    <li class="nav-item"><a class="nav-link fw-medium" href="<?= generate_url('./lmic', $lang) ?>"><a class="nav-link fw-medium" href="/"><?= htmlspecialchars($header_translations['lmic']) ?></a></a></li>
+
+                    <li class="nav-item dropdown menu-item-has-children">
+                            <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><?= htmlspecialchars($header_translations['about']) ?></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="
+                        <?= generate_url('./about', $lang, false) ?>
+                        "><?= htmlspecialchars($header_translations['kroniks']) ?></a></li>
+                                <li><a class="dropdown-item" href="<?= generate_url('./team', $lang, false) ?>
+                                "><?= htmlspecialchars($header_translations['team']) ?></a></li>
+                            </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link fw-medium"><a href="<?= generate_url('./lmic', $lang, false) ?>" class="nav-link fw-medium"><?= htmlspecialchars($header_translations['lmic']) ?></a></a></li>
                     <!-- <li class="nav-item dropdown menu-item-has-children">
                         <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">LMICs</a>
                         <ul class="dropdown-menu">
@@ -146,7 +172,8 @@ function generate_url($path, $lang) {
                         </ul>
                     </li> -->
                     <!-- Programmes -->
-                    <li class="nav-item"><a class="nav-link fw-medium" href="<?= generate_url('./programs', $lang) ?>"><a class="nav-link fw-medium" href="/"><?= htmlspecialchars($header_translations['programs']) ?></a></a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" ><a
+                    href="<?= generate_url('./programs', $lang, false) ?>" class="nav-link fw-medium"><?= htmlspecialchars($header_translations['programs']) ?></a></a></li>
                     <!-- <li class="nav-item dropdown menu-item-has-children">
                         <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programmes</a>
                         <ul class="dropdown-menu">
@@ -171,7 +198,7 @@ function generate_url($path, $lang) {
                     <!-- Mentorat -->
                     <li class="nav-item">
                         <!-- <a class="nav-link fw-medium" href="./contribute"></a> -->
-                      <a class="nav-link fw-medium" href="<?= generate_url('./contribute', $lang) ?>"><?= htmlspecialchars($header_translations['contribute']) ?></a>
+                      <a class="nav-link fw-medium" href="<?= generate_url('./contribute', $lang, false) ?>"><?= htmlspecialchars($header_translations['contribute']) ?></a>
                     </li>
                     <!-- <li class="nav-item dropdown menu-item-has-children">
                         <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mentorat</a>
@@ -191,10 +218,9 @@ function generate_url($path, $lang) {
                             <li><a class="dropdown-item" href="evenements.php">Événements</a></li>
                         </ul>
                     </li> -->
-
                     <!-- Contact -->
                     <li class="nav-item">
-                    <a class="nav-link fw-medium" href="<?= generate_url('./contact', $lang) ?>"><?= htmlspecialchars($header_translations['contact']) ?></a>
+                    <a class="nav-link fw-medium" href="<?= generate_url('./contact', $lang, false) ?>"><?= htmlspecialchars($header_translations['contact']) ?></a>
                     </li>
 
                     <li class="nav-item dropdown menu-item-has-children">

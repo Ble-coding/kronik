@@ -36,6 +36,14 @@ return [
         'title'       => 'Terms and Conditions - Kronik-X Health',
         'description' => 'Read the terms and conditions for using the Kronik-X Health platform and services.'
     ],
+    'team' => [
+        'title'       => 'Our Team - Kronik-X Health',
+        'description' => 'Meet the dedicated team behind Kronik-X Health, working together to bring innovative healthcare solutions to you.',
+    ],
+   'profile' => [
+        'title'       => 'Team Member Profile - Kronik-X Health',
+        'description' => 'Explore the background and contributions of each team member driving health innovation at Kronik-X Health.',
+    ],
     '404' => [
        'title'       => 'Oops! Page Not Found - Kronik-X Health',
        'description' => 'The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.'

@@ -67,13 +67,14 @@ if (empty($_SESSION['csrf_token'])) {
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="presentation.php">Présentation concise</a> -->
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="statistiques.php">Statistiques Clés</a> -->
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="programmes.php">Nos Programmes en un coup d'œil</a> -->
-                        <a class="hover-effect paragraph-base grey-100 pt-2" href="  <?= generate_url('./about', $lang) ?>"><?= htmlspecialchars($footer_translations['about']) ?></a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="  <?= generate_url('./about', $lang, false) ?>"><?= htmlspecialchars($footer_translations['about']) ?></a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="  <?= generate_url('./team', $lang, false) ?>"><?= htmlspecialchars($footer_translations['team']) ?></a>
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="./about/mission">Notre Mission</a> -->
                         <a class="hover-effect paragraph-base grey-100 pt-2" href="
-                          <?= generate_url('./contact', $lang) ?>"><?= htmlspecialchars($footer_translations['contact']) ?></a>
+                          <?= generate_url('./contact', $lang, false) ?>"><?= htmlspecialchars($footer_translations['contact']) ?></a>
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="/">Actualités</a> -->
-                        <a class="hover-effect paragraph-base grey-100 pt-2" href="  <?= generate_url('./programs', $lang) ?>"><?= htmlspecialchars($footer_translations['programs']) ?></a>
-                        <a class="hover-effect paragraph-base grey-100 pt-2" href="  <?= generate_url('./lmic', $lang) ?>"><?= htmlspecialchars($footer_translations['lmic']) ?></a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="  <?= generate_url('./programs', $lang, false) ?>"><?= htmlspecialchars($footer_translations['programs']) ?></a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="  <?= generate_url('./lmic', $lang, false) ?>"><?= htmlspecialchars($footer_translations['lmic']) ?></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
@@ -82,10 +83,10 @@ if (empty($_SESSION['csrf_token'])) {
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="programme-education.php">Éducation</a> -->
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="programme-sante.php">Santé</a> -->
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="/">Formation</a> <a class="hover-effect paragraph-base grey-100 pt-2" href="/formation/formation-en-ligne">Formation en Ligne</a> -->
-                        <a class="hover-effect paragraph-base grey-100 pt-2" href="<?= generate_url('./contribute#pills-mentorat', $lang) ?>"><?= htmlspecialchars($footer_translations['mentor']) ?></a>
-        <a class="hover-effect paragraph-base grey-100 pt-2" href="<?= generate_url('./contribute#pills-coach', $lang) ?>"><?= htmlspecialchars($footer_translations['coach']) ?></a>
-        <a class="hover-effect paragraph-base grey-100 pt-2" href="<?= generate_url('./contribute#pills-partner', $lang) ?>"><?= htmlspecialchars($footer_translations['partner']) ?></a>
-        <a class="hover-effect paragraph-base grey-100 pt-2" href="<?= generate_url('./faq', $lang) ?>"><?= htmlspecialchars($footer_translations['faq']) ?></a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="<?= generate_url('./contribute#pills-mentorat', $lang, false) ?>"><?= htmlspecialchars($footer_translations['mentor']) ?></a>
+        <a class="hover-effect paragraph-base grey-100 pt-2" href="<?= generate_url('./contribute#pills-coach', $lang, false) ?>"><?= htmlspecialchars($footer_translations['coach']) ?></a>
+        <a class="hover-effect paragraph-base grey-100 pt-2" href="<?= generate_url('./contribute#pills-partner', $lang, false) ?>"><?= htmlspecialchars($footer_translations['partner']) ?></a>
+        <a class="hover-effect paragraph-base grey-100 pt-2" href="<?= generate_url('./faq', $lang, false) ?>"><?= htmlspecialchars($footer_translations['faq']) ?></a>
                     </div>
                 </div>
 
