@@ -11,7 +11,8 @@ $partner_translations = include "{$base_path}/languages/{$lang}/about/partner.ph
     <p class="title-line-both neutral-1200">   <?= $partner_translations['supported_and_accompanied_by'] ?? 'SOUTENUE ET ACCOMPAGNÉE PAR'; ?></p>
   </div>
   <div class="container" data-aos="fade-up">
-    <div class="box-logos-partner box-logos-partner-3-col">
+    <div class="box-logos-partner box-logos-partner-3-col
+    d-flex align-items-center justify-content-center flex-wrap">
       <div class="item-partner">
         <img src="/assets/imgs/pages/home5/ministere_sante.png" alt="kronik" />
       </div>
