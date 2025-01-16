@@ -68,7 +68,7 @@ if (empty($_SESSION['csrf_token'])) {
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="statistiques.php">Statistiques Clés</a> -->
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="programmes.php">Nos Programmes en un coup d'œil</a> -->
                         <a class="hover-effect paragraph-base grey-100 pt-2" href="  <?= generate_url('./about', $lang, false) ?>"><?= htmlspecialchars($footer_translations['about']) ?></a>
-                        <a class="hover-effect paragraph-base grey-100 pt-2" href="  <?= generate_url('./team', $lang, false) ?>"><?= htmlspecialchars($footer_translations['team']) ?></a>
+                        <a class="hover-effect paragraph-base grey-100 pt-2" href="  <?= generate_url('./board', $lang, false) ?>"><?= htmlspecialchars($footer_translations['team']) ?></a>
                         <!-- <a class="hover-effect paragraph-base grey-100 pt-2" href="./about/mission">Notre Mission</a> -->
                         <a class="hover-effect paragraph-base grey-100 pt-2" href="
                           <?= generate_url('./contact', $lang, false) ?>"><?= htmlspecialchars($footer_translations['contact']) ?></a>
