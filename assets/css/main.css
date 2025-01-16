@@ -8888,11 +8888,36 @@ footer {
   width: 90%;
 }
 
-.pagi:hover,
-.pagi :active {
-  border-color: var(--tc-theme-primary) !important;
-  color: var(--tc-theme-primary) !important;
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
+
+.pagi {
+  margin: 0 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  color: #333;
+  border-radius: 3px;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.pagi.active {
+  background-color: var(--tc-theme-primary);
+  color: white;
+  /* border-color: var(--tc-theme-primary); */
+}
+
+.pagi:hover,
+.pagi:active {
+  /* border-color: var(--tc-theme-primary) !important; */
+  background-color: var(--kronik-light-blue) !important;
+  color: #FFF !important;
+}
+
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -9535,6 +9560,15 @@ a.btn.text-secondary:hover {
   font-weight: 700;
   font-family: var(--tc-ag-font-family);
   color: #fff;
+}
+
+
+.heading-ag-8xl {
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: var(--tc-ag-font-family);
+  color: var(--tc-dark-950);
 }
 
 .heading-ag-2xl {
@@ -15778,6 +15812,19 @@ h6 {
 }
 
 
+.box-faq-single-banner-team {
+  background-image: url(../imgs/pages/home5/team_back.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
+.box-faq-single-banner-profile {
+  background-image: url(../imgs/pages/home5/profile.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
 
 
 .box-faq-single-banner-lmics {

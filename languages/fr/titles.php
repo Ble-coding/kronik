@@ -36,6 +36,14 @@ return [
         'title'       => 'Termes et Conditions - Kronik-X Health',
         'description' => 'Consultez les conditions générales d’utilisation de la plateforme et des services de Kronik-X Health.'
     ],
+    'team' => [
+        'title'       => 'Notre Équipe - Kronik-X Health',
+        'description' => 'Rencontrez l’équipe dévouée derrière Kronik-X Health, qui travaille ensemble pour vous apporter des solutions de santé innovantes.',
+    ],
+    'profile' => [
+        'title'       => 'Profil de l’Équipe - Kronik-X Health',
+        'description' => 'Découvrez le parcours et les contributions de chaque membre de notre équipe qui façonne l’innovation en santé chez Kronik-X Health.',
+    ],
     '404' => [
         'title'       => 'Oops! Page Introuvable - Kronik-X Health',
         'description' => 'La page que vous recherchez a peut-être été supprimée, renommée ou est temporairement indisponible.'
