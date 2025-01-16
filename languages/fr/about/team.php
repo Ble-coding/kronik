@@ -1,6 +1,6 @@
 <?php
 return [
-    'meet_team'     => 'Rencontrez Notre Équipe',
+    'meet_team'     => 'Rencontrez Notre Conseil',
     'build_solutions' => 'Construire des Solutions',
     'together'      => 'Ensemble',
     'description'   => 'Avec des décennies d’expérience et une vision commune, nous bâtissons un futur où la gestion des maladies chroniques est accessible, efficace et équitable pour tous.',

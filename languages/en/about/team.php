@@ -1,6 +1,6 @@
 <?php
 return [
-    'meet_team'     => 'Meet Our Team',
+    'meet_team'     => 'Meet Our Board',
     'build_solutions' => 'Building Solutions',
     'together'      => 'Together',
     'description'   => 'With decades of experience and a shared vision, we are building a future where chronic disease management is accessible, effective, and equitable for all.',
