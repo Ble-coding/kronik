@@ -11,9 +11,6 @@ ob_start();
 <!-- Section About -->
 <?php require __DIR__ . '/layouts/about/about.php'; ?>
 
-<!-- Section Team -->
-<?php require __DIR__ . '/layouts/about/team.php'; ?>
-
 <!-- Section Partner -->
 <?php require __DIR__ . '/layouts/about/partner.php'; ?>
 
