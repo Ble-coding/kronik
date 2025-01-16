@@ -1,8 +1,8 @@
 <?php
 return [
-    'title' => 'Our Team',
+    'title' => 'Our Board',
     'breadcrumb' => [
         'home' => 'Home',
-        'current' => 'Our Team',
+        'current' => 'Our Board',
     ],
 ];
