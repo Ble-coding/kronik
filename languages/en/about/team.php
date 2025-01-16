@@ -7,7 +7,7 @@ return [
     'previous' => 'Previous',
     'next'     => 'Next',
     'team' => [   
-        1 => [
+        1 => [ 
             'id'    => 1,
             'name'  => 'Alphonse Konan',
             'role'  => 'Senior Regional Consultant Africa',
@@ -200,6 +200,23 @@ return [
 
                 "🚀 <strong>Strategic Projects:</strong> Holding an <strong>MBA</strong> from the <strong>University of Rhode Island</strong>, he leads the national strategy for <strong>Artificial Intelligence</strong> and <strong>Data Management</strong>. He also oversees key initiatives like the <strong>HIT Hub Ivoire Tech</strong>, the <strong>Digital Empowerment Program for Women and Youth</strong>, and the <strong>Startup Act</strong>."
 
+            ],
+        ],
+        12 => [
+            'id'    => 12,
+            'name'  => 'KPATTA KADJÉ Yves',
+            'role'  => 'Medical Director at EMCEL Clinic',
+            'linkedin' => '#',
+            'image' => 'assets/imgs/pages/home5/kpatta-kadje-yve.jpg',
+            'image-profile' => 'assets/imgs/pages/home5/kpatta-kadje-yve-great.jpg',
+            'bio'   => [
+                "🎓 <strong>Education:</strong> Graduated from the <strong>State Academy of Medicine of Ivanovo</strong> in Russia in <strong>2017</strong>, specialized in <strong>surgery</strong>.",
+        
+                "💡 <strong>Digital Health Expertise:</strong> Former <strong>Country Manager</strong> for the <strong>KimboCare digital health platform</strong>, with strong experience in implementing digital health solutions.",
+                
+                "🏥 <strong>Current Role:</strong> Serving as <strong>Medical Director</strong> at <strong>EMCEL Clinic</strong>, collaborating with various <strong>digital health platforms</strong> to drive innovation in healthcare.",
+                
+                "🚀 <strong>Vision:</strong> A key contributor to the digital transformation of the medical sector, with a strong focus on innovative healthcare technologies."
             ],
         ],
     ]

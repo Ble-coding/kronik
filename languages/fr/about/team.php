@@ -6,7 +6,7 @@ return [
     'description'   => 'Avec des décennies d’expérience et une vision commune, nous bâtissons un futur où la gestion des maladies chroniques est accessible, efficace et équitable pour tous.',
     'previous' => 'Précédent',
     'next'     => 'Suivant',
-   'team' => [
+   'team' => [ 
         1 => [
            'id'    => 1,
             'name'  => 'Alphonse Konan',
@@ -195,6 +195,23 @@ return [
                 "🌐 <strong>Parcours International :</strong> Il possède plus de <strong>11 ans d'expérience</strong> chez <strong>IBM</strong> aux États-Unis en tant que <strong>Manager of Data and Analytics</strong>, avec une expertise reconnue en <strong>intelligence artificielle</strong> et en <strong>stratégie numérique</strong>.",
 
                 "🚀 <strong>Projets Stratégiques :</strong> Diplômé d'un <strong>MBA</strong> de l'<strong>University of Rhode Island</strong>, il dirige la mise en œuvre de la <strong>stratégie nationale de l’Intelligence Artificielle</strong> et de la <strong>Gestion des Données</strong>. Il supervise également des initiatives clés comme <strong>HIT Hub Ivoire Tech</strong>, le <strong>Programme d’Autonomisation Numérique des Femmes et des Jeunes</strong> et le <strong>Startup Act</strong>."
+            ],
+        ],
+        12 => [
+            'id'    => 12,
+            'name'  => 'KPATTA KADJÉ Yves',
+            'role'  => 'Directeur Médical de la Clinique EMCEL',
+            'linkedin' => '#',
+            'image' => 'assets/imgs/pages/home5/kpatta-kadje-yve.jpg',
+            'image-profile' => 'assets/imgs/pages/home5/kpatta-kadje-yve-great.jpg',
+            'bio'   => [
+                "🎓 <strong>Formation :</strong> Diplômé de l'<strong>Académie d'État de Médecine d'Ivanovo</strong> en Russie depuis <strong>2017</strong>, spécialisé en <strong>chirurgie</strong>.",
+        
+                "💡 <strong>Engagement dans la santé numérique :</strong> Ancien <strong>responsable pays</strong> de la plateforme de <strong>santé numérique KimboCare</strong>, avec une expertise dans l'intégration de solutions digitales au service de la santé.",
+                
+                "🏥 <strong>Position actuelle :</strong> Actuellement <strong>Directeur Médical</strong> de la <strong>Clinique EMCEL</strong>, collaborant activement avec diverses <strong>plateformes numériques</strong> pour le développement de solutions innovantes en santé.",
+                
+                "🚀 <strong>Vision :</strong> Acteur engagé dans la transformation digitale du secteur médical, avec un intérêt marqué pour les technologies innovantes au service des soins de santé."
             ],
         ],
     ]
