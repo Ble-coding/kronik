@@ -7,7 +7,7 @@ return [
     'programs' => 'Programmes',
     'contribute' => 'Contribuez à Kronik-X Health',
     'contact' => 'Contactez-Nous',
-    'team' => 'Notre Équipe',
+    'team' => 'Notre Conseil',
     'title' => 'Nous Contacter',
         'address' => 'Cocody, Riviera Bonoumin Rue i61, Abidjan, Côte d\'Ivoire',
         'hours' => 'LUN-VEN : 8h - 17h, SAMEDI : 9h - 12h, DIMANCHE : Fermé',

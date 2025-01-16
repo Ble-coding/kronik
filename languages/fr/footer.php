@@ -9,7 +9,7 @@ return [
     'contact' => "Contact",
     'programs' => "Programmes",
     'lmic' => "LMICs",
-    'team' => "Notre Équipe",
+    'team' => "Notre Conseil",
     'useful_links_title' => "Liens Utiles",
     'mentor' => "Mentor",
     'coach' => "Coach",
