@@ -25,25 +25,25 @@ return [
             ]
 
         ],
-        2 => [
-            'id'    => 2,
-            'name'  => 'Julien Kakou',
-            'role'  => 'Leader en Santé Digitale & Expert en Accès aux Soin',
-             'linkedin' => 'https://www.linkedin.com/in/julien-kakou-57954390/',
-            'image' => 'assets/imgs/pages/home5/julien-kakou.jpg',
-            'image-profile' => 'assets/imgs/pages/home5/julien-kakou-great.jpg',
-            'bio'   => [
-                "🩺 <strong>Expertise :</strong> Julien Kakou est un leader reconnu en <em>santé digitale</em> et en <em>politiques d'accès aux soins</em>, avec plus de 15 ans d’expérience dans la <strong>stratégie d'accès au marché</strong> et le <strong>développement de politiques de santé</strong> dans les LMICs.",
+        // 2 => [
+        //     'id'    => 2,
+        //     'name'  => 'Julien Kakou',
+        //     'role'  => 'Leader en Santé Digitale & Expert en Accès aux Soin',
+        //      'linkedin' => 'https://www.linkedin.com/in/julien-kakou-57954390/',
+        //     'image' => 'assets/imgs/pages/home5/julien-kakou.jpg',
+        //     'image-profile' => 'assets/imgs/pages/home5/julien-kakou-great.jpg',
+        //     'bio'   => [
+        //         "🩺 <strong>Expertise :</strong> Julien Kakou est un leader reconnu en <em>santé digitale</em> et en <em>politiques d'accès aux soins</em>, avec plus de 15 ans d’expérience dans la <strong>stratégie d'accès au marché</strong> et le <strong>développement de politiques de santé</strong> dans les LMICs.",
         
-                "🌍 <strong>Impact :</strong> Actuellement <em>Healthcare System Partner, Policy & Strategic Financing</em>, il joue un rôle clé dans la <strong>transformation digitale</strong> des systèmes de santé en Afrique, notamment dans l'accès aux traitements contre le cancer.",
+        //         "🌍 <strong>Impact :</strong> Actuellement <em>Healthcare System Partner, Policy & Strategic Financing</em>, il joue un rôle clé dans la <strong>transformation digitale</strong> des systèmes de santé en Afrique, notamment dans l'accès aux traitements contre le cancer.",
         
-                "💼 <strong>Parcours :</strong> Fort d’une expérience au sein de grandes entreprises pharmaceutiques comme <strong>Roche</strong>, <strong>Otsuka</strong> et <strong>Sanofi</strong>, Julien a dirigé des projets d'<strong>innovation digitale</strong> et des <strong>partenariats public-privé</strong> pour améliorer les infrastructures de santé.",
+        //         "💼 <strong>Parcours :</strong> Fort d’une expérience au sein de grandes entreprises pharmaceutiques comme <strong>Roche</strong>, <strong>Otsuka</strong> et <strong>Sanofi</strong>, Julien a dirigé des projets d'<strong>innovation digitale</strong> et des <strong>partenariats public-privé</strong> pour améliorer les infrastructures de santé.",
         
-                "🚀 <strong>Réalisations :</strong> À travers le programme <strong>Innov'Keneya</strong>, il a contribué à l’expansion des soins oncologiques, impactant plus de <strong>22 000 patients</strong> et renforçant les infrastructures de santé dans l'Afrique francophone.",
+        //         "🚀 <strong>Réalisations :</strong> À travers le programme <strong>Innov'Keneya</strong>, il a contribué à l’expansion des soins oncologiques, impactant plus de <strong>22 000 patients</strong> et renforçant les infrastructures de santé dans l'Afrique francophone.",
         
-                "🎓 <strong>Formation :</strong> Titulaire d'un <em>Executive Master</em> en gestion de l'industrie <strong>biotechnologique et pharmaceutique</strong>, Julien est également expert en <strong>recherche clinique</strong> et certifié en <strong>coaching agile</strong>."
-            ],
-        ],
+        //         "🎓 <strong>Formation :</strong> Titulaire d'un <em>Executive Master</em> en gestion de l'industrie <strong>biotechnologique et pharmaceutique</strong>, Julien est également expert en <strong>recherche clinique</strong> et certifié en <strong>coaching agile</strong>."
+        //     ],
+        // ],
         3 => [
             'id'    => 3,
             'name'  => 'Gnona Dovi Serge',

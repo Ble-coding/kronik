@@ -6,7 +6,7 @@ return [
     'description'   => 'With decades of experience and a shared vision, we are building a future where chronic disease management is accessible, effective, and equitable for all.',
     'previous' => 'Previous',
     'next'     => 'Next',
-    'team' => [
+    'team' => [   
         1 => [
             'id'    => 1,
             'name'  => 'Alphonse Konan',
@@ -25,26 +25,26 @@ return [
             ]
 
         ],
-        2 => [
-            'id'    => 2,
-            'name'  => 'Julien Kakou',
-            'role'  => 'Digital Health Leader & Access to Care Expert',
-            'linkedin' => 'https://www.linkedin.com/in/julien-kakou-57954390/',
-            'image' => 'assets/imgs/pages/home5/julien-kakou.jpg',
-            'image-profile' => 'assets/imgs/pages/home5/julien-kakou-great.jpg',
-            'bio'   => [
-                "🩺 <strong>Expertise:</strong> Julien Kakou is a recognized leader in <em>digital health</em> and <em>access to care policies</em>, with over 15 years of experience in <strong>market access strategy</strong> and <strong>health policy development</strong> in LMICs.",
+        // 2 => [
+        //     'id'    => 2,
+        //     'name'  => 'Julien Kakou',
+        //     'role'  => 'Digital Health Leader & Access to Care Expert',
+        //     'linkedin' => 'https://www.linkedin.com/in/julien-kakou-57954390/',
+        //     'image' => 'assets/imgs/pages/home5/julien-kakou.jpg',
+        //     'image-profile' => 'assets/imgs/pages/home5/julien-kakou-great.jpg',
+        //     'bio'   => [
+        //         "🩺 <strong>Expertise:</strong> Julien Kakou is a recognized leader in <em>digital health</em> and <em>access to care policies</em>, with over 15 years of experience in <strong>market access strategy</strong> and <strong>health policy development</strong> in LMICs.",
 
-            "🌍 <strong>Impact:</strong> Currently serving as <em>Healthcare System Partner, Policy & Strategic Financing</em>, he plays a pivotal role in the <strong>digital transformation</strong> of health systems in Africa, particularly in expanding access to cancer treatments.",
+        //     "🌍 <strong>Impact:</strong> Currently serving as <em>Healthcare System Partner, Policy & Strategic Financing</em>, he plays a pivotal role in the <strong>digital transformation</strong> of health systems in Africa, particularly in expanding access to cancer treatments.",
 
-            "💼 <strong>Background:</strong> Julien gained extensive experience at major pharmaceutical companies such as <strong>Roche</strong>, <strong>Otsuka</strong>, and <strong>Sanofi</strong>, leading <strong>digital innovation</strong> projects and <strong>public-private partnerships</strong> to strengthen healthcare infrastructure.",
+        //     "💼 <strong>Background:</strong> Julien gained extensive experience at major pharmaceutical companies such as <strong>Roche</strong>, <strong>Otsuka</strong>, and <strong>Sanofi</strong>, leading <strong>digital innovation</strong> projects and <strong>public-private partnerships</strong> to strengthen healthcare infrastructure.",
 
-            "🚀 <strong>Achievements:</strong> Through the <strong>Innov'Keneya</strong> program, he contributed to expanding oncology care, impacting over <strong>22,000 patients</strong> and improving healthcare infrastructure across Francophone Africa.",
+        //     "🚀 <strong>Achievements:</strong> Through the <strong>Innov'Keneya</strong> program, he contributed to expanding oncology care, impacting over <strong>22,000 patients</strong> and improving healthcare infrastructure across Francophone Africa.",
 
-            "🎓 <strong>Education:</strong> Julien holds an <em>Executive Master</em> in <strong>biotech and pharmaceutical industry management</strong> and is an expert in <strong>clinical research</strong> and a certified <strong>agile coach</strong>."
-            ],
+        //     "🎓 <strong>Education:</strong> Julien holds an <em>Executive Master</em> in <strong>biotech and pharmaceutical industry management</strong> and is an expert in <strong>clinical research</strong> and a certified <strong>agile coach</strong>."
+        //     ],
         
-        ],
+        // ],
         3 => [
             'id'    => 3,
             'name'  => 'Gnona Dovi Serge',
