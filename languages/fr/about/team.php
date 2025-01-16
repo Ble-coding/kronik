@@ -201,7 +201,7 @@ return [
             'id'    => 12,
             'name'  => 'KPATTA KADJÉ Yves',
             'role'  => 'Directeur Médical de la Clinique EMCEL',
-            'linkedin' => '#',
+            'linkedin' => 'https://www.linkedin.com/in/kadje-yves-kpatta-3b4122189/',
             'image' => 'assets/imgs/pages/home5/kpatta-kadje-yve.jpg',
             'image-profile' => 'assets/imgs/pages/home5/kpatta-kadje-yve-great.jpg',
             'bio'   => [
