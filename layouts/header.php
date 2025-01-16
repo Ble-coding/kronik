@@ -233,15 +233,15 @@ function generate_url($path, $lang, $preserveParams = true) {
     </a>
     <ul class="dropdown-menu">
         <li>
-            <a class="dropdown-item" href="?lang=fr">
+            <a class="dropdown-item" href="<?= generate_url('', 'fr') ?>">
                 <img src="assets/imgs/template/fr.png" class="me-1" alt="Français">
-                <?php echo $lang === 'fr' ? 'Français' : 'French'; ?>
+                <?= $lang === 'fr' ? 'Français' : 'French'; ?>
             </a>
         </li>
         <li>
-            <a class="dropdown-item" href="?lang=en">
+            <a class="dropdown-item" href="<?= generate_url('', 'en') ?>">
                 <img src="assets/imgs/template/us.png" class="me-1" alt="English">
-                <?php echo $lang === 'fr' ? 'Anglais' : 'English'; ?>
+                <?= $lang === 'fr' ? 'Anglais' : 'English'; ?>
             </a>
         </li>
     </ul>
