@@ -4,7 +4,7 @@ $base_path = dirname(__DIR__, 2); // Remonte de deux niveaux pour atteindre la r
 $lang = $_GET['lang'] ?? 'en'; // Définit la langue par défaut si non défini dans l'URL
 
 // Charger les traductions spécifiques à la page "team"
-$team_translations = include "{$base_path}/languages/{$lang}/about/board.php"; 
+$team_translations = include "{$base_path}/languages/{$lang}/about/team.php"; 
 
 // Fonction pour paginer un tableau
 function paginateArray(array $items, int $perPage, int $currentPage): array {
