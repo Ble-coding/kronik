@@ -42,7 +42,7 @@ function generate_url($path, $lang, $preserveParams = true) {
                                 <li><a class="dropdown-item fw-medium" href="
                         <?= generate_url('/about', $lang, false) ?>
                         "><?= htmlspecialchars($header_translations['kroniks']) ?></a></li>
-                                <li><a class="dropdown-item fw-medium" href="<?= generate_url('/team', $lang, false) ?>
+                                <li><a class="dropdown-item fw-medium" href="<?= generate_url('/board', $lang, false) ?>
                                 "><?= htmlspecialchars($header_translations['team']) ?></a></li>
                             </ul>
                         </li>
@@ -156,7 +156,7 @@ function generate_url($path, $lang, $preserveParams = true) {
                                 <li><a class="dropdown-item" href="
                         <?= generate_url('/about', $lang, false) ?>
                         "><?= htmlspecialchars($header_translations['kroniks']) ?></a></li>
-                                <li><a class="dropdown-item" href="<?= generate_url('/team', $lang, false) ?>
+                                <li><a class="dropdown-item" href="<?= generate_url('/board', $lang, false) ?>
                                 "><?= htmlspecialchars($header_translations['team']) ?></a></li>
                             </ul>
                     </li>

@@ -4,7 +4,7 @@ $base_path = dirname(__DIR__, 2); // Remonte de deux niveaux pour atteindre la r
 $lang = $_GET['lang'] ?? 'en'; // Définit la langue par défaut si non défini dans l'URL
 
 // Charger les traductions spécifiques à la page "team"
-$team_translations = include "{$base_path}/languages/{$lang}/about/team.php"; 
+$team_translations = include "{$base_path}/languages/{$lang}/about/board.php"; 
 
 // Fonction pour paginer un tableau
 function paginateArray(array $items, int $perPage, int $currentPage): array {
@@ -25,7 +25,7 @@ $pagedTeam = paginateArray($team_translations['team'], $itemsPerPage, $currentPa
 function generateUrl($route, $params = []) {
     $currentParams = $_GET; // Récupérer les paramètres actuels
     // Supprimer les paramètres inutiles pour certaines routes
-    if ($route === './team-profile') {
+    if ($route === './board-profile') {
         unset($currentParams['page']); // Retirer le paramètre de pagination pour les profils
     }
     $updatedParams = array_merge($currentParams, $params); // Fusionner avec les nouveaux paramètres
@@ -57,7 +57,7 @@ function generateUrl($route, $params = []) {
                 <div class="col-lg-4 col-md-6">
                     <div class="card-expert">
                         <div class="card-image">
-                            <a href="<?= generateUrl('./team-profile', ['id' => $id]) ?>">
+                            <a href="<?= generateUrl('./board-profile', ['id' => $id]) ?>">
                                 <img src="<?= htmlspecialchars($member['image']) ?>" alt="<?= htmlspecialchars($member['name']) ?>" />
                             </a>
                         </div>
@@ -71,7 +71,7 @@ function generateUrl($route, $params = []) {
                                 </a>
                             </div>
                             <div class="card-text-info">
-                                <a href="<?= generateUrl('./team-profile', ['id' => $id]) ?>" class="sub-heading-ag-xl neutral-1200">
+                                <a href="<?= generateUrl('./board-profile', ['id' => $id]) ?>" class="sub-heading-ag-xl neutral-1200">
                                     <?= htmlspecialchars($member['name']) ?>
                                 </a>
                                 <p class="paragraph-rubik-r grey-800">
@@ -87,19 +87,19 @@ function generateUrl($route, $params = []) {
         <!-- Pagination -->
         <div class="pagination d-flex justify-content-center mt-4">
             <?php if ($currentPage > 1): ?>
-                <a href="<?= generateUrl('./team', ['page' => $currentPage - 1]) ?>" class="pagi">
+                <a href="<?= generateUrl('./board', ['page' => $currentPage - 1]) ?>" class="pagi">
                     <?= htmlspecialchars($team_translations['previous'] ?? 'Previous') ?>
                 </a>
             <?php endif; ?>
 
             <?php for ($page = 1; $page <= $totalPages; $page++): ?>
-                <a href="<?= generateUrl('./team', ['page' => $page]) ?>" class="pagi <?= $page === $currentPage ? 'active' : '' ?>">
+                <a href="<?= generateUrl('./board', ['page' => $page]) ?>" class="pagi <?= $page === $currentPage ? 'active' : '' ?>">
                     <?= $page ?>
                 </a>
             <?php endfor; ?>
 
             <?php if ($currentPage < $totalPages): ?>
-                <a href="<?= generateUrl('./team', ['page' => $currentPage + 1]) ?>" class="pagi">
+                <a href="<?= generateUrl('./board', ['page' => $currentPage + 1]) ?>" class="pagi">
                     <?= htmlspecialchars($team_translations['next'] ?? 'Next') ?>
                 </a>
             <?php endif; ?>
