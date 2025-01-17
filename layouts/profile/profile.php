@@ -26,7 +26,7 @@ $member = $team_translations['team'][$id];
                         </div>
                         <div class="col-lg-7 col-md-8 mb-4">
                             <h1 class="heading-ag-8xl mb-3"><?= htmlspecialchars($member['name']) ?></h1>
-                            <h3 class="neutral-2900 mb-4"><?= htmlspecialchars($member['role']) ?></h3>
+                            <!-- <h3 class="neutral-2900 mb-4"><?= htmlspecialchars($member['role']) ?></h3> -->
                             <div class="team-socials">
                                 <a href="<?= htmlspecialchars($member['linkedin']) ?>" target="_blank">
                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
