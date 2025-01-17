@@ -74,9 +74,9 @@ function generateUrl($route, $params = []) {
                                 <a href="<?= generateUrl('./board-profile', ['id' => $id]) ?>" class="sub-heading-ag-xl neutral-1200">
                                     <?= htmlspecialchars($member['name']) ?>
                                 </a>
-                                <p class="paragraph-rubik-r grey-800">
+                                <!-- <p class="paragraph-rubik-r grey-800">
                                     <?= htmlspecialchars($member['role']) ?>
-                                </p>
+                                </p> -->
                             </div>
                         </div>
                     </div>
