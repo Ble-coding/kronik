@@ -8,46 +8,41 @@ return [
     'next'     => 'Suivant',
    'team' => [ 
         1 => [
-           'id'    => 1,
-            'name'  => 'Alphonse Konan',
-            'role'  => 'Consultant Senior Régional Afrique',
+            'id'    => 1,
+            'name'  => 'Franck-Simon Blehiri',
+            // 'role'  => 'Directeur de l’Informatique et de la Santé Digitale',
             'linkedin' => '#',
-            'image' => 'assets/imgs/pages/home5/alphonse_konan.jpg',
-            'image-profile' => 'assets/imgs/pages/home5/alphonse_konan-great.jpg',
-          'bio' => [
-                "🎯 <strong>Expertise :</strong> Alphonse Konan est un consultant senior régional reconnu pour sa solide expérience en <em>gestion de projets en e-santé</em> et <em>e-formation</em>, avec plus de 15 ans dans des organisations internationales.",
-                
-                "🌍 <strong>Impact :</strong> Il a dirigé des initiatives stratégiques dans plus de 30 pays, mobilisant des équipes pour atteindre des objectifs ambitieux dans le respect des contraintes budgétaires.",
-                
-                "💼 <strong>Compétences :</strong> Alphonse combine adaptabilité, discrétion et professionnalisme. Il excelle en travail d’équipe et crée des environnements collaboratifs et performants.",
-                
-                "🚀 <strong>Vision :</strong> Engagé dans le développement de solutions innovantes, il maîtrise la gestion de projets complexes et accompagne les équipes vers l’excellence opérationnelle."
-            ]
+            'image' => 'assets/imgs/pages/home5/franck-simon-blehiri.jpg',
+            'image-profile' => 'assets/imgs/pages/home5/franck-simon-blehiri-great.jpg',
+            'bio'   => [
+                "💼 <strong>Poste :</strong> <em>Franck-Simon Blehiri</em> est le <strong>Directeur de l’Informatique et de la Santé Digitale</strong> au <strong>Ministère de la Santé, de l’Hygiène Publique et de la Couverture Maladie Universelle</strong> de Côte d’Ivoire. Expert en technologies de la santé, il joue un rôle clé dans la transformation numérique du système de santé ivoirien.",
 
+                "🚀 <strong>Réalisations :</strong> Mise en place de solutions de <strong>digitalisation</strong> pour améliorer l’accès et l’efficacité des soins. Promotion de la <strong>télémédecine</strong> et des systèmes de gestion des données médicales.",
+        
+                "🤝 <strong>Partenariats :</strong> Collaboration avec des partenaires <strong>nationaux</strong> et <strong>internationaux</strong> pour accélérer l’adoption des technologies de santé.",
+        
+                "🌍 <strong>Vision :</strong> S’engage à construire un <strong>système de santé numérique</strong> durable, inclusif et accessible à tous."
+            ],
         ],
-        // 2 => [
-        //     'id'    => 2,
-        //     'name'  => 'Julien Kakou',
-        //     'role'  => 'Leader en Santé Digitale & Expert en Accès aux Soin',
-        //      'linkedin' => 'https://www.linkedin.com/in/julien-kakou-57954390/',
-        //     'image' => 'assets/imgs/pages/home5/julien-kakou.jpg',
-        //     'image-profile' => 'assets/imgs/pages/home5/julien-kakou-great.jpg',
-        //     'bio'   => [
-        //         "🩺 <strong>Expertise :</strong> Julien Kakou est un leader reconnu en <em>santé digitale</em> et en <em>politiques d'accès aux soins</em>, avec plus de 15 ans d’expérience dans la <strong>stratégie d'accès au marché</strong> et le <strong>développement de politiques de santé</strong> dans les LMICs.",
-        
-        //         "🌍 <strong>Impact :</strong> Actuellement <em>Healthcare System Partner, Policy & Strategic Financing</em>, il joue un rôle clé dans la <strong>transformation digitale</strong> des systèmes de santé en Afrique, notamment dans l'accès aux traitements contre le cancer.",
-        
-        //         "💼 <strong>Parcours :</strong> Fort d’une expérience au sein de grandes entreprises pharmaceutiques comme <strong>Roche</strong>, <strong>Otsuka</strong> et <strong>Sanofi</strong>, Julien a dirigé des projets d'<strong>innovation digitale</strong> et des <strong>partenariats public-privé</strong> pour améliorer les infrastructures de santé.",
-        
-        //         "🚀 <strong>Réalisations :</strong> À travers le programme <strong>Innov'Keneya</strong>, il a contribué à l’expansion des soins oncologiques, impactant plus de <strong>22 000 patients</strong> et renforçant les infrastructures de santé dans l'Afrique francophone.",
-        
-        //         "🎓 <strong>Formation :</strong> Titulaire d'un <em>Executive Master</em> en gestion de l'industrie <strong>biotechnologique et pharmaceutique</strong>, Julien est également expert en <strong>recherche clinique</strong> et certifié en <strong>coaching agile</strong>."
-        //     ],
-        // ],
+        2 => [
+            'id'    => 2,
+            'name'  => 'COULIBALY Kounandi Stéphane',
+            // 'role'  => 'Directeur de l’Innovation, des Startups et du Secteur Privé',
+            'linkedin' => '#',
+            'image' => 'assets/imgs/pages/home5/coulibaly-kounandi-stephane.jpg',
+            'image-profile' => 'assets/imgs/pages/home5/coulibaly-kounandi-stephane-great.jpg',
+            'bio'   => [
+                "💼 <strong>Fonction :</strong> <em>Stéphane Kounandi Coulibaly</em> est <strong>Directeur de l’Innovation, des Startups et du Secteur Privé</strong> au <strong>Ministère de la Transition Numérique et de la Digitalisation</strong> en Côte d'Ivoire.",
+
+                "🌐 <strong>Parcours International :</strong> Il possède plus de <strong>11 ans d'expérience</strong> chez <strong>IBM</strong> aux États-Unis en tant que <strong>Manager of Data and Analytics</strong>, avec une expertise reconnue en <strong>intelligence artificielle</strong> et en <strong>stratégie numérique</strong>.",
+
+                "🚀 <strong>Projets Stratégiques :</strong> Diplômé d'un <strong>MBA</strong> de l'<strong>University of Rhode Island</strong>, il dirige la mise en œuvre de la <strong>stratégie nationale de l’Intelligence Artificielle</strong> et de la <strong>Gestion des Données</strong>. Il supervise également des initiatives clés comme <strong>HIT Hub Ivoire Tech</strong>, le <strong>Programme d’Autonomisation Numérique des Femmes et des Jeunes</strong> et le <strong>Startup Act</strong>."
+            ],
+        ],
         3 => [
             'id'    => 3,
             'name'  => 'Gnona Dovi Serge',
-            'role'  => 'Fondateur & PDG de Dove Innovations',
+            // 'role'  => 'Fondateur & PDG de Dove Innovations',
             'linkedin' => '#',
             'image' => 'assets/imgs/pages/home5/gnona-dovi-serge.jpg',
             'image-profile' => 'assets/imgs/pages/home5/gnona-dovi-serge-great.jpg',
@@ -65,25 +60,26 @@ return [
         ],
         4 => [
             'id'    => 4,
-            'name'  => 'Franck-Simon Blehiri',
-            'role'  => 'Directeur de l’Informatique et de la Santé Digitale',
-            'linkedin' => '#',
-            'image' => 'assets/imgs/pages/home5/franck-simon-blehiri.jpg',
-            'image-profile' => 'assets/imgs/pages/home5/franck-simon-blehiri-great.jpg',
-            'bio'   => [
-                "💼 <strong>Poste :</strong> <em>Franck-Simon Blehiri</em> est le <strong>Directeur de l’Informatique et de la Santé Digitale</strong> au <strong>Ministère de la Santé, de l’Hygiène Publique et de la Couverture Maladie Universelle</strong> de Côte d’Ivoire. Expert en technologies de la santé, il joue un rôle clé dans la transformation numérique du système de santé ivoirien.",
-
-                "🚀 <strong>Réalisations :</strong> Mise en place de solutions de <strong>digitalisation</strong> pour améliorer l’accès et l’efficacité des soins. Promotion de la <strong>télémédecine</strong> et des systèmes de gestion des données médicales.",
-        
-                "🤝 <strong>Partenariats :</strong> Collaboration avec des partenaires <strong>nationaux</strong> et <strong>internationaux</strong> pour accélérer l’adoption des technologies de santé.",
-        
-                "🌍 <strong>Vision :</strong> S’engage à construire un <strong>système de santé numérique</strong> durable, inclusif et accessible à tous."
-            ],
+             'name'  => 'Alphonse Konan',
+            //  'role'  => 'Consultant Senior Régional Afrique',
+             'linkedin' => '#',
+             'image' => 'assets/imgs/pages/home5/alphonse_konan.jpg',
+             'image-profile' => 'assets/imgs/pages/home5/alphonse_konan-great.jpg',
+           'bio' => [
+                 "🎯 <strong>Expertise :</strong> Alphonse Konan est un consultant senior régional reconnu pour sa solide expérience en <em>gestion de projets en e-santé</em> et <em>e-formation</em>, avec plus de 15 ans dans des organisations internationales.",
+                 
+                 "🌍 <strong>Impact :</strong> Il a dirigé des initiatives stratégiques dans plus de 30 pays, mobilisant des équipes pour atteindre des objectifs ambitieux dans le respect des contraintes budgétaires.",
+                 
+                 "💼 <strong>Compétences :</strong> Alphonse combine adaptabilité, discrétion et professionnalisme. Il excelle en travail d’équipe et crée des environnements collaboratifs et performants.",
+                 
+                 "🚀 <strong>Vision :</strong> Engagé dans le développement de solutions innovantes, il maîtrise la gestion de projets complexes et accompagne les équipes vers l’excellence opérationnelle."
+             ]
+ 
         ],
         5 => [
             'id'    => 5,
             'name'  => 'Georgette Zamblé',
-            'role'  => 'Docteure en Genre et Autonomisation Durable',
+            // 'role'  => 'Docteure en Genre et Autonomisation Durable',
             'linkedin' => '#',
             'image' => 'assets/imgs/pages/home5/georgette-zamble.jpg',
             'image-profile' => 'assets/imgs/pages/home5/georgette-zamble-great.jpg',
@@ -100,7 +96,7 @@ return [
         6 => [
             'id'    => 6,
             'name'  => 'Nandy Joëlle Beugré Goué',
-            'role'  => 'Cheffe des Subventions et Programmes - FOASPS',
+            // 'role'  => 'Cheffe des Subventions et Programmes - FOASPS',
             'linkedin' => 'https://www.linkedin.com/in/nandybeugre/',
             'image' => 'assets/imgs/pages/home5/nandy-joelle-beugre-goue.jpg',
             'image-profile' => 'assets/imgs/pages/home5/nandy-joelle-beugre-goue-great.jpg',
@@ -117,7 +113,7 @@ return [
         7 => [
             'id'    => 7,
             'name'  => 'Aman Vladimir',
-            'role'  => 'Expert en Cybersécurité',
+            // 'role'  => 'Expert en Cybersécurité',
             'linkedin' => '#',
             'image' => 'assets/imgs/pages/home5/aman-vladimir.jpg',
             'image-profile' => 'assets/imgs/pages/home5/aman-vladimir.jpg-great.jpg',
@@ -136,7 +132,7 @@ return [
         8 => [
             'id'    => 8,
             'name'  => 'Amichia Alexia',
-            'role'  => 'Sous-Directrice du Développement de l’Entrepreneuriat et des Startups Technologiques',
+            // 'role'  => 'Sous-Directrice du Développement de l’Entrepreneuriat et des Startups Technologiques',
             'linkedin' => '#',
             'image' => 'assets/imgs/pages/home5/amichia-alexia.jpg',
             'image-profile' => 'assets/imgs/pages/home5/amichia-alexia-great.jpg',
@@ -155,7 +151,7 @@ return [
         9 => [
             'id'    => 9,
             'name'  => 'Haifa Daoud',
-            'role'  => 'Fondatrice & PDG de Loqui',
+            // 'role'  => 'Fondatrice & PDG de Loqui',
             'linkedin' => '#',
             'image' => 'assets/imgs/pages/home5/haifa-daoud.jpg',
             'image-profile' => 'assets/imgs/pages/home5/haifa-daoud-great.jpg',
@@ -170,7 +166,7 @@ return [
         10 => [
             'id'    => 10,
             'name'  => 'Michaël Anvoh',
-            'role'  => 'Expert en Informatique et Transformation Numérique',
+            // 'role'  => 'Expert en Informatique et Transformation Numérique',
             'linkedin' => '#',
             'image' => 'assets/imgs/pages/home5/michael-anvoh.jpg',
             'image-profile' => 'assets/imgs/pages/home5/michael-anvoh-great.jpg',
@@ -182,25 +178,29 @@ return [
                 "🌍 <strong>Engagement :</strong> Michaël met son expertise au service de la <strong>digitalisation</strong> et de l’<strong>optimisation des processus métiers</strong>, contribuant à la transformation durable des organisations."
             ],
         ],
-        11 => [
-            'id'    => 11,
-            'name'  => 'COULIBALY Kounandi Stéphane',
-            'role'  => 'Directeur de l’Innovation, des Startups et du Secteur Privé',
-            'linkedin' => '#',
-            'image' => 'assets/imgs/pages/home5/coulibaly-kounandi-stephane.jpg',
-            'image-profile' => 'assets/imgs/pages/home5/coulibaly-kounandi-stephane-great.jpg',
-            'bio'   => [
-                "💼 <strong>Fonction :</strong> <em>Stéphane Kounandi Coulibaly</em> est <strong>Directeur de l’Innovation, des Startups et du Secteur Privé</strong> au <strong>Ministère de la Transition Numérique et de la Digitalisation</strong> en Côte d'Ivoire.",
-
-                "🌐 <strong>Parcours International :</strong> Il possède plus de <strong>11 ans d'expérience</strong> chez <strong>IBM</strong> aux États-Unis en tant que <strong>Manager of Data and Analytics</strong>, avec une expertise reconnue en <strong>intelligence artificielle</strong> et en <strong>stratégie numérique</strong>.",
-
-                "🚀 <strong>Projets Stratégiques :</strong> Diplômé d'un <strong>MBA</strong> de l'<strong>University of Rhode Island</strong>, il dirige la mise en œuvre de la <strong>stratégie nationale de l’Intelligence Artificielle</strong> et de la <strong>Gestion des Données</strong>. Il supervise également des initiatives clés comme <strong>HIT Hub Ivoire Tech</strong>, le <strong>Programme d’Autonomisation Numérique des Femmes et des Jeunes</strong> et le <strong>Startup Act</strong>."
-            ],
-        ],
+        // 11 => [
+        //     'id'    => 11,
+        //     'name'  => 'Julien Kakou',
+        //     'role'  => 'Leader en Santé Digitale & Expert en Accès aux Soin',
+        //      'linkedin' => 'https://www.linkedin.com/in/julien-kakou-57954390/',
+        //     'image' => 'assets/imgs/pages/home5/julien-kakou.jpg',
+        //     'image-profile' => 'assets/imgs/pages/home5/julien-kakou-great.jpg',
+        //     'bio'   => [
+        //         "🩺 <strong>Expertise :</strong> Julien Kakou est un leader reconnu en <em>santé digitale</em> et en <em>politiques d'accès aux soins</em>, avec plus de 15 ans d’expérience dans la <strong>stratégie d'accès au marché</strong> et le <strong>développement de politiques de santé</strong> dans les LMICs.",
+        
+        //         "🌍 <strong>Impact :</strong> Actuellement <em>Healthcare System Partner, Policy & Strategic Financing</em>, il joue un rôle clé dans la <strong>transformation digitale</strong> des systèmes de santé en Afrique, notamment dans l'accès aux traitements contre le cancer.",
+        
+        //         "💼 <strong>Parcours :</strong> Fort d’une expérience au sein de grandes entreprises pharmaceutiques comme <strong>Roche</strong>, <strong>Otsuka</strong> et <strong>Sanofi</strong>, Julien a dirigé des projets d'<strong>innovation digitale</strong> et des <strong>partenariats public-privé</strong> pour améliorer les infrastructures de santé.",
+        
+        //         "🚀 <strong>Réalisations :</strong> À travers le programme <strong>Innov'Keneya</strong>, il a contribué à l’expansion des soins oncologiques, impactant plus de <strong>22 000 patients</strong> et renforçant les infrastructures de santé dans l'Afrique francophone.",
+        
+        //         "🎓 <strong>Formation :</strong> Titulaire d'un <em>Executive Master</em> en gestion de l'industrie <strong>biotechnologique et pharmaceutique</strong>, Julien est également expert en <strong>recherche clinique</strong> et certifié en <strong>coaching agile</strong>."
+        //     ],
+        // ],
         12 => [
             'id'    => 12,
-            'name'  => 'KPATTA KADJÉ Yves',
-            'role'  => 'Directeur Médical de la Clinique EMCEL',
+            'name'  => 'Dr KPATTA KADJÉ Yves',
+            // 'role'  => 'Directeur Médical de la Clinique EMCEL',
             'linkedin' => 'https://www.linkedin.com/in/kadje-yves-kpatta-3b4122189/',
             'image' => 'assets/imgs/pages/home5/kpatta-kadje-yve.jpg',
             'image-profile' => 'assets/imgs/pages/home5/kpatta-kadje-yve-great.jpg',

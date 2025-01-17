@@ -7,48 +7,44 @@ return [
     'previous' => 'Previous',
     'next'     => 'Next',
     'team' => [   
-        1 => [ 
+        1 => [
             'id'    => 1,
-            'name'  => 'Alphonse Konan',
-            'role'  => 'Senior Regional Consultant Africa',
+            'name'  => 'Franck-Simon Blehiri',
+            // 'role'  => 'Director of IT and Digital Health',
             'linkedin' => '#',
-            'image' => 'assets/imgs/pages/home5/alphonse_konan.jpg',
-            'image-profile' => 'assets/imgs/pages/home5/alphonse_konan-great.jpg',
-          'bio' => [
-                "🎯 <strong>Expertise:</strong> Alphonse Konan is a senior regional consultant with extensive experience in <em>e-health</em> and <em>e-learning project management</em>, backed by over 15 years in leading international organizations.",
-                
-                "🌍 <strong>Impact:</strong> He has led strategic initiatives across 30+ countries, effectively mobilizing teams to achieve ambitious goals within tight budgets.",
-                
-                "💼 <strong>Skills:</strong> Alphonse blends adaptability, discretion, and professionalism. He thrives in teamwork and fosters collaborative and high-performing environments.",
-                
-                "🚀 <strong>Vision:</strong> Dedicated to developing innovative solutions, he excels in managing complex projects and guiding teams toward operational excellence."
-            ]
+            'image' => 'assets/imgs/pages/home5/franck-simon-blehiri.jpg',
+            'image-profile' => 'assets/imgs/pages/home5/franck-simon-blehiri-great.jpg',
+            'bio'   => [
+                "💼 <strong>Position:</strong> <em>Franck-Simon Blehiri</em> is the <strong>Director of IT and Digital Health</strong> at the <strong>Ministry of Health, Public Hygiene, and Universal Health Coverage</strong> of Côte d’Ivoire. As a health technology expert, he plays a key role in the digital transformation of the Ivorian healthcare system.",
 
-        ],
-        // 2 => [
-        //     'id'    => 2,
-        //     'name'  => 'Julien Kakou',
-        //     'role'  => 'Digital Health Leader & Access to Care Expert',
-        //     'linkedin' => 'https://www.linkedin.com/in/julien-kakou-57954390/',
-        //     'image' => 'assets/imgs/pages/home5/julien-kakou.jpg',
-        //     'image-profile' => 'assets/imgs/pages/home5/julien-kakou-great.jpg',
-        //     'bio'   => [
-        //         "🩺 <strong>Expertise:</strong> Julien Kakou is a recognized leader in <em>digital health</em> and <em>access to care policies</em>, with over 15 years of experience in <strong>market access strategy</strong> and <strong>health policy development</strong> in LMICs.",
-
-        //     "🌍 <strong>Impact:</strong> Currently serving as <em>Healthcare System Partner, Policy & Strategic Financing</em>, he plays a pivotal role in the <strong>digital transformation</strong> of health systems in Africa, particularly in expanding access to cancer treatments.",
-
-        //     "💼 <strong>Background:</strong> Julien gained extensive experience at major pharmaceutical companies such as <strong>Roche</strong>, <strong>Otsuka</strong>, and <strong>Sanofi</strong>, leading <strong>digital innovation</strong> projects and <strong>public-private partnerships</strong> to strengthen healthcare infrastructure.",
-
-        //     "🚀 <strong>Achievements:</strong> Through the <strong>Innov'Keneya</strong> program, he contributed to expanding oncology care, impacting over <strong>22,000 patients</strong> and improving healthcare infrastructure across Francophone Africa.",
-
-        //     "🎓 <strong>Education:</strong> Julien holds an <em>Executive Master</em> in <strong>biotech and pharmaceutical industry management</strong> and is an expert in <strong>clinical research</strong> and a certified <strong>agile coach</strong>."
-        //     ],
+                "🚀 <strong>Achievements:</strong> Implemented <strong>innovative digital solutions</strong> to improve healthcare access and efficiency. Advocates for <strong>telemedicine</strong> and medical data management systems.",
         
-        // ],
+                "🤝 <strong>Partnerships:</strong> Works with <strong>national</strong> and <strong>international</strong> partners to accelerate health technology adoption.",
+        
+                "🌍 <strong>Vision:</strong> Committed to building a <strong>sustainable, inclusive, and accessible digital healthcare system</strong>."
+        
+            ],
+        ],
+        2 => [
+            'id'    => 2,
+            'name'  => 'COULIBALY Kounandi Stéphane',
+            // 'role'  => 'Director of Innovation, Startups, and Private Sector',
+            'linkedin' => '#',
+            'image' => 'assets/imgs/pages/home5/coulibaly-kounandi-stephane.jpg',
+            'image-profile' => 'assets/imgs/pages/home5/coulibaly-kounandi-stephane-great.jpg',
+            'bio'   => [
+                "💼 <strong>Position:</strong> <em>Stéphane Kounandi Coulibaly</em> is the <strong>Director of Innovation, Startups, and the Private Sector</strong> at the <strong>Ministry of Digital Transition and Digitalization</strong> in Côte d'Ivoire.",
+
+                "🌐 <strong>International Experience:</strong> He has over <strong>11 years of experience</strong> at <strong>IBM</strong> in the United States as a <strong>Manager of Data and Analytics</strong>, with recognized expertise in <strong>artificial intelligence</strong> and <strong>digital strategy</strong>.",
+
+                "🚀 <strong>Strategic Projects:</strong> Holding an <strong>MBA</strong> from the <strong>University of Rhode Island</strong>, he leads the national strategy for <strong>Artificial Intelligence</strong> and <strong>Data Management</strong>. He also oversees key initiatives like the <strong>HIT Hub Ivoire Tech</strong>, the <strong>Digital Empowerment Program for Women and Youth</strong>, and the <strong>Startup Act</strong>."
+
+            ],
+        ],
         3 => [
             'id'    => 3,
             'name'  => 'Gnona Dovi Serge',
-            'role'  => 'Founder & CEO of Dove Innovations',
+            // 'role'  => 'Founder & CEO of Dove Innovations',
             'linkedin' => '#',
             'image' => 'assets/imgs/pages/home5/gnona-dovi-serge.jpg',
             'image-profile' => 'assets/imgs/pages/home5/gnona-dovi-serge-great.jpg',
@@ -65,28 +61,28 @@ return [
             
             ],
         ],
-        4 => [
+        4 => [ 
             'id'    => 4,
-            'name'  => 'Franck-Simon Blehiri',
-            'role'  => 'Director of IT and Digital Health',
+            'name'  => 'Alphonse Konan',
+            // 'role'  => 'Senior Regional Consultant Africa',
             'linkedin' => '#',
-            'image' => 'assets/imgs/pages/home5/franck-simon-blehiri.jpg',
-            'image-profile' => 'assets/imgs/pages/home5/franck-simon-blehiri-great.jpg',
-            'bio'   => [
-                "💼 <strong>Position:</strong> <em>Franck-Simon Blehiri</em> is the <strong>Director of IT and Digital Health</strong> at the <strong>Ministry of Health, Public Hygiene, and Universal Health Coverage</strong> of Côte d’Ivoire. As a health technology expert, he plays a key role in the digital transformation of the Ivorian healthcare system.",
+            'image' => 'assets/imgs/pages/home5/alphonse_konan.jpg',
+            'image-profile' => 'assets/imgs/pages/home5/alphonse_konan-great.jpg',
+          'bio' => [
+                "🎯 <strong>Expertise:</strong> Alphonse Konan is a senior regional consultant with extensive experience in <em>e-health</em> and <em>e-learning project management</em>, backed by over 15 years in leading international organizations.",
+                
+                "🌍 <strong>Impact:</strong> He has led strategic initiatives across 30+ countries, effectively mobilizing teams to achieve ambitious goals within tight budgets.",
+                
+                "💼 <strong>Skills:</strong> Alphonse blends adaptability, discretion, and professionalism. He thrives in teamwork and fosters collaborative and high-performing environments.",
+                
+                "🚀 <strong>Vision:</strong> Dedicated to developing innovative solutions, he excels in managing complex projects and guiding teams toward operational excellence."
+            ]
 
-                "🚀 <strong>Achievements:</strong> Implemented <strong>innovative digital solutions</strong> to improve healthcare access and efficiency. Advocates for <strong>telemedicine</strong> and medical data management systems.",
-        
-                "🤝 <strong>Partnerships:</strong> Works with <strong>national</strong> and <strong>international</strong> partners to accelerate health technology adoption.",
-        
-                "🌍 <strong>Vision:</strong> Committed to building a <strong>sustainable, inclusive, and accessible digital healthcare system</strong>."
-        
-            ],
         ],
         5 => [
             'id'    => 5,
             'name'  => 'Georgette Zamblé',
-            'role'  => 'Doctor in Gender and Sustainable Empowerment',
+            // 'role'  => 'Doctor in Gender and Sustainable Empowerment',
             'linkedin' => '#',
             'image' => 'assets/imgs/pages/home5/georgette-zamble.jpg', 
             'image-profile' => 'assets/imgs/pages/home5/georgette-zamble-great.jpg',
@@ -103,7 +99,7 @@ return [
         6 => [
             'id'    => 6,
             'name'  => 'Nandy Joëlle Beugré Goué',
-            'role'  => 'Head of Grants and Programs - FOASPS',
+            // 'role'  => 'Head of Grants and Programs - FOASPS',
             'linkedin' => 'https://www.linkedin.com/in/nandybeugre/',
             'image' => 'assets/imgs/pages/home5/nandy-joelle-beugre-goue.jpg', 
             'image-profile' => 'assets/imgs/pages/home5/nandy-joelle-beugre-goue-great.jpg',
@@ -121,7 +117,7 @@ return [
         7 => [
             'id'    => 7,
             'name'  => 'Aman Vladimir',
-            'role'  => 'Cybersecurity Expert',
+            // 'role'  => 'Cybersecurity Expert',
             'linkedin' => '#',
             'image' => 'assets/imgs/pages/home5/aman-vladimir.jpg',
             'image-profile' => 'assets/imgs/pages/home5/aman-vladimir-great.jpg',
@@ -140,7 +136,7 @@ return [
         8 => [
             'id'    => 8,
             'name'  => 'Amichia Alexia',
-            'role'  => 'Deputy Director of Entrepreneurship and Tech Startups Development',
+            // 'role'  => 'Deputy Director of Entrepreneurship and Tech Startups Development',
             'linkedin' => '#',
             'image' => 'assets/imgs/pages/home5/amichia-alexia.jpg',
             'image-profile' => 'assets/imgs/pages/home5/amichia-alexia-great.jpg',
@@ -159,7 +155,7 @@ return [
         9 => [
             'id'    => 9,
             'name'  => 'Haifa Daoud',
-            'role'  => 'Founder & CEO of Loqui',
+            // 'role'  => 'Founder & CEO of Loqui',
             'linkedin' => '#',
             'image' => 'assets/imgs/pages/home5/haifa-daoud.jpg',
             'image-profile' => 'assets/imgs/pages/home5/haifa-daoud-great.jpg',
@@ -174,7 +170,7 @@ return [
         10 => [
             'id'    => 10,
             'name'  => 'Michaël Anvoh',
-            'role'  => 'IT and Digital Transformation Expert',
+            // 'role'  => 'IT and Digital Transformation Expert',
             'linkedin' => '#',
             'image' => 'assets/imgs/pages/home5/michael-anvoh.jpg',
             'image-profile' => 'assets/imgs/pages/home5/michael-anvoh-great.jpg',
@@ -186,26 +182,30 @@ return [
                 "🌍 <strong>Commitment:</strong> Michaël leverages his expertise to support <strong>digitalization</strong> and the <strong>optimization of business processes</strong>, contributing to the sustainable transformation of organizations."
             ],
         ],
-        11 => [
-            'id'    => 11,
-            'name'  => 'COULIBALY Kounandi Stéphane',
-            'role'  => 'Director of Innovation, Startups, and Private Sector',
-            'linkedin' => '#',
-            'image' => 'assets/imgs/pages/home5/coulibaly-kounandi-stephane.jpg',
-            'image-profile' => 'assets/imgs/pages/home5/coulibaly-kounandi-stephane-great.jpg',
-            'bio'   => [
-                "💼 <strong>Position:</strong> <em>Stéphane Kounandi Coulibaly</em> is the <strong>Director of Innovation, Startups, and the Private Sector</strong> at the <strong>Ministry of Digital Transition and Digitalization</strong> in Côte d'Ivoire.",
+        // 11 => [
+        //     'id'    => 11,
+        //     'name'  => 'Julien Kakou',
+        //   // 'role'  => 'Digital Health Leader & Access to Care Expert',
+        //     'linkedin' => 'https://www.linkedin.com/in/julien-kakou-57954390/',
+        //     'image' => 'assets/imgs/pages/home5/julien-kakou.jpg',
+        //     'image-profile' => 'assets/imgs/pages/home5/julien-kakou-great.jpg',
+        //     'bio'   => [
+        //         "🩺 <strong>Expertise:</strong> Julien Kakou is a recognized leader in <em>digital health</em> and <em>access to care policies</em>, with over 15 years of experience in <strong>market access strategy</strong> and <strong>health policy development</strong> in LMICs.",
 
-                "🌐 <strong>International Experience:</strong> He has over <strong>11 years of experience</strong> at <strong>IBM</strong> in the United States as a <strong>Manager of Data and Analytics</strong>, with recognized expertise in <strong>artificial intelligence</strong> and <strong>digital strategy</strong>.",
+        //     "🌍 <strong>Impact:</strong> Currently serving as <em>Healthcare System Partner, Policy & Strategic Financing</em>, he plays a pivotal role in the <strong>digital transformation</strong> of health systems in Africa, particularly in expanding access to cancer treatments.",
 
-                "🚀 <strong>Strategic Projects:</strong> Holding an <strong>MBA</strong> from the <strong>University of Rhode Island</strong>, he leads the national strategy for <strong>Artificial Intelligence</strong> and <strong>Data Management</strong>. He also oversees key initiatives like the <strong>HIT Hub Ivoire Tech</strong>, the <strong>Digital Empowerment Program for Women and Youth</strong>, and the <strong>Startup Act</strong>."
+        //     "💼 <strong>Background:</strong> Julien gained extensive experience at major pharmaceutical companies such as <strong>Roche</strong>, <strong>Otsuka</strong>, and <strong>Sanofi</strong>, leading <strong>digital innovation</strong> projects and <strong>public-private partnerships</strong> to strengthen healthcare infrastructure.",
 
-            ],
-        ],
+        //     "🚀 <strong>Achievements:</strong> Through the <strong>Innov'Keneya</strong> program, he contributed to expanding oncology care, impacting over <strong>22,000 patients</strong> and improving healthcare infrastructure across Francophone Africa.",
+
+        //     "🎓 <strong>Education:</strong> Julien holds an <em>Executive Master</em> in <strong>biotech and pharmaceutical industry management</strong> and is an expert in <strong>clinical research</strong> and a certified <strong>agile coach</strong>."
+        //     ],
+        
+        // ],
         12 => [
             'id'    => 12,
-            'name'  => 'KPATTA KADJÉ Yves',
-            'role'  => 'Medical Director at EMCEL Clinic',
+            'name'  => 'Dr KPATTA KADJÉ Yves',
+            // 'role'  => 'Medical Director at EMCEL Clinic',
             'linkedin' => 'https://www.linkedin.com/in/kadje-yves-kpatta-3b4122189',
             'image' => 'assets/imgs/pages/home5/kpatta-kadje-yve.jpg',
             'image-profile' => 'assets/imgs/pages/home5/kpatta-kadje-yve-great.jpg',
