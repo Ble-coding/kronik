@@ -6,12 +6,12 @@ return [
     'learn_more' => 'Learn More',
     'cards' => [
         [
-            'title' => 'Hypertension: A Critical Diagnosis',
-            'content' => 'In sub-Saharan Africa, a concerning majority of people with hypertension remain undiagnosed. This lack of diagnosis puts millions of lives at increased risk of severe complications, including cardiovascular diseases and strokes.',
-        ],
-        [
             'title' => 'Chronic Diseases: A Silent Crisis',
             'content' => 'In 2016, over 13.7 million deaths in low- and middle-income countries were caused by chronic diseases. These alarming figures highlight the urgency of prevention and management initiatives to reduce this global burden. Investing in innovation can save lives.',
+        ],
+        [
+            'title' => 'Hypertension: A Critical Diagnosis',
+            'content' => 'In sub-Saharan Africa, a concerning majority of people with hypertension remain undiagnosed. This lack of diagnosis puts millions of lives at increased risk of severe complications, including cardiovascular diseases and strokes.',
         ],
         [
             'title' => 'Cancer in Africa: A Silent Epidemic',
