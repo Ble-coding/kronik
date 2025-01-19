@@ -201,7 +201,7 @@ return [
             'id'    => 12,
             'name'  => 'Dr KPATTA KADJÉ Yves',
             // 'role'  => 'Directeur Médical de la Clinique EMCEL',
-            'linkedin' => 'https://www.linkedin.com/in/kadje-yves-kpatta-3b4122189/',
+            'linkedin' => 'https://www.linkedin.com/in/dolores-anoh-355342195/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
             'image' => '/assets/imgs/pages/home5/kpatta-kadje-yve.jpg',
             'image-profile' => '/assets/imgs/pages/home5/kpatta-kadje-yve-great.jpg',
             'bio'   => [
