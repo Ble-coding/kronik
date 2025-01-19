@@ -219,6 +219,21 @@ return [
                 "🚀 <strong>Vision:</strong> A key contributor to the digital transformation of the medical sector, with a strong focus on innovative healthcare technologies."
             ],
         ],
+        13 => [
+            'id'    => 13,
+            'name'  => 'Dolorès Anoh N’diaye',
+            // 'role'  => 'Head of Health Communication Department',
+            'linkedin' => 'https://www.linkedin.com/in/kadje-yves-kpatta-3b4122189/',
+            'image' => '/assets/imgs/pages/home5/dolores-anoh-ndiaye.jpg',
+            'image-profile' => '/assets/imgs/pages/home5/dolores-anoh-ndiaye-great.jpg',
+            'bio'   => [
+                "🎓 <strong>Education:</strong> Holds a <em>Doctorate in Medicine</em> from the University of Alassane Ouattara in Bouaké, a <em>Master's in Public Health</em> from Aix-Marseille, and a <em>Postgraduate Diploma in Medical Informatics</em>. She is also certified in <em>Strategic Leadership in Communication</em> from Johns Hopkins University CCP.",
+        
+                "💼 <strong>Responsibilities:</strong> As the Head of Health Communication at the National Cancer Control Program in Côte d’Ivoire, she plays a pivotal role in disease awareness and prevention campaigns.",
+                
+                "🌍 <strong>Expertise:</strong> With five years of experience in public health, she has been instrumental in designing and implementing community mobilization, prevention, and screening projects as part of cancer control efforts in Côte d’Ivoire."
+            ],
+        ],
     ]
 ];
 
