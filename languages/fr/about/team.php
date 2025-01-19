@@ -221,7 +221,7 @@ return [
             'linkedin' => 'https://www.linkedin.com/in/dolores-anoh-355342195/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
             'image' => 'assets/imgs/pages/home5/dolores-anoh-ndiaye.jpg',
             'image-profile' => '/assets/imgs/pages/home5/dolores-anoh-ndiaye-great.jpg',
-            'bio'   => [
+            'bio'   => [    
                "🎓 <strong>Formation :</strong> Titulaire d’un <em>Doctorat en Médecine</em> obtenu à l’Université Alassane Ouattara de Bouaké, complété par un <em>Master en Santé Publique</em> à Aix-Marseille et un <em>DESU en Informatique Médicale</em>. Elle est également certifiée en <em>Leadership Stratégique en Communication</em> par l’Université Johns Hopkins CCP.",
         
                 "💼 <strong>Responsabilités :</strong> Chef de Service Communication Santé au Programme National de Lutte contre le Cancer en Côte d’Ivoire, elle joue un rôle clé dans la sensibilisation et la prévention des maladies.",
