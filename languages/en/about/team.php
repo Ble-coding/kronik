@@ -225,7 +225,7 @@ return [
             // 'role'  => 'Head of Health Communication Department',
             'linkedin' => 'https://www.linkedin.com/in/dolores-anoh-355342195/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
             'image' => 'assets/imgs/pages/home5/dolores-anoh-ndiaye.jpg',
-            'image-profile' => '/assets/imgs/pages/home5/dolores-anoh-ndiaye-great.jpg',
+            'image-profile' => 'assets/imgs/pages/home5/dolores-anoh-ndiaye-great.jpg',
             'bio'   => [
                 "🎓 <strong>Education:</strong> Holds a <em>Doctorate in Medicine</em> from the University of Alassane Ouattara in Bouaké, a <em>Master's in Public Health</em> from Aix-Marseille, and a <em>Postgraduate Diploma in Medical Informatics</em>. She is also certified in <em>Strategic Leadership in Communication</em> from Johns Hopkins University CCP.",
         
