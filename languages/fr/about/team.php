@@ -214,6 +214,20 @@ return [
                 "🚀 <strong>Vision :</strong> Acteur engagé dans la transformation digitale du secteur médical, avec un intérêt marqué pour les technologies innovantes au service des soins de santé."
             ],
         ],
+        13 => [
+            'id'    => 13,
+            'name'  => 'Dolorès Anoh N’diaye',
+            // 'role'  => 'Chef de Service Communication Santé',
+            'linkedin' => 'https://www.linkedin.com/in/dolores-anoh-355342195/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+            'image' => 'assets/imgs/pages/home5/dolores-anoh-ndiaye.jpg',
+            'image-profile' => '/assets/imgs/pages/home5/dolores-anoh-ndiaye-great.jpg',
+            'bio'   => [
+               "🎓 <strong>Formation :</strong> Titulaire d’un <em>Doctorat en Médecine</em> obtenu à l’Université Alassane Ouattara de Bouaké, complété par un <em>Master en Santé Publique</em> à Aix-Marseille et un <em>DESU en Informatique Médicale</em>. Elle est également certifiée en <em>Leadership Stratégique en Communication</em> par l’Université Johns Hopkins CCP.",
+        
+                "💼 <strong>Responsabilités :</strong> Chef de Service Communication Santé au Programme National de Lutte contre le Cancer en Côte d’Ivoire, elle joue un rôle clé dans la sensibilisation et la prévention des maladies.",
+                
+                "🌍 <strong>Expertise :</strong> Avec cinq années d’expérience en santé publique, elle a contribué à la conception et à la mise en œuvre de projets de mobilisation communautaire, de prévention et de dépistage dans le cadre de la lutte contre le cancer en Côte d’Ivoire."
+            ],
+        ],
     ]
-
 ];
