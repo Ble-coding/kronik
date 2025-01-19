@@ -221,7 +221,7 @@ return [
         ],
         13 => [
             'id'    => 13,
-            'name'  => 'Dolorès Anoh N’diaye',
+            'name'  => 'Dolores Anoh N’diaye',
             // 'role'  => 'Head of Health Communication Department',
             'linkedin' => 'https://www.linkedin.com/in/dolores-anoh-355342195/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
             'image' => '/assets/imgs/pages/home5/dolores-anoh-ndiaye.jpg',
