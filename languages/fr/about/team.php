@@ -216,7 +216,7 @@ return [
         ],
         13 => [
             'id'    => 13,
-            'name'  => 'Dolorès Anoh N’diaye',
+            'name'  => 'Dr Dolorès Anoh N’diaye',
             // 'role'  => 'Chef de Service Communication Santé',
             'linkedin' => 'https://www.linkedin.com/in/kadje-yves-kpatta-3b4122189/',
             'image' => '/assets/imgs/pages/home5/dolores-anoh-ndiaye.jpg',
