@@ -234,8 +234,8 @@ return [
             'name'  => 'Professeur Gildas Komenan GBASSI',
             // 'role'  => 'Professeur Titulaire des Universités du CAMES',
             'linkedin' => 'https://www.linkedin.com/in/prof-gbassi-k-gildas-a152b011/',
-            'image' => 'assets/imgs/pages/home5/gildas-komenan-gbassi.jpg',
-            'image-profile' => 'assets/imgs/pages/home5/gildas-komenan-gbassi-great.jpg',
+            'image' => '/assets/imgs/pages/home5/gildas-komenan-gbassi.jpg',
+            'image-profile' => '/assets/imgs/pages/home5/gildas-komenan-gbassi-great.jpg',
             'bio'   => [    
                 "🎓 Docteur en Pharmacie diplômé de Côte d’Ivoire en 2003, suivi d’un doctorat en Chimie Physique à l’Université de Strasbourg (2010). Lauréat des Doctoriales d’Alsace 2007 avec un 2<sup>e</sup> Prix du Meilleur Projet Innovant.",
                 "🔬 Professeur Titulaire depuis 2018, ancien chercheur invité à l’École Polytechnique de Montréal, avec plus de 58 publications scientifiques et deux ouvrages à son actif.",
