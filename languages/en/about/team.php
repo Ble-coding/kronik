@@ -234,6 +234,21 @@ return [
                 "🌍 <strong>Expertise:</strong> With five years of experience in public health, she has been instrumental in designing and implementing community mobilization, prevention, and screening projects as part of cancer control efforts in Côte d’Ivoire."
             ],
         ],
+        14 => [
+            'id'    => 14,
+            'name'  => 'Professor  Gildas Komenan GBASSI',
+            // 'role'  => 'Professor at CAMES Universities',
+            'linkedin' => 'https://www.linkedin.com/in/prof-gbassi-k-gildas-a152b011/',
+            'image' => '/assets/imgs/pages/home5/gildas-komenan-gbassi.jpg',
+            'image-profile' => '/assets/imgs/pages/home5/gildas-komenan-gbassi-great.jpg',
+            'bio'   => [    
+                "🎓 Doctor of Pharmacy graduated in Côte d’Ivoire (2003), followed by a PhD in Physical Chemistry from the University of Strasbourg (2010). Winner of the 2007 Alsace Doctoriales, securing the 2<sup>nd</sup> Prize for Best Innovative Project.",
+                "🔬 Full Professor since 2018, former visiting researcher at École Polytechnique de Montréal, with over 58 scientific publications and two books to his credit.",
+                "📚 Deputy Director of Research at the Faculty of Pharmaceutical and Biological Sciences, Félix Houphouët-Boigny University since 2023, and Head of the Food Control Service at the National Public Health Laboratory.",
+                "💡 Leader of a FONSTI-funded project to develop a mobile prototype for treating industrial effluents using Moringa Oleifera.",
+                "🌍 Chair of several scientific committees, including the XV<sup>th</sup> Biology and Public Health Colloquium and the 1<sup>st</sup> edition of the IntechSanté Forum."
+            ],
+        ],
     ]
 ];
 
