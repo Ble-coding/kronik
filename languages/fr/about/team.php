@@ -229,5 +229,21 @@ return [
                 "🌍 <strong>Expertise :</strong> Avec cinq années d’expérience en santé publique, elle a contribué à la conception et à la mise en œuvre de projets de mobilisation communautaire, de prévention et de dépistage dans le cadre de la lutte contre le cancer en Côte d’Ivoire."
             ],
         ],
+        14 => [
+            'id'    => 14,
+            'name'  => 'Professeur Gildas Komenan GBASSI',
+            // 'role'  => 'Professeur Titulaire des Universités du CAMES',
+            'linkedin' => 'https://www.linkedin.com/in/prof-gbassi-k-gildas-a152b011/',
+            'image' => 'assets/imgs/pages/home5/gildas-komenan-gbassi.jpg',
+            'image-profile' => 'assets/imgs/pages/home5/gildas-komenan-gbassi-great.jpg',
+            'bio'   => [    
+                "🎓 Docteur en Pharmacie diplômé de Côte d’Ivoire en 2003, suivi d’un doctorat en Chimie Physique à l’Université de Strasbourg (2010). Lauréat des Doctoriales d’Alsace 2007 avec un 2<sup>e</sup> Prix du Meilleur Projet Innovant.",
+                "🔬 Professeur Titulaire depuis 2018, ancien chercheur invité à l’École Polytechnique de Montréal, avec plus de 58 publications scientifiques et deux ouvrages à son actif.",
+                "📚 Directeur Adjoint de la Recherche à l’UFR Sciences Pharmaceutiques et Biologiques de l’Université Félix Houphouët-Boigny depuis 2023, et Chef du Service Contrôle des Aliments au LNSP.",
+                "💡 Leader d’un projet financé par le FONSTI pour développer un prototype mobile de dépollution des effluents industriels à base de Moringa Oleifera.",
+                "🌍 Président de divers comités scientifiques, dont le XV<sup>e</sup> Colloque de Biologie et la 1<sup>ère</sup> édition du Forum IntechSanté."
+            ],
+        ],
+
     ]
 ];
